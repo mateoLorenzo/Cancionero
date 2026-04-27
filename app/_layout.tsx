@@ -7,7 +7,8 @@ import { PlayfairDisplay_400Regular_Italic } from "@expo-google-fonts/playfair-d
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
-import { useEffect } from "react";
+import { useCallback } from "react";
+import { StyleSheet, View } from "react-native";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -18,7 +19,8 @@ export default function RootLayout() {
     "PlayfairDisplay-Italic": PlayfairDisplay_400Regular_Italic,
   });
 
-  useEffect(() => {
+  // Hide splash after first paint to avoid the white flash gap
+  const onLayoutRootView = useCallback(() => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
     }
@@ -27,8 +29,13 @@ export default function RootLayout() {
   if (!fontsLoaded) return null;
 
   return (
-    <>
-      <Stack screenOptions={{ headerShown: false }}>
+    <View style={styles.root} onLayout={onLayoutRootView}>
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          contentStyle: styles.screenContent,
+        }}
+      >
         <Stack.Screen name="(tabs)" />
         <Stack.Screen
           name="hymn/[id]"
@@ -41,6 +48,16 @@ export default function RootLayout() {
         />
       </Stack>
       <StatusBar style="light" />
-    </>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    backgroundColor: "#000000",
+  },
+  screenContent: {
+    backgroundColor: "#000000",
+  },
+});

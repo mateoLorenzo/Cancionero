@@ -3,6 +3,7 @@ import ZoomOutIcon from "@/assets/svg/zoom-out.svg";
 import hymnsData from "@/src/data/hymns.json";
 import { useSettingsStore } from "@/src/stores/settings";
 import { Hymn } from "@/src/types/hymn";
+import { haptics } from "@/src/utils/haptic-feedback";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useLayoutEffect } from "react";
@@ -21,11 +22,17 @@ export default function HymnDetailScreen() {
   const hymn = hymns.find((h) => h.id === Number(id));
 
   const decreaseFont = () => {
-    if (fontSize > MIN_FONT) setFontSize(fontSize - 1);
+    if (fontSize > MIN_FONT) {
+      haptics.light();
+      setFontSize(fontSize - 1);
+    }
   };
 
   const increaseFont = () => {
-    if (fontSize < MAX_FONT) setFontSize(fontSize + 1);
+    if (fontSize < MAX_FONT) {
+      haptics.light();
+      setFontSize(fontSize + 1);
+    }
   };
 
   useLayoutEffect(() => {

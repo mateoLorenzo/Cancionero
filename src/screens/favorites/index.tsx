@@ -7,8 +7,11 @@ import { FlashList } from "@shopify/flash-list";
 import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useMemo } from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+
+const FEEDBACK_URL =
+  "https://wa.me/5491140392404?text=Hola,%20tengo%20una%20sugerencia%20para%20la%20app%20Cancionero";
 
 const hymns = hymnsData as Hymn[];
 
@@ -31,44 +34,63 @@ export default function FavoritesScreen() {
         <Text style={styles.headerTitle}>Favoritos</Text>
       </View>
 
-      <FlashList
-        data={favorites}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <Pressable
-            style={({ pressed }) => [
-              styles.item,
-              pressed && styles.itemPressed,
-            ]}
-            onPress={() => push(`/hymn/${item.id}`)}
-            accessibilityRole="button"
-            accessibilityLabel={`Himno ${item.id}, ${item.title}`}
-          >
-            <Text style={styles.number}>{item.id}</Text>
-            <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
-              {item.title}
-            </Text>
+      <View style={styles.listWrapper}>
+        <FlashList
+          data={favorites}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={({ item }) => (
             <Pressable
-              onPress={() => toggleFavorite(item.id)}
-              hitSlop={8}
+              style={({ pressed }) => [
+                styles.item,
+                pressed && styles.itemPressed,
+              ]}
+              onPress={() => push(`/hymn/${item.id}`)}
               accessibilityRole="button"
-              accessibilityLabel="Quitar de favoritos"
+              accessibilityLabel={`Himno ${item.id}, ${item.title}`}
             >
-              <Ionicons name="heart" size={20} color="#E05555" />
+              <Text style={styles.number}>{item.id}</Text>
+              <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
+                {item.title}
+              </Text>
+              <Pressable
+                onPress={() => toggleFavorite(item.id)}
+                hitSlop={8}
+                accessibilityRole="button"
+                accessibilityLabel="Quitar de favoritos"
+              >
+                <Ionicons name="heart" size={20} color="#E05555" />
+              </Pressable>
             </Pressable>
-          </Pressable>
-        )}
-        keyboardDismissMode="on-drag"
-        ListEmptyComponent={
-          <View style={styles.emptyContainer}>
-            <Ionicons name="heart-outline" size={48} color="#CCC" />
-            <Text style={styles.emptyText}>Aún no tenés himnos favoritos</Text>
-            <Text style={styles.emptySubtext}>
-              Tocá el corazón en un himno para guardarlo acá
-            </Text>
-          </View>
-        }
-      />
+          )}
+          keyboardDismissMode="on-drag"
+          ListEmptyComponent={
+            <View style={styles.emptyContainer}>
+              <Ionicons name="heart-outline" size={48} color="#CCC" />
+              <Text style={styles.emptyText}>
+                Aún no tenés himnos favoritos
+              </Text>
+              <Text style={styles.emptySubtext}>
+                Tocá el corazón en un himno para guardarlo acá
+              </Text>
+            </View>
+          }
+        />
+      </View>
+
+      <View style={styles.footer}>
+        <Pressable
+          style={({ pressed }) => [
+            styles.feedbackButton,
+            pressed && styles.feedbackButtonPressed,
+          ]}
+          onPress={() => Linking.openURL(FEEDBACK_URL)}
+          accessibilityRole="button"
+          accessibilityLabel="Enviar sugerencia por WhatsApp"
+        >
+          <Ionicons name="logo-whatsapp" size={18} color="#FFFFFF" />
+          <Text style={styles.feedbackButtonText}>Enviar sugerencias</Text>
+        </Pressable>
+      </View>
     </View>
   );
 }
@@ -130,5 +152,32 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#BBB",
     textAlign: "center",
+  },
+  listWrapper: {
+    flex: 1,
+  },
+  footer: {
+    paddingTop: 12,
+    paddingBottom: 12,
+    paddingHorizontal: 20,
+    backgroundColor: "#FAFAFA",
+  },
+  feedbackButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#179130",
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    gap: 8,
+  },
+  feedbackButtonPressed: {
+    opacity: 0.8,
+  },
+  feedbackButtonText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#FFFFFF",
   },
 });

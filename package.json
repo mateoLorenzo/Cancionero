@@ -1,5 +1,5 @@
 {
-  "name": "himnos",
+  "name": "cancionero",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {

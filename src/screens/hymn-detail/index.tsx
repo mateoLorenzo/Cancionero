@@ -8,6 +8,7 @@ import { useLocalSearchParams, useNavigation } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useLayoutEffect } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const hymns = hymnsData as Hymn[];
 
@@ -17,6 +18,7 @@ const MAX_FONT = 28;
 export default function HymnDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const navigation = useNavigation();
+  const insets = useSafeAreaInsets();
   const fontSize = useSettingsStore((s) => s.fontSize);
   const setFontSize = useSettingsStore((s) => s.setFontSize);
   const hymn = hymns.find((h) => h.id === Number(id));
@@ -63,7 +65,10 @@ export default function HymnDetailScreen() {
       <StatusBar style="dark" />
       <ScrollView
         style={styles.container}
-        contentContainerStyle={styles.content}
+        contentContainerStyle={[
+          styles.content,
+          { paddingBottom: 120 + insets.bottom },
+        ]}
         showsVerticalScrollIndicator={false}
       >
         <Text style={styles.title}>{hymn.title}</Text>
@@ -85,7 +90,12 @@ export default function HymnDetailScreen() {
         ))}
       </ScrollView>
 
-      <View style={styles.floatingButtons}>
+      <View
+        style={[
+          styles.floatingButtons,
+          { bottom: 16 + insets.bottom },
+        ]}
+      >
         <Pressable
           style={[
             styles.fontButton,
@@ -134,7 +144,6 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 24,
     paddingTop: 16,
-    paddingBottom: 120,
   },
   title: {
     fontSize: 24,
@@ -163,7 +172,6 @@ const styles = StyleSheet.create({
   },
   floatingButtons: {
     position: "absolute",
-    bottom: 32,
     left: 24,
     right: 24,
     flexDirection: "row",

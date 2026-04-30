@@ -30,51 +30,53 @@ export default function FavoritesScreen() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
-      <View style={[styles.headerSection, { paddingTop: insets.top }]}>
-        <Text style={styles.headerTitle}>Favoritos</Text>
+      <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
+        <Text style={styles.headerTitle}>Mis Favoritos</Text>
+        <Text style={styles.headerSubtitle}>Guarda tantos como quieras</Text>
       </View>
 
       <View style={styles.listWrapper}>
-        <FlashList
-          data={favorites}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (
-            <Pressable
-              style={({ pressed }) => [
-                styles.item,
-                pressed && styles.itemPressed,
-              ]}
-              onPress={() => push(`/hymn/${item.id}`)}
-              accessibilityRole="button"
-              accessibilityLabel={`Himno ${item.id}, ${item.title}`}
-            >
-              <Text style={styles.number}>{item.id}</Text>
-              <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
-                {item.title}
-              </Text>
+        {favorites.length === 0 ? (
+          <View style={styles.emptyContainer}>
+            <Ionicons name="heart-outline" size={48} color="#CCC" />
+            <Text style={styles.emptyText}>
+              Aún no tenés himnos favoritos
+            </Text>
+            <Text style={styles.emptySubtext}>
+              Tocá el corazón en un himno para guardarlo acá
+            </Text>
+          </View>
+        ) : (
+          <FlashList
+            data={favorites}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) => (
               <Pressable
-                onPress={() => toggleFavorite(item.id)}
-                hitSlop={8}
+                style={({ pressed }) => [
+                  styles.item,
+                  pressed && styles.itemPressed,
+                ]}
+                onPress={() => push(`/hymn/${item.id}`)}
                 accessibilityRole="button"
-                accessibilityLabel="Quitar de favoritos"
+                accessibilityLabel={`Himno ${item.id}, ${item.title}`}
               >
-                <Ionicons name="heart" size={20} color="#E05555" />
+                <Text style={styles.number}>#{item.id}</Text>
+                <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
+                  {item.title}
+                </Text>
+                <Pressable
+                  onPress={() => toggleFavorite(item.id)}
+                  hitSlop={8}
+                  accessibilityRole="button"
+                  accessibilityLabel="Quitar de favoritos"
+                >
+                  <Ionicons name="heart" size={20} color="#E05555" />
+                </Pressable>
               </Pressable>
-            </Pressable>
-          )}
-          keyboardDismissMode="on-drag"
-          ListEmptyComponent={
-            <View style={styles.emptyContainer}>
-              <Ionicons name="heart-outline" size={48} color="#CCC" />
-              <Text style={styles.emptyText}>
-                Aún no tenés himnos favoritos
-              </Text>
-              <Text style={styles.emptySubtext}>
-                Tocá el corazón en un himno para guardarlo acá
-              </Text>
-            </View>
-          }
-        />
+            )}
+            keyboardDismissMode="on-drag"
+          />
+        )}
       </View>
 
       <View style={styles.footer}>
@@ -101,15 +103,21 @@ const styles = StyleSheet.create({
     backgroundColor: "#FAFAFA",
   },
   headerSection: {
-    backgroundColor: "#000",
+    backgroundColor: "#0c0c0c",
     paddingBottom: 20,
     paddingHorizontal: 20,
-    paddingTop: 12,
   },
   headerTitle: {
     fontSize: 26,
-    fontWeight: "700",
+    fontFamily: "PlayfairDisplay-Italic",
     color: "#FFFFFF",
+    textAlign: "center",
+    marginBottom: 2,
+  },
+  headerSubtitle: {
+    fontSize: 16,
+    fontFamily: "PlayfairDisplay-Italic",
+    color: "rgba(255,255,255,0.6)",
     textAlign: "center",
   },
   item: {
@@ -127,7 +135,7 @@ const styles = StyleSheet.create({
   number: {
     fontSize: 15,
     color: "#AAAAAA",
-    width: 34,
+    width: 46,
     fontWeight: "500",
     fontVariant: ["tabular-nums"],
   },
@@ -137,8 +145,9 @@ const styles = StyleSheet.create({
     fontWeight: "400",
   },
   emptyContainer: {
+    flex: 1,
     alignItems: "center",
-    paddingTop: 80,
+    justifyContent: "center",
     gap: 10,
     paddingHorizontal: 40,
   },

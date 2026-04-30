@@ -1,57 +1,30 @@
 [
   {
     "id": 1,
-    "title": "10000 razones",
+    "title": "Diez mil razones",
     "verses": [
-      "Que todo lo que soy,\nAlabe al Señor,\nCon todo mi corazón,",
-      "De tu grande amor, cantaré\nTu Nombre alabaré",
-      "Sale el sol\nEs un nuevo amanecer\nCantaré a ti otra vez",
-      "Sea lo que venga, confiaré en Ti\nAlabaré en el anochecer",
-      "Tu amor no tiene fin\nY Tú eres paciente\nY bondadoso es tu corazón",
-      "Por todo lo que haz hecho\nYo sigo cantando\nDiez mil razones para alabar",
-      "Y en ese día cuando\nYa no tenga fuerzas\nY se acerque tu gloria",
-      "Mi alma cantará de tu amor sin final\nDiez mil años y para siempre más"
+      "Que todo lo que soy,\nAlabe al Señor,\nCon todo mi corazón,\nDe tu grande amor, cantaré\nTu Nombre alabaré",
+      "Sale el sol\nEs un nuevo amanecer\nCantaré a ti otra vez\nSea lo que venga, confiaré en Ti\nAlabaré en el anochecer",
+      "Que todo lo que soy,\nAlabe al Señor,\nCon todo mi corazón,\nDe tu grande amor, cantaré\nTu Nombre alabaré",
+      "Tu amor no tiene fin\nY Tú eres paciente\nY bondadoso es tu corazón\nPor todo lo que haz hecho\nYo sigo cantando\nDiez mil razones para alabar",
+      "Que todo lo que soy,\nAlabe al Señor,\nCon todo mi corazón,\nDe tu grande amor, cantaré\nTu Nombre alabaré",
+      "Y en ese día cuando\nYa no tenga fuerzas\nY se acerque tu gloria\nMi alma cantará de tu amor sin final\nDiez mil años y para siempre más",
+      "Que todo lo que soy,\nAlabe al Señor,\nCon todo mi corazón,\nDe tu grande amor, cantaré\nTu Nombre alabaré"
     ],
-    "author": "ICB"
-  },
-  {
-    "id": 2,
-    "title": "150 CRISTIANO, ALABA A TU SEÑOR",
-    "verses": [
-      "Cristiano, Alaba a tu Señor,\nProclama sus bondades;\nAnuncia a todos su favor,\nSu gracia y sus verdades.",
-      "La buena nueva de salud\nDeclara al angustiado;\nEnsalza siempre la virtud\nDe aquel que te ha salvado.",
-      "Con fe, constancia y gran valor\nSé siempre buen testigo;\nDirige al triste pecador\nA Cristo, el fiel amigo.",
-      "En todo tiempo, sin temor,\nConfiesa a Jesucristo;\nNo te avergüences del Señor,\nQue en cruz por ti a sufrido."
-    ],
-    "chorus": "Alaba siempre, alaba al Salvador.\nCanta, ¡Oh! canta la historia de su amor.",
-    "author": "ICB"
-  },
-  {
-    "id": 3,
-    "title": "A Dios sea la Gloria",
-    "verses": [
-      "A Dios sea la gloria, al mundo El dio\nAl Hijo bendito que por nos murió;",
-      "Expió los pecados de quien en El cree,\nAbriónos la senda hacia Dios por la fe.",
-      "La sangre de Cristo la obra efectuó,\nPara todo creyente perdón alcanzó;",
-      "Si en Cristo confía el más vil pecador,\nPerdón en el acto le otorga el Señor.",
-      "Inmensa la obra de Cristo en la cruz,\nEnorme la culpa se ve por su luz;",
-      "Al mundo El vino, nos iluminó,\nY por nuestras culpas el Justo murió."
-    ],
-    "chorus": "¡Gloria a Dios! ¡Gloria a Dios!\nQue de tal modo amó\n\nAl que lejos de El en pecado se halló;\nVenid por el Hijo al gran Dios Salvador,\n\nY dadle la gloria por tan grande amor.",
     "author": "ICB"
   },
   {
     "id": 4,
-    "title": "A QUIEN IRE",
+    "title": "A quien iré",
     "verses": [
-      "A quién ire en necesidad?\nA quién ire en busca de paz?\nY quién podra mi vida\nSaciar de verdad?",
-      "Quién mas tendra de mi compasion?\nY entenderá mi corazon?\nQuién cambiará mi eternidad?\nSino tu Jesús"
+      "¿A quién iré en necesidad?\n¿A quién iré en busca de paz?\n¿Y quién podra mi vida saciar de verdad?",
+      "Quién mas tendra de mi compasión?\nY entenderá mi corazón?\nQuién cambiará mi eternidad?\nSino tu Jesús"
     ],
     "chorus": "Cristo, a dónde más podria ir?\nCristo, qué otro lugar puede existir?\nSolo Tú tienes palabras de amor\nCamino al padre y verdad eres Tú\nCristo, a dónde más podria ir?"
   },
   {
     "id": 5,
-    "title": "ABRE MIS OJOS",
+    "title": "Abre mis ojos",
     "verses": [
       "//Abre mis ojos oh Cristo,\nAbre mis ojos oh Dios,\nYo quiero verte,\nYo quiero verte//",
       "Derrama hoy tu poder,\nsobre tu pueblo\nPadre Santo//"
@@ -60,7 +33,7 @@
   },
   {
     "id": 6,
-    "title": "AL ESTAR ANTE TI",
+    "title": "Al estar ante ti",
     "verses": [
       "Al estar ante ti",
       "Adorando frente \nal mar de cristal",
@@ -73,48 +46,30 @@
     "chorus": "Digno es el \nCordero de DIOS\n\nEl que fue inmolado \nen la cruz\n\nDigno de la  \nhonra  y el Poder\n\nLa sabiduría suya  es\n\nY al que esta en el Trono \nsea el honor\n\nSanto, Santo, Santo  \nes  el Señor\n\nReina por los siglos \ncon Poder\n\nTodo lo que existe es  por   El"
   },
   {
-    "id": 7,
-    "title": "ALABADO EL GRAN MANANTIAL",
-    "verses": [
-      "¡Alabado el gran manantial\nQue de sangre Dios nos mostró!\n¡Alabado el Rey que murió;\nSu pasión nos libra del mal!",
-      "Lejos del redil de mi dueño\nVime pecador, perdido y vil;\nEl Cordero sangre vertió;\nMe limpia sólo este raudal.",
-      "La punzante insignia llevó;\nEn la cruz dejó de vivir;\nGrandes males quiso sufrir;\nNo en vano Cristo sufrió.",
-      "Al gran manantial conducido,\nQue de mi maldad ha sido fin,\n\"Lávame\" le pude decir,\nY nívea blancura me dió.",
-      "Padre, de tí lejos vagué;\nExtravióse mi corazón;\nComo grana mis culpas son;\nNo con agua limpio seré.",
-      "A tu fuente magna acudí;\nTu promesa creo, oh Jesús;\nLa eficaz virtud de tu don\nLa nívea blancura me dé."
-    ],
-    "chorus": "Sé que sólo así me emblanqueceré;\nLávame en tu sangre, Jesús,\nY nívea blancura tendré."
-  },
-  {
-    "id": 8,
-    "title": "ALABANZAS AL CORDERO",
-    "verses": [
-      "Me gozo en Jesús,\nQuien su trono de luz\nDejó por comprar mi salud en la cruz.",
-      "Mis culpas sentí,\nY contrito acudí\nA Cristo, refugio eternal para mi.",
-      "Y así tengo yo\nEn Jesús que me amó,\nLa paz y el perdón que su sangre compró.",
-      "Si hay penas aquí,\nGozo eterno hay allí,\nDo Cristo prepara lugar para mí."
-    ],
-    "chorus": "¡Alabanzas al Cordero!\nDe mi vida el sostén;\n\nTriunfó en el madero.\n¡Aleluya!-Amén!"
-  },
-  {
     "id": 9,
-    "title": "AQUEL QUE NOS AMO",
+    "title": "Aquel que nos amo",
     "verses": [
+      "// Aquel que nos amó\nTestigo fiel exaltaré\nAl que es principio y fin\nAl gran yo soy adoraré //",
       "Aquel que nos amó\nTestigo fiel exaltaré\nAl que es principio y fin\nAl gran yo soy adoraré",
-      "Siempre te amaré\nSiempre te adoraré\nSiempre te cantaré\nSiempre te exaltaré"
+      "// A Jesús mi Señor\nResplandor de la gloria de Dios\nA Jesús mi gran Rey\nAlabanza y honra daré //",
+      "Siempre te amaré\nSiempre te adoraré\nSiempre te cantaré\nSiempre te exaltaré",
+      "// A Jesús mi Señor\nResplandor de la gloria de Dios\nA Jesús mi gran Rey\nAlabanza y honra daré //",
+      "Alabanza y honra daré\nAlabanza y honra daré"
     ],
     "chorus": "A Jesús mi Señor\nResplandor de la gloria de Dios\nA Jesús mi gran Rey\nAlabanza y honra daré"
   },
   {
     "id": 10,
-    "title": "ASÍ ES TU AMOR",
+    "title": "Así es tu amor",
     "verses": [
-      "Hay un deseo en mi corazon de estar donde Tú estas\nSé que no hay mejor lugar quiero haitar en tu altar",
-      "He buscado en otras cosas el amor sin encontrar\nMe doy cuenta que tu amor mi vida llenará…",
-      "Paciente y bondadoso es (Así es tu amor)\nTodo lo espera y lo soporta (Así es tu amor)",
-      "No tiene envidia ni rencor (Así es tu amor)\nTu amor nunca deja de ser…",
-      "Me cuidas, me amas, me cubres, me abrazas\nMejor que la vida es Tu amor",
-      "Tan alto, sublime, perfecto y eterno\nMejor que la vida es Tu amor"
+      "Hay un deseo en mi corazón de estar donde Tú estás\nSé que no hay mejor lugar quiero habitar en tu altar\nHe buscado en otras cosas el amor sin encontrar\nMe doy cuenta que tu amor mi vida llenará",
+      "Paciente y bondadoso es (Así es tu amor)\nTodo lo espera y lo soporta (Así es tu amor)\nNo tiene envidia ni rencor (Así es tu amor)\nTu amor nunca deja de ser…",
+      "Me cuidas, me amas, me cubres, me abrazas\nMejor que la vida es Tu amor\nTan alto, sublime, perfecto y eterno\nMejor que la vida es Tu amor\nPor mi ",
+      "Hay un deseo en mi corazón de estar donde Tú estás\nSé que no hay mejor lugar quiero habitar en tu altar\nHe buscado en otras cosas el amor sin encontrar\nMe doy cuenta que tu amor mi vida llenará",
+      "Paciente y bondadoso es (Así es tu amor)\nTodo lo espera y lo soporta (Así es tu amor)\nNo tiene envidia ni rencor (Así es tu amor)\nTu amor nunca deja de ser…",
+      "Me cuidas, me amas, me cubres, me abrazas\nMejor que la vida es Tu amor\nTan alto, sublime, perfecto y eterno\nMejor que la vida es Tu amor\nPor mi",
+      "Paciente y bondadoso es (Así es tu amor)\nTodo lo espera y lo soporta (Así es tu amor)\nNo tiene envidia ni rencor (Así es tu amor)\nTu amor nunca deja de ser…",
+      "Me cuidas, me amas, me cubres, me abrazas\nMejor que la vida es Tu amor\nTan alto, sublime, perfecto y eterno\nMejor que la vida es Tu amor\nPor mi"
     ]
   },
   {
@@ -142,17 +97,6 @@
     "author": "ICB"
   },
   {
-    "id": 13,
-    "title": "Al Señor Jesús loemos",
-    "verses": [
-      "Al Señor Jesús loemos\nPorque tanto le debemos,\nLo que somos y tenemos\nSolo es nuestro en Él",
-      "Es Jesús su nombre amado,\nA su pueblo Él ha salvado;\nEs el triunfo asegurado\nPor su gran poder",
-      "¡Oh, confiad en este amigo!\nNos liberta del peligro.\nNos es hoy un fuerte abrigo\nY hasta el fin será",
-      "Cumpliráse nuestro anhelo,\nEn el día en que sin velo\nLe veremos en el cielo\nAl Señor Jesús"
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 14,
     "title": "Al cristo vivo sirvo",
     "verses": [
@@ -170,7 +114,7 @@
       "Desde siempre Yo te miro,\nCuando has llorado has reido,\nEn cada área o situación\nMuchas veces me has sentido,\nOtras veces que me he oido,\nA la verdad siempre has tenido mi atención",
       "Desde siempre te respondo,\nY mi rostro nunca escondo,\nPorque me buscas con el alma y corazón.\nDesde siempre Yo te guardo,\nSiempre tiene mi respaldo,\nEn tu camino siempre está mi bendición"
     ],
-    "chorus": "Solo que aveces oras mal,\nY no he podido darte,\nLo que has pedido porque Yo,\nConozco que es lo mejor,\nPorque tu miras el presente,\nPero el futuro mira Yo.\n\nSi quieres vivir en victoria,\nTen mi palabra en tu memoria,\nYo siempre permanezco fiel,\nSoy quien le respondió a Moises,\nCuando se hallaba frente al mar,\nY el enemigo más allá.\n\nCuando mi nombre él clamó,\nTocó el mar se dividió,\nEntonces qué dificultad,\nTendría para en tí obrar,\nDescansa en mi trendrás alivio,\nAprender que será mejor:\nAL MODO MÍO",
+    "chorus": "Solo que a veces oras mal,\nY no he podido darte,\nLo que has pedido porque Yo,\nConozco que es lo mejor,\nPorque tu miras el presente,\nPero el futuro mira Yo.\n\nSi quieres vivir en victoria,\nTen mi palabra en tu memoria,\nYo siempre permanezco fiel,\nSoy quien le respondió a Moises,\nCuando se hallaba frente al mar,\nY el enemigo más allá.\n\nCuando mi nombre él clamó,\nTocó el mar se dividió,\nEntonces qué dificultad,\nTendría para en tí obrar,\nDescansa en mi trendrás alivio,\nAprender que será mejor:\nAL MODO MÍO",
     "author": "ICB"
   },
   {
@@ -190,7 +134,7 @@
   },
   {
     "id": 17,
-    "title": "Alabare al Señor (Anastasis)",
+    "title": "Alabaré al Señor (Anastasis)",
     "verses": [
       "Recordaré aquella cruz\nDonde sangró y murió Jesús\nHeridas que por mi sufrió\nCrucificado Salvador",
       "Su cuerpo envuelto en dolor\nEn el sepulcro reposó\nEn soledad Él se quedó\nJesús Mesías el Señor",
@@ -262,7 +206,7 @@
   },
   {
     "id": 21,
-    "title": "Aqui Estoy LAPEN",
+    "title": "Aquí Estoy LAPEN",
     "verses": [
       "Tú eres el principio\nTuya es la eternidad",
       "Llamaste el mundo a existencia\nMe acerco a Ti",
@@ -284,7 +228,7 @@
   },
   {
     "id": 22,
-    "title": "Aqui Estoy + Cristo puede mover montes LAPEN",
+    "title": "Aquí Estoy + Cristo puede mover montes LAPEN",
     "verses": [
       "Tú eres el principio\nTuya es la eternidad",
       "Llamaste el mundo a existencia\nMe acerco a Ti",
@@ -309,16 +253,8 @@
     "author": "ICB"
   },
   {
-    "id": 23,
-    "title": "Avisos",
-    "verses": [
-      "Jueves  -   20:00hs Reunion de Oracion En Casas\nSabado -   17:00hs Renovados\nDomingo - 09:30hs Cena del Señor\n                11:00hs Culto familiar"
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 24,
-    "title": "BUENO ES ALABAR",
+    "title": "Bueno es alabar",
     "verses": [
       "Bueno es alabar \nOh Señor,\nTu Nombre\nDarte gloria, Honra\ny Honor\nPor siempre,",
       "Bueno es Alabarte \nJesús\nY gozarme\nen tu Poder",
@@ -340,7 +276,7 @@
   },
   {
     "id": 26,
-    "title": "CADA DIA CONTIGO",
+    "title": "Cada día contigo",
     "verses": [
       "//Cada día contigo, es mas dulce que ayer//",
       "Te alabaré cada mañana, y al atardecer también",
@@ -351,18 +287,8 @@
     ]
   },
   {
-    "id": 27,
-    "title": "CANTARE A CRISTO",
-    "verses": [
-      "Cantaré a Cristo por su gran amor,\nComo vino para ser mi Salvador;\n¡Tan humilde fué el lugar en el pueblo de Judá,\nDonde Cristo vino por amor de mí!",
-      "Cantaré a Cristo, quien en humildad\nObró siempre la divina voluntad:\nLos enfermos el sanó, a los muertos levantó,\nA los pobres él colmó por su bondad.",
-      "Cantaré a Cristo, quien murió por mí,\nContaré lo que el ha hecho para mì;\nMis pecados él llevó, mi perdón y paz compró;\nSiempre cantaré su dulce nombre, sí"
-    ],
-    "chorus": "Es sin igual en su infinito amor,\nPues en la cruz allí, su vida dio por mí;\nYo cantaré su dulce nombre, sí;\nOh Salvador eterno, loores doy a ti."
-  },
-  {
     "id": 28,
-    "title": "CANTO AL SEÑOR",
+    "title": "Canto al Señor",
     "verses": [
       "Mi Cristo, mi Rey \nNadie es como Tu",
       "Toda mi vida\nquiero exaltar,",
@@ -372,11 +298,11 @@
       "Montes caerán y el mar rugirá\nal sonar de su Nombre",
       "Incomparables promesas me das, Señor.."
     ],
-    "chorus": "Cante al Señor toda la creación\nHonra, poder, Majestad sean al Rey\n\nCanto con gozo al mirar tu Poder\nPor siempre yo te amare y diré"
+    "chorus": "Cante al Señor toda la creación\nHonra, poder, Majestad sean al Rey\n\nCanto con gozo al mirar tu Poder\nPor siempre yo te amaré y diré"
   },
   {
     "id": 29,
-    "title": "COMO PODRE ESTAR TRISTE",
+    "title": "Como podre estar triste",
     "verses": [
       "¿Cómo podré estar triste,\nCómo entre sombras ir,\nCómo sentirme solo,\nY en el dolor vivir,\nSi Cristo es mi consuelo,\nMi amigo siempre fiel,\nSi aun las aves tienen\nSeguro asilo en él?",
       "“Nunca te desalientes”,\nOigo al Señor decir;\nY en su palabra fiado.\nHago al dolor huir.\nA Cristo paso a paso\nYo sigo sin cesar.\nY todas sus bondades\nPor siempre me ha de dar.",
@@ -386,7 +312,7 @@
   },
   {
     "id": 30,
-    "title": "CON VOZ DE MANDO",
+    "title": "Con voz de mando",
     "verses": [
       "Con voz de mando y trompeta de Dios\nEn los confines de la tierra se oirá la voz... del Señor",
       "Los muertos en cristo de sus tumbas correrán\nY los que vivimos en las nubes nos levantará\nEl señor"
@@ -395,7 +321,7 @@
   },
   {
     "id": 31,
-    "title": "CUAN GRANDE ES DIOS",
+    "title": "Cuan grande es Dios",
     "verses": [
       "De gloria y esplendor se viste nuestro Dios",
       "se goza la creación, se goza la creación",
@@ -416,7 +342,7 @@
   },
   {
     "id": 32,
-    "title": "CUAN GRANDE ES EL",
+    "title": "Cuan grande es el",
     "verses": [
       "Señor mi Dios\nAl contemplar los cielos\nEl firmamento y las estrellas mil",
       "Al oir tu voz el los potentes truenos\nY ver brillar el sol en su señor",
@@ -425,21 +351,11 @@
       "Cuando su Dios me llame a su presencia\nAl dulce hogar al cielo de esplendor",
       "Le adorare cantando la grandeza de su poder\nY su infinito amor"
     ],
-    "chorus": "/ Mi corazon entona la canción\nCuan grande es, cuan grande es el /"
-  },
-  {
-    "id": 33,
-    "title": "CUANDO EL VINO A MI CORAZON",
-    "verses": [
-      "Cuán glorioso es el cambio operado en mi ser\nViniendo a mi vida el Señor!\nHay en mi alma una paz que yo ansiaba tener:\nLa paz que me trajo su amor.",
-      "Ya no voy por la senda que el mal me trazó,\nDo sólo encontré confusión;\nMis errores pasados Jesús los borró,\nCuando él vino a mi corazón.",
-      "Ni una sombra de duda oscurece su amor,\nAmor que me trajo el perdón:\nLa esperanza que aliento la debo al Señor,\nCuando el vino a mi corazón."
-    ],
-    "chorus": "//¡El vino a mi corazón!//\nSoy feliz con la vida que Cristo me dio,\nCuando el vino a mi\ncorazón."
+    "chorus": "/ Mi corazón entona la canción\nCuan grande es, cuan grande es el /"
   },
   {
     "id": 34,
-    "title": "Cada dia",
+    "title": "Cada día",
     "verses": [
       "Cada día me acompaña mi Señor\nCada día me protege con su amor",
       "Cada día en mis dudas en Él puedo confiar\nPues sus pasos van conmigo al caminar",
@@ -471,37 +387,15 @@
     "author": "ICB"
   },
   {
-    "id": 35,
-    "title": "Canten del amor de Cristo",
-    "verses": [
-      "Canten del amor de Cristo.\nEnsalzad al Redentor:\nTributadle santos todos,\nGrande gloria y loor.",
-      "El triunfo ya es seguro\nA las huestes del Señor;\n¡Oh, luchad con la mirada\nPuesta en nuestro Protector!",
-      "El pendón alzad, cristianos.\nDe la cruz y caminad:\nDe victoria en victoria,\nSiempre firmes avanzad.",
-      "Adelante en la lucha,\n¡Oh, soldados de la fe!\nNuestro el triunfo, escuchemos\nLos clamores ¡Viva el Rey!"
-    ],
-    "chorus": "Cuando estemos en gloria,\nEn presencia de nuestro Redentor,\nA una voz la historia,\nDiremos del gran Vencedor.",
-    "author": "ICB"
-  },
-  {
     "id": 36,
     "title": "Confio en ti",
     "verses": [
       "Cada sueño que tanto anhelé\nLo entrego hoy ante tus pies\nEsos momentos que me desvié\nSé que no cambian lo que en mí ves",
       "Quede cansada de tanto luchar\nEn tu presencia quiero descansar\nPoderoso rey vencedor\nNo importa lo que enfrente, aquí estarás",
-      "En ti se encuentra mi principio y fin\nNo hay dia frente a mí que tú no ves\nEn todo se mi vida y respirar\nQuiero tú voluntad y nada más",
+      "En ti se encuentra mi principio y fin\nNo hay día frente a mí que tú no ves\nEn todo se mi vida y respirar\nQuiero tú voluntad y nada más",
       "Mi fuerza, mi reposo\nEl que me sostendrá\nEres mi fundamento\nMi roca en tempestad\nTus sendas son más altas\nTus planes son de bien\nSé que a donde me lleves\nHas estado también"
     ],
     "chorus": "Aún cuando no se mueven\nLos montes frente a mí\nAún cuando no se abren\nLas aguas hoy aquí\n\nAún cuando no hay respuesta\nDe mi clamor a ti\nConfiaré, confiaré, confiaré en ti\nConfiaré en ti\n\nAún cuando no se mueven\nLos montes frente a mí\nAún cuando no se abren\nLas aguas hoy aquí\n\nAún cuando no hay respuesta\nDe mi clamor a ti\nConfiaré, confiaré, confiaré en ti\nConfiaré en ti\n\nAún cuando no se mueven\nLos montes frente a mí\nAún cuando no se abren\nLas aguas hoy aquí\n\nAún cuando no hay respuesta\nDe mi clamor a ti\nConfiaré, confiaré, confiaré en ti\nConfiaré en ti",
-    "author": "ICB"
-  },
-  {
-    "id": 37,
-    "title": "Cristo ha resucitado",
-    "verses": [
-      "¡Cristo ha resucitado!",
-      "¡Veraderamente ha resucitado!",
-      "¡Cristo ha resucitado!\n\n¡Veraderamente ha resucitado!"
-    ],
     "author": "ICB"
   },
   {
@@ -534,17 +428,6 @@
       "//En la tierra, Tu luz brillará \nCantamos por la gloria de Tu majestad, Jesús//"
     ],
     "chorus": "Cristo puede mover montes\n¡Sólo Dios puede salvar, mi Dios puede salvar!"
-  },
-  {
-    "id": 41,
-    "title": "Crucificado fue",
-    "verses": [
-      "Crucificado fue  - Mi Salvador\nPor mis pecados, sé  -Cristo el Señor.\nDesde la tumba subió",
-      "Inútil la prisión  -Del Salvador,\nVana la detención  -De mi Señor.",
-      "La muerte ya venció   -Cristo el Señor,\nLa salvación nos dio  -El redentor."
-    ],
-    "chorus": "Sí, triunfante él resucitó;\nPara siempre ya dominio sobre el mal\nCon los santos tiene en gloria celestial;\nTriunfó, triunfó, ¡Aleluya! el triunfó.",
-    "author": "ICB"
   },
   {
     "id": 42,
@@ -581,7 +464,7 @@
   },
   {
     "id": 45,
-    "title": "DE GLORIA EN GLORIA",
+    "title": "De gloria en gloria",
     "verses": [
       "De gloria en gloria te veo, cuanto más te conozco, \nquiero saber más de ti.",
       "Mi Dios, cual buen alfarero,\nquebrántame, transfórmame,",
@@ -594,7 +477,7 @@
   },
   {
     "id": 46,
-    "title": "DE TAL MANERA ME AMO",
+    "title": "De tal manera me amo",
     "verses": [
       "De tal manera me amó\nQue su vida no escatimó",
       "Hasta el final Él se entregó\nY a la muerte fue porque me amó",
@@ -608,7 +491,7 @@
   },
   {
     "id": 47,
-    "title": "DESDE EL FONDO DEL MAR",
+    "title": "Desde el fondo del mar",
     "verses": [
       "Desde el fondo del mar \nDel más alto lugar\nDel más hondo abismo\nTe alabaré",
       "Desde mi corazón\nFuerte o débil esté\nCada instante de mi vida\nCon gozo yo diré",
@@ -618,7 +501,7 @@
   },
   {
     "id": 48,
-    "title": "DIGNO ES EL SEÑOR",
+    "title": "Digno es el Señor",
     "verses": [
       "Gracias por la cruz \noh Dios",
       "El precio que pagaste por mí,",
@@ -776,23 +659,8 @@
     "author": "ICB"
   },
   {
-    "id": 58,
-    "title": "Dulces momentos consoladores",
-    "verses": [
-      "¡Dulces momentos consoladores,\nLos que yo paso junto a la cruz!",
-      "Allí sufriendo crueles dolores\nVeo al cordero, Cristo Jesús.",
-      "Veo los brazos de su amor abiertos,\nQue me convidan llegar a El;",
-      "Y haciendo suyos mis desaciertos,\nPor mí sus labios gustan la hiel.",
-      "Veo su angustia ya terminada,\nHecha la ofrenda de expiación;",
-      "Su noble frente, mustia, inclinada,\nY consumada mi redención.",
-      "¡Dulces momentos, ricos en dones\nDe paz y gracia, de vida y luz!",
-      "Sólo hay consuelos y bendiciones\nCerca de Cristo, junto a la cruz."
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 59,
-    "title": "EL ES EL REY EXALTADO",
+    "title": "El es el rey exaltado",
     "verses": [
       "Él es el Rey exaltado en su majestad le alabo.",
       "Él es por siempre exaltado y su nombre santo he de adorar.",
@@ -803,7 +671,7 @@
   },
   {
     "id": 60,
-    "title": "EL ES LA VOZ",
+    "title": "El es la voz",
     "verses": [
       "El es la voz que mis oídos abrió\nLa libertad que mis cadenas rompió",
       "El es la luz que mi alma oscura iluminó\nEl es Jesús, toda mi vida transformó",
@@ -822,10 +690,10 @@
   },
   {
     "id": 61,
-    "title": "EN EL MONTE CALVARIO",
+    "title": "En el monte Calvario",
     "verses": [
       "En el monte Calvario estaba una cruz,\nEmblema de afrenta y dolor.",
-      "Mas yo amo a Jesús, que murio en la cruz\nPor salvar al más vil pecador.",
+      "Mas yo amo a Jesús, que murió en la cruz\nPor salvar al más vil pecador.",
       "Aunque el mundo desprecie la cruz de Jesús,\nPara mi tiene suma atracción.",
       "Porque en ella llevo el Cordero de Dios\nde mi alma la condenación.",
       "En la cruz de Jesús do su sangre vertio,\nHermosura contemplo sin par.",
@@ -837,16 +705,16 @@
   },
   {
     "id": 62,
-    "title": "EN TI CONFIA MI CORAZON",
+    "title": "En ti confia mi corazón",
     "verses": [
       "//En Ti confía mi corazón,\nEn Ti reposa mi alma,\nMi ser descansa en ti,\nPuedo ser feliz//",
-      "Porque se que estas obrando,\nTu perfecta voluntad,\nEn mi vida estas obrando,\nTu perfecta voluntad.",
+      "Porque se que estás obrando,\nTu perfecta voluntad,\nEn mi vida estás obrando,\nTu perfecta voluntad.",
       "En Ti confía mi corazón,\nEn Ti reposa mi alma,\nMi ser descansa en ti,\n//Puedo ser feliz//"
     ]
   },
   {
     "id": 63,
-    "title": "ENVIAME A MI",
+    "title": "Enviame a mi",
     "verses": [
       "La mies es mucha hay gran necesidad\nPocos obreros al campo van",
       "Hoy muchos se pierden\nViven sin dirección",
@@ -857,7 +725,7 @@
   },
   {
     "id": 64,
-    "title": "ERES TU",
+    "title": "Eres tu",
     "verses": [
       "Eres Tu la única razón de mi adoración oh Jesús\nEres Tu la esperanza que anhelé tener oh Jesús",
       "Confié en Ti me has ayudado\nTu salvación me has regalado\nHoy hay gozo en mi corazón\nCon mi canto te alabaré",
@@ -867,7 +735,7 @@
   },
   {
     "id": 65,
-    "title": "ES MAS Q UNA CANCIÓN",
+    "title": "Es mas q una canción",
     "verses": [
       "Es más que una canción,\nEs más que palabras\nEs mi corazón rendido a Ti,",
       "Es lo mejor de mí,\nLo que vengo a darte,\nYa no es suficiente una canción\nLo que tu me pidas yo te quiero dar",
@@ -877,7 +745,7 @@
   },
   {
     "id": 66,
-    "title": "ES NUESTRO DIOS",
+    "title": "Es nuestro Dios",
     "verses": [
       "Quién aviva el fuego de mil soles con poder\nQue en los cielos arden? Nadie como Él\nNuestro Dios",
       "¿Quién gobierna el mundo? ¿Quién levanta y quita al rey\nVence a sus rivales? Nadie como Él\nNuestro Dios, nuestro Dios",
@@ -889,11 +757,11 @@
   },
   {
     "id": 67,
-    "title": "ESTE ES MI DESEO",
+    "title": "Este es mi deseo",
     "verses": [
       "Este es mi deseo\nHonrarte a Ti",
       "Con todo mi ser\nTe adoro a Ti",
-      "Con todas mis fuerzas\nTe alabare\nMi adoración eres Tú",
+      "Con todas mis fuerzas\nTe alabaré\nMi adoración eres Tú",
       "Y en cada palpitar\nMientras haya aliento en mí\nDios haz tu obra en mí",
       "Yo vivo para Ti\nY en cada palpitar",
       "Mientras haya aliento en mí\nDios haz tu obra en mí//"
@@ -1012,24 +880,6 @@
     "author": "ICB"
   },
   {
-    "id": 74,
-    "title": "En la cruz",
-    "verses": [
-      "Me hirió el pecado, fui a Jesús,\nMostréle mi dolor:",
-      "Perdido, errante, vi su luz,\nBendíjome en su amor.",
-      "En una cruz, mi Salvador\nSu sangre derramó",
-      "Por este pobre pecador,\nA quien así salvó.",
-      "Venció la muerte: ¡qué placer!\nY el Padre lo exaltó;",
-      "Espero sólo en su poder;\nMorir no temo yo.",
-      "Aunque él se fue, conmigo está\nEl gran Consolador;",
-      "Por él entrada tengo ya\nAl reino del Señor.",
-      "Vivir en Cristo trae la paz;\nCon él habitaré.",
-      "Ya suyo soy, y de hoy en más\nA nadie temeré."
-    ],
-    "chorus": "En la cruz, en la cruz,\nDo primero vi la luz.\nY las manchas de mi alma yo lavé;\n\nFue allí por la fe, do vi a Jesús\nY siempre feliz con él seré.\n\nEn la cruz, en la cruz,\nDo primero vi la luz.\nY las manchas de mi alma yo lavé;\n\nFue allí por la fe, do vi a Jesús\nY siempre feliz con él seré.\n\nEn la cruz, en la cruz,\nDo primero vi la luz.\nY las manchas de mi alma yo lavé;\n\nFue allí por la fe, do vi a Jesús\nY siempre feliz con él seré.\n\nEn la cruz, en la cruz,\nDo primero vi la luz.\nY las manchas de mi alma yo lavé;\n\nFue allí por la fe, do vi a Jesús\nY siempre feliz con él seré.\n\nEn la cruz, en la cruz,\nDo primero vi la luz.\nY las manchas de mi alma yo lavé;\n\nFue allí por la fe, do vi a Jesús\nY siempre feliz con él seré.",
-    "author": "ICB"
-  },
-  {
     "id": 75,
     "title": "En tu presencia LAPEN",
     "verses": [
@@ -1089,24 +939,13 @@
     "author": "ICB"
   },
   {
-    "id": 78,
-    "title": "Es digno nuestro salvador",
-    "verses": [
-      "Es digno nuestro Salvador\nDe nuestra adoraeión:\nVenid, cantemos su loor\nDe todo corazon.",
-      "Jesús es digno del amor\nDe los que redimió;\nEs digno de una vida fiel\nDe celo y devoción.",
-      "Si somos salvos por Jesús,\nDebemos elevar\nUn cántico de gratitud\nY culto sin cesar."
-    ],
-    "chorus": "Ensalcemos a Jesús,\nAclamemos con júbilo:\nAleluya, Aleluya, Aleluya. Amén.",
-    "author": "ICB"
-  },
-  {
     "id": 79,
     "title": "Es por tu gracia",
     "verses": [
       "Cuando nadie me ve\nEn la intimidad\nDonde no puedo hablar\nMás que la verdad\nDonde no hay apariencias\nDonde al descubierto queda mi corazón",
       "Allí soy sincero,\nAllí mi apariencia de piedad se va\nAllí es tu gracia lo que cuenta\nTu perdón lo que sustenta\nPara estar de pie"
     ],
-    "chorus": "Y no podría dar la cara\nSi no fuera porque soy\nRevertido de la gracia\ny la justicia del Señor\nSi me vieran tal cual soy\nSe enterarían que es Jesús\nLo que han visto reflejado en mí\nTan solo fue su luz\n\nY es por tu gracia, y Tu perdón\nQue podemos ser llamados\nInstrumentos en Tu amor\nY es por Tu gracia y tu perdon\nMi justicia queda lejos de Tu perfección",
+    "chorus": "Y no podría dar la cara\nSi no fuera porque soy\nRevertido de la gracia\ny la justicia del Señor\nSi me vieran tal cual soy\nSe enterarían que es Jesús\nLo que han visto reflejado en mí\nTan solo fue su luz\n\nY es por tu gracia, y Tu perdón\nQue podemos ser llamados\nInstrumentos en Tu amor\nY es por Tu gracia y tu perdón\nMi justicia queda lejos de Tu perfección",
     "author": "ICB"
   },
   {
@@ -1228,19 +1067,8 @@
     "author": "ICB"
   },
   {
-    "id": 86,
-    "title": "Firmes y Adelante",
-    "verses": [
-      "Firmes y adelante, huestes de la fe.\nSin temor alguno, que Jesús nos ve.\nJefe soberano, Cristo al frente va.\nY la regia enseña tremolanda está.",
-      "Muévase potente la Iglesia de Dios,\nDe los ya gloriosos, marchemos en pos,\nSomos sólo un cuerpo, y uno es el Señor,\nUna la esperanza, y uno nuestro amor.",
-      "Tronos y coronas pueden perecer,\nDe Jesús la Iglesia fiel habrá de ser,\nNada en contra suya, prevalecerá,\nPorque la promesa nunca faltará."
-    ],
-    "chorus": "Firmes y adelante huestes de la fe,\nSin temor alguno que Jesús nos ve.",
-    "author": "ICB"
-  },
-  {
     "id": 87,
-    "title": "GRACIAS SEÑOR",
+    "title": "Gracias Señor",
     "verses": [
       "Me has tomado en tus brazos\ny me has dado salvación\nde tu amor has derramado\nen mi corazón",
       "No sabré agradecerte\nlo que has hecho por mí\nsolo puedo darte ahora\nmi canción"
@@ -1249,7 +1077,7 @@
   },
   {
     "id": 88,
-    "title": "GRANDE GOZO HAY EN MI ALMA",
+    "title": "Grande gozo hay en mi alma",
     "verses": [
       "Grande gozo hay en mi alma hoy",
       "pues Jesús conmigo está",
@@ -1263,44 +1091,8 @@
     "chorus": "Grande gozo, cuan hermoso\ncuando paso el tiempo bien felíz\n\nporque veo de Cristo la sonriente faz\n\ngrande gozo siento en mi."
   },
   {
-    "id": 89,
-    "title": "GRATO ES DECIR LA HISTORIA",
-    "verses": [
-      "Grato es decir la historia del celestial favor,",
-      "De Cristo y de su gloria, de Cristo y de su amor.",
-      "Me agrada referirla, pues sé que es la verdad;",
-      "Y nada satisface cual ella mi ansiedad.",
-      "Grato es decir la historia tan util al mortal;",
-      "Que en glorias y portentos no reconoce igual;",
-      "Me agrada referirla, pues me hace mucho bien;",
-      "Por eso a ti deseo decírtela también.",
-      "Grato es decir la historia que antigua, sin vejez,",
-      "Parece al repetirla más dulce cada vez;",
-      "Me agrada referirla, pues hay quien nunca oyó",
-      "Que para hacerle salvo el Buen Pastor murió",
-      "Grato es decir la historia; el que la sabe ya,",
-      "Parece que de oírla sediento aún está.",
-      "Y cuando el nuevo canto en gloria cantare,",
-      "Será la antigua historia que en vida tanto amé."
-    ],
-    "chorus": "¡Cuán bella es esa historia!\nMi tema allá en la Gloria\n\nSerá la antigua historia\nDe Cristo y de su amor."
-  },
-  {
-    "id": 90,
-    "title": "Gloria sea gloria eterna",
-    "verses": [
-      "¡Gloria sea, gloria eterna\na Jesús, al que murió,\nAl que por amor perfecto\nSu preciosa vida dio!",
-      "/ ¡Gloria sea, gloria sea\nA aquel que nos rescató! /",
-      "Sí, su amor es verdadero,\nY nada lo podrá falsear;\nFirme anduvo hasta el madero,\nNunca pudo vacilar.",
-      "/ ¡Gloria sea, gloria sea\nAl que así nos supo amar /",
-      "Celebremos esa historia\nConsumada con la cruz;\nCantaremos siempre: ¡Gloria\nSea a Ti, Señor Jesús!",
-      "/ ¡Aleluya, aleluya,\nAl que mora en alta luz! /"
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 91,
-    "title": "Glorioso Dia",
+    "title": "Glorioso Día",
     "verses": [
       "Mi vergüenza me sepultó\nYo buscaba un salvador\nMas tu perdón me liberó",
       "Muerto, estaba en mi interior\nMe escondía de Ti, Señor\nMas tu perdón me liberó",
@@ -1327,39 +1119,30 @@
       "El rey de Gloria el rey de majestad",
       "Gracia sublime es\nPerfecto es tu amor",
       "Tomaste mi lugar\nCargaste tu mi cruz",
-      "Tu vida diste alli\nY ahora libre soy",
-      "Jesus te adoro por lo que hiciste en mí",
+      "Tu vida diste allí\nY ahora libre soy",
+      "Jesús te adoro por lo que hiciste en mí",
       "Pusiste en orden todo el caos\nNos adoptaste como tus hijos",
       "El Rey de Gloria, El Rey de Majestad",
       "El que gobierna con su justicia\nY resplandece con su Belleza",
       "El Rey de Gloria, El Rey de Majestad",
       "Gracia sublime es\nPerfecto es tu amor",
       "Tomaste mi lugar\nCargaste tu mi cruz",
-      "Tu vida diste alli\nY ahora libre soy",
-      "Jesus te adoro por lo que hiciste en mí",
+      "Tu vida diste allí\nY ahora libre soy",
+      "Jesús te adoro por lo que hiciste en mí",
       "Digno es el Cordero de Dios",
       "Digno es el Rey que la muerte venció",
       "Digno es el Cordero de Dios",
       "Digno es el Rey que la muerte venció",
       "Gracia sublime es\nPerfecto es tu amor",
       "Tomaste mi lugar\nCargaste tu mi cruz",
-      "Tu vida diste alli\nY ahora libre soy",
-      "Jesus te adoro por lo que hiciste en mí"
+      "Tu vida diste allí\nY ahora libre soy",
+      "Jesús te adoro por lo que hiciste en mí"
     ],
     "author": "ICB"
   },
   {
-    "id": 93,
-    "title": "HALLE UN BUEN AMIGO",
-    "verses": [
-      "Hallé un buen amigo, mi amado Salvador;\nContaré lo que él ha hecho para mí:\nHallándome perdido e indigno pecador,\nMe salvó, y ya me guarda para sí,\nMe salva del pecado, me guarda de Satán,\nPromete estar conmigo hasta el fin;\nEl consuela mi tristeza, me quita todo afán;\nGrandes cosas Cristo ha hecho para mí.",
-      "Jesús jamás me falta, jamás me dejará:\nEs mi fuerte y poderoso protector:\nDel mundo yo me aparto y toda vanidad\nPara consagrar mi vida a mi Señor\nSi el mundo me persigue, si sufro tentación,\nConfiado en Cristo puedo resistir;\nLa victoria me es segura y elevo mi canción;\nGrandes cosas Cristo ha hecho para mí.",
-      "Yo sé que Jesucristo muy pronto volverá;\nY entretanto me prepara un lugar\nEn la casa de su Padre, mansión de luz y paz,\nDo el creyente fiel con él ha de morar.\nLlegándome a la gloria, con él yo estaré\nY contemplaré su rostro siempre allí;\nCon los santos redimidos gozoso cantaré:\nGrandes cosas Cristo ha hecho para mí."
-    ]
-  },
-  {
     "id": 94,
-    "title": "HAY PODER",
+    "title": "Hay poder",
     "verses": [
       "¿Quieres ser libre del vicio y del mal?\nVirtud hay en él, virtud en él;\n¿Quieres por él la victoria ganar?\nPor siempre virtud hay en él."
     ],
@@ -1493,7 +1276,7 @@
   },
   {
     "id": 102,
-    "title": "INMERECEDOR",
+    "title": "Inmerecedor",
     "verses": [
       "Inmerecedor,\nSoy de tu gracia y tu perdón",
       "De tu perfecto amor,\nIndigno soy",
@@ -1504,15 +1287,6 @@
       "Quiero corresponderte,\nSer fiel por siempre\nCon decisión y no fallar jamás"
     ],
     "chorus": "Tú me has amado y has decidido estar aquí\n\nUn pecador que de ti su rostro escondió\n\nYo quiero agradecerte,\nAmarte siempre\nCon gran pasión como lo has hecho Tú",
-    "author": "ICB"
-  },
-  {
-    "id": 103,
-    "title": "INMERECEDOR <duplicar>",
-    "verses": [
-      "Quiero corresponderte,\nSer fiel por siempre\nCon decisión y no fallar jamás"
-    ],
-    "chorus": "Yo quiero agradecerte,\nAmarte siempre\nCon gran pasión como lo has hecho Tú",
     "author": "ICB"
   },
   {
@@ -1532,17 +1306,6 @@
       "Nunca podré imaginar\nEl ancho y la profundidad\nTu inagotable amor"
     ],
     "author": "ICB"
-  },
-  {
-    "id": 105,
-    "title": "JUNTO A LA CRUZ",
-    "verses": [
-      "Junto a la cruz, do murió el Salvador\nPor mis pecados, clamaba al Señor\n¡Qué maravilla! Jesús me salvó,\nA su nombre gloria.",
-      "Junto a la cruz recibí el perdón,\nLimpio en su sangre es mi corazón,\nMe gozo ya de su bendicion,\nA su nombre gloria.",
-      "Junto a la cruz hay el manantial\nDe agua de vida, cual el cristal,\nmi sed alli Cristo pudo apagar,\nA su nombre gloria.",
-      "Ven sin tardar a la cruz, pecador;\nAllí te espera el gran Redentor;\nAllí de Dios hallarás el amor.\nA su nombre gloria"
-    ],
-    "chorus": "A su nombre gloria,\nA su nombre gloria,\n¡Qué maravilla ! Jesús me salvó,\nA su nombre gloria."
   },
   {
     "id": 106,
@@ -1566,7 +1329,7 @@
   },
   {
     "id": 108,
-    "title": "LA ALEGRIA",
+    "title": "La alegría",
     "verses": [
       "La alegría esta en el corazón de aquel que conoce a Jesús\nLa verdadera paz esta en aquel que ya conoce a Jesús",
       "Oh sentimiento más precioso que viene del Señor\nEs el amor de aquél que ya conoce a Jesús"
@@ -1574,7 +1337,7 @@
   },
   {
     "id": 109,
-    "title": "La Alegria 2024",
+    "title": "La Alegría 2024",
     "verses": [
       "La alegría está en el corazón\nDe aquel que conoce a Jesús",
       "La verdadera paz esta en aquel\nQue ya conoce a Jesús",
@@ -1639,7 +1402,7 @@
   },
   {
     "id": 113,
-    "title": "La sangre de JEsus LAPEN",
+    "title": "La sangre de Jesús LAPEN",
     "verses": [
       "Todo cambió\nLo que yo era no existe más\nMe transformó\nCuando su amor me vino a encontrar",
       "Ya no pienso como antes\nYa no vivo como antes\nFui lavado por dentro",
@@ -1660,12 +1423,12 @@
   },
   {
     "id": 114,
-    "title": "La unica razon",
+    "title": "La única razón",
     "verses": [
-      "La unica razon de mi adoracion\nEres tu mi Jesus",
-      "El unico motivo para vivir\nEres tu mi Señor",
-      "Mi unica verdad esta en Ti\nEres mi luz y mi salvacion",
-      "Mi unico amor eres tu Señor\nY por siempre te alabare",
+      "La única razón de mi adoración\nEres tu mi Jesús",
+      "El único motivo para vivir\nEres tu mi Señor",
+      "Mi única verdad está en Ti\nEres mi luz y mi salvación",
+      "Mi único amor eres tu Señor\nY por siempre te alabaré",
       "Tu eres todo poderoso\nEres grande y majestuoso",
       "Eres fuerte, invencible\nY no hay nadie como Tu"
     ],
@@ -1673,7 +1436,7 @@
   },
   {
     "id": 115,
-    "title": "ME HAS TOMADO EN TUS BRAZOS",
+    "title": "Me has tomado en tus brazos",
     "verses": [
       "Me has tomado en tus brazos, y me has dado Salvación de tu amor has derramado en mi corazón.",
       "No sabré agradecerte lo que has hecho por mí solo puedo darte ahora mi corazón",
@@ -1687,11 +1450,11 @@
     "id": 116,
     "title": "Majestad",
     "verses": [
-      "Aqui estoy rendido por tu majestad\ncubierto por tu gracia señor;",
-      "Aqui estoy sabiendo que soy un pecador\ncubierto por tu sangre señor.",
+      "Aquí estoy rendido por tu majestad\ncubierto por tu gracia señor;",
+      "Aquí estoy sabiendo que soy un pecador\ncubierto por tu sangre señor.",
       "Encontre el mas inmenso amor por mi\ntu vida entregaste en el gran sacrificio.",
-      "Aqui estoy rendido por tu amor que me das\ntu perdon me hace perdonar,",
-      "aqui estoy sé que tu deseo soy\nsanto por gloria y poder."
+      "Aquí estoy rendido por tu amor que me das\ntu perdón me hace perdonar,",
+      "aquí estoy sé que tu deseo soy\nsanto por gloria y poder."
     ],
     "chorus": "Majestad, majestad\ntu gracia me encontro tal cual soy\nno era nada y tu me diste valor.\n\nMajestad, majestad\ntu gracia me encontro tal cual soy\nno era nada y tu me diste valor\n\nMajestad, majestad\ntu amor me cambia al habitar\nen presencia de tu majestad\n\nMajestad, majestad\ntu gracia me encontro tal cual soy\nno era nada y tu me diste valor",
     "author": "ICB"
@@ -1710,18 +1473,6 @@
     "author": "ICB"
   },
   {
-    "id": 118,
-    "title": "Me gozo en jesus",
-    "verses": [
-      "Me gozo en Jesús,\nquien su trono de luz\nDejó por comprar\nmi salud en la cruz.",
-      "Mis culpas sentí,\ny contrito acudí,\nA Cristo, refugio\neternal para mí.",
-      "Y así tengo yo,\nen Jesús que me amó,\nLa paz y el perdón\nque su sangre compró.",
-      "Si hay penas aquí,\ngozo eterno hay allí,\nDonde Cristo prepara\nlugar para mí."
-    ],
-    "chorus": "¡Alabanzas al cordero!\nDe mi vida el sostén,\nTriunfó en el madero,\n¡Aleluya!, amén.",
-    "author": "ICB"
-  },
-  {
     "id": 119,
     "title": "Me ha mostrado el Señor",
     "verses": [
@@ -1731,10 +1482,10 @@
   },
   {
     "id": 120,
-    "title": "Mi Corazon",
+    "title": "Mi Corazón",
     "verses": [
       "Muchos años se anunció\nCasi nadie asistió, al evento que marcó\nLa fecha de su gran amor, en silencio Él nació,\nEn aquella navidad\nUn pequeño niño que\nNos daría libertad\nY aunque el mundo no le recibió\nTodo el cielo, se regozijó.",
-      "La promesa se cumplió\nDe una virgen Él nació\nY su espiritu llenó de paz toda la tierra\nDesde el cielo Él bajó\nA salvar lo que Él creó\nA lo suyo vino\nY lo suyo no le conoció\nY aquel dia que Jesús nació\nTodo el cielo se regozijó"
+      "La promesa se cumplió\nDe una virgen Él nació\nY su espíritu llenó de paz toda la tierra\nDesde el cielo Él bajó\nA salvar lo que Él creó\nA lo suyo vino\nY lo suyo no le conoció\nY aquel día que Jesús nació\nTodo el cielo se regozijó"
     ],
     "chorus": "Y las estrellas le cantaron y le adoraron\nY todo monte se inclino a Él,\nY dieron gloria\nY aunque algunos le llevaron\nOro y plata, yo lo tengo que tengo le doy\nMi corazón\n\nY las estrellas le cantaron y le adoraron\nY todo monte se inclino a Él,\nY dieron gloria\nY aunque algunos le llevaron\nOro y plata, yo lo tengo que tengo le doy\nMi corazón",
     "author": "Forgiven"
@@ -1791,20 +1542,20 @@
     "id": 124,
     "title": "Mi trabajo es creer",
     "verses": [
-      "Cuando Dios da una palabra puedes creerla con el \nalma porque su fidelidad nunca falla porque el no se\nlimita a tomar las circunstancias que si el dijo que lo hara asi sera\nMi trabajo es creer y caminar bajo la fe y el de Dios es\nhacerlo el tiene poder\nPorque el no improvisa el siempre tiene un plan y aunque\nlos tiempos no se presten con todo y eso el lo hara\nMi trabajo es creer y abrazarme a la fe el trabajo de Dios\nes hacerlo el sabra disponer los tiempos\nMi trabajo es mantener la calma en lo duro de la\ncircunstancia el trabajo de Dios es abrir las puertas\ny romper murallas\nMi trabajo es creer.....\nCuando Dios esta retando a creer en su palabra apesar de\nque en el HOY no vez nada es porque el conoce todo lo que\nviene en el mañana y si el dijo que lo hara asi sera\nMi trabajo es creer y caminar bajo la fe y el de Dios\nsera hacerlo el tiene todo el poder\nPorque el no improvisa el siempre tiene un plan y aunque\nlos tiempos no se presten con todo y eso el lo hara\nMi trabajo es creer y abrazarme a la fe el trabajo de\nDios es hacerlo el sabra disponer los tiempos\nMi trabajo es mantener la calma en lo duro de la\ncircunstancia el trabajo de Dios es abrir las puertas\ny romper murallas\nMi trabajo es creer....."
+      "Cuando Dios da una palabra puedes creerla con el \nalma porque su fidelidad nunca falla porque el no se\nlimita a tomar las circunstancias que si el dijo que lo hara así será\nMi trabajo es creer y caminar bajo la fe y el de Dios es\nhacerlo el tiene poder\nPorque el no improvisa el siempre tiene un plan y aunque\nlos tiempos no se presten con todo y eso el lo hara\nMi trabajo es creer y abrazarme a la fe el trabajo de Dios\nes hacerlo el sabra disponer los tiempos\nMi trabajo es mantener la calma en lo duro de la\ncircunstancia el trabajo de Dios es abrir las puertas\ny romper murallas\nMi trabajo es creer.....\nCuando Dios esta retando a creer en su palabra apesar de\nque en el HOY no vez nada es porque el conoce todo lo que\nviene en el mañana y si el dijo que lo hara así será\nMi trabajo es creer y caminar bajo la fe y el de Dios\nserá hacerlo el tiene todo el poder\nPorque el no improvisa el siempre tiene un plan y aunque\nlos tiempos no se presten con todo y eso el lo hara\nMi trabajo es creer y abrazarme a la fe el trabajo de\nDios es hacerlo el sabra disponer los tiempos\nMi trabajo es mantener la calma en lo duro de la\ncircunstancia el trabajo de Dios es abrir las puertas\ny romper murallas\nMi trabajo es creer....."
     ],
     "author": "ICB"
   },
   {
     "id": 125,
-    "title": "Mira Señor Jesus",
+    "title": "Mira Señor Jesús",
     "verses": [
-      "Mira Señor Jesus, este es tu pueblo y quiere amarte\nviene a ofrecerte hoy todo su amor\nHoy no vine a buscar, solo vine a entregar\nMira Señor Jesus solo te quiero alabar"
+      "Mira Señor Jesús, este es tu pueblo y quiere amarte\nviene a ofrecerte hoy todo su amor\nHoy no vine a buscar, solo vine a entregar\nMira Señor Jesús solo te quiero alabar"
     ]
   },
   {
     "id": 126,
-    "title": "Mover tu corazon LAPEN",
+    "title": "Mover tu corazón LAPEN",
     "verses": [
       "Jesucristo, precioso Rey\nNadie en la tierra ni en el cielo\nQue se compare a ti mi Dios\nTú mi tesoro, mi gran amor",
       "Mover tu corazón\nEs lo que quiero hacer\nRendirte todo mi amor\nY ante ti permanecer",
@@ -1836,7 +1587,7 @@
   },
   {
     "id": 128,
-    "title": "NO EXISTE BIEN PARA MÍ",
+    "title": "No existe bien para mí",
     "verses": [
       "No existe bien para mi\nQue este fuera de Ti\nGracias Dios mío\nMe siento feliz",
       "Cuan dulce amor Tu me diste\nMe asombra Señor\nY hoy quiero darte\nLo poco que soy",
@@ -1846,34 +1597,12 @@
     ]
   },
   {
-    "id": 129,
-    "title": "NO HAY AMOR COMO EL DE CRISTO",
-    "verses": [
-      "No hay amor como el de Cristo\nNo hay amor como el amor que el da",
-      "A mi ser su amor le a dado la libertad",
-      "Gloria al señor por el incomparable amor de Dios",
-      "Grande amor que ha quitado toda mi maldad",
-      "No hay poder que se pueda igualar a su poder",
-      "Como el poder de su amor"
-    ]
-  },
-  {
     "id": 130,
-    "title": "NOCHE DE PAZ",
+    "title": "Noche de paz",
     "verses": [
       "Noche de paz, noche de amor,\nTodo duerme en derredor.\nEntre los astros que esparcen su luz, bella\nAnunciando al niñito Jesús\n//Brilla la estrella de paz//",
       "Noche de paz, noche de amor,\nMira que gran resplandor,\nLuce en el rostro del Niño Jesús\nEn el pesebre del mundo la Luz,\n//Brilla la estrella de paz//",
       "Noche de paz, noche de amor,\nAl divino Salvador\nQue por nosotros, nació en un portal\nHimnos cantemos de amor celestial\n//Gloria por siempre al Señor//"
-    ],
-    "author": "ICB"
-  },
-  {
-    "id": 131,
-    "title": "NOCHE DE PAZ <duplicar>",
-    "verses": [
-      "¡Noche de paz, noche de amor!\nTodo duerme en derredor,\nEntre los astros que esparcen su luz\nBella anunciando al niñito Jesús,\nBrilla la estrella de paz,\nBrilla la estrella de paz.",
-      "¡Noche de paz, noche de amor!\nOye humilde al fiel pastor\nCoros celestes que anuncian salud\nGracias y glorias en gran plenitud,\nPor nuestro buen Redentor,\nPor nuestro buen Redentor.",
-      "¡Noche de paz, noche de amor!\nVed que bello resplandor\nLuce el rostro del niño Jesús,\nEn el pesebre del mundo la luz,\nAstro de eterno fulgor,\nAstro de eterno fulgor."
     ],
     "author": "ICB"
   },
@@ -2041,7 +1770,7 @@
     "id": 140,
     "title": "Nuestro padre Abraham",
     "verses": [
-      "Nuestro padre Abraham\nTuvo muchos\nMuchos hijos\nTuvo nuestro padre Abraham\nTu eres uno y yo tambien\npor eso alabemos al Señor"
+      "Nuestro padre Abraham\nTuvo muchos\nMuchos hijos\nTuvo nuestro padre Abraham\nTu eres uno y yo también\npor eso alabemos al Señor"
     ],
     "author": "ICB"
   },
@@ -2125,25 +1854,6 @@
     "author": "ICB"
   },
   {
-    "id": 147,
-    "title": "Oh profundo amor de Cristo",
-    "verses": [
-      "¡Oh, profundo amor de Cristo,\nVasto, inmerecido don!",
-      "Cual océano infinito,\nYa me inunda el corazón.",
-      "Me rodea, me sostiene\nLa corriente de su amor,",
-      "Llévame continuamente,\nHacia el gozo del Señor.",
-      "¡Oh, profundo amor de Cristo!\nSus loores proclamad,",
-      "Pues su amor nos satisfizo\nY no cambiará jamás.",
-      "¡Cómo cuida a sus amados,\nRedimidos por su cruz!",
-      "Comunión con El gozamos\nCuando andamos en la luz.",
-      "¡Oh, profundo amor de Cristo,\nÚnico, supremo amor!",
-      "Cual un vasto mar bendito,\nCual hogar al viador.",
-      "¡Oh, profundo amor de Cristo!\nPura gloria es para mí,",
-      "Que me eleva salvo y listo,\nHacia el cielo, hacia Ti."
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 148,
     "title": "Oid un son en alta esfera (271)",
     "verses": [
@@ -2181,7 +1891,7 @@
   },
   {
     "id": 150,
-    "title": "PALABRAS",
+    "title": "Palabras",
     "verses": [
       "Escogido\nHeredero\nJustificado\nPerdonado\nHijo Amado\nVictorioso\nSalvo\nValiente\nSanto"
     ],
@@ -2189,7 +1899,7 @@
   },
   {
     "id": 151,
-    "title": "POR MUCHO TIEMPO BUSQUE",
+    "title": "Por mucho tiempo busque",
     "verses": [
       "Por mucho tiempo busqué\nuna razón de vivir",
       "en medio de mil preguntas\nTu amor me respondió",
@@ -2201,7 +1911,7 @@
   },
   {
     "id": 152,
-    "title": "PORQUE PARA SIEMPRE",
+    "title": "Porque para siempre",
     "verses": [
       "Porque para siempre Dios\ntu misericordia es",
       "porque para siempre Dios\ntu misericordia es",
@@ -2214,7 +1924,7 @@
   },
   {
     "id": 153,
-    "title": "PUEDO CONFIAR EN EL SEÑOR",
+    "title": "Puedo confiar en el Señor",
     "verses": [
       "//Puedo confiar en el Señor, no me va a fallar.//",
       "Si el sol llegara a oscurecer, y no brillara nunca más, igual confío en el Señor, no me va a fallar.",
@@ -2259,11 +1969,11 @@
       "/ Todo lo doy por ti, por ti\nQuiero seguirte solo a ti /",
       "En el padre somos libres\nLa esperanza se encuentra en su nombre",
       "Entregamos nuestras vidas\nEn su amor viviremos por siempre",
-      "En ti la vida esta\nEncuentro libertad\nMi vida no sera igual",
+      "En ti la vida esta\nEncuentro libertad\nMi vida no será igual",
       "Todo lo doy por ti, por ti\nQuiero seguirte solo a ti",
       "Con mi vida hoy te sirvo\nTodo lo que soy a ti rindo",
       "Mis deseos quiero darte\nY por siempre poder reflejarte",
-      "En ti la vida esta\nEncuentro libertad\nMi vida no sera igual",
+      "En ti la vida esta\nEncuentro libertad\nMi vida no será igual",
       "/ Todo lo doy por ti, por ti\nQuiero seguirte solo a ti /\nCantaremos"
     ],
     "author": "ICB"
@@ -2281,17 +1991,6 @@
       "La vida vale más y más\nLa vida vale más y más\nSolo por Él"
     ],
     "chorus": "Porque Él vive, triunfaré mañana\nPorque Él vive, ya no hay temor\n\nPorque Él vive, triunfaré mañana\nPorque Él vive, ya no hay temor",
-    "author": "ICB"
-  },
-  {
-    "id": 158,
-    "title": "Porque el vive <duplicar>",
-    "verses": [
-      "Dios nos envió\nA su hijo Cristo, el es salud, paz y perdón\nVivió y murió por mi pecado\nVacía está la tumba porque Él triunfó",
-      "Yo sé que un día, el río cruzaré\nCon el dolor batallaré\nY al ver la vida, triunfando invita\nVeré gloriosas luces y veré al Rey",
-      "La vida vale más y más\nLa vida vale más y más\nLa vida vale más y más\nSolo por Él"
-    ],
-    "chorus": "Porque Él vive, triunfaré mañana\nPorque Él vive, ya no hay temor\nPorque yo sé, yo sé que el futuro es suyo\nLa vida vale más y más solo por Él\n\nPorque Él vive, triunfaré mañana\nPorque Él vive, ya no hay temor\nPorque yo sé, yo sé que el futuro es suyo",
     "author": "ICB"
   },
   {
@@ -2373,29 +2072,6 @@
     "author": "iceb"
   },
   {
-    "id": 163,
-    "title": "Primero nos amo <duplicar>",
-    "verses": [
-      "Cuán bello es\nQuien murió por mi",
-      "Fui perdonado\nYo fui encontrado",
-      "Caminaré\nEn tus promesas permaneceré",
-      "A ti miraré\nSolo en ti confiaré",
-      "Fue tu cruz, la que me salvó\nFue tu amor, que me rescato",
-      "Por eso canto adoración\nAl que es el Gran Yo Soy",
-      "Cuán bello es\nQuien murió por mi",
-      "Fui perdonado\nYo fui encontrado",
-      "Caminaré\nEn tus promesas permaneceré",
-      "A ti miraré\nSolo en ti confiaré",
-      "Fue tu cruz, la que me salvó\nFue tu amor, que me rescato",
-      "Por eso canto adoración\nAl que es el Gran Yo Soy",
-      "Fue tu sangre que me limpio\nFue tu voz la que me llamo",
-      "Fue la gracia, de un buen padre\nLa que me enamoró",
-      "Quiero corresponderte,\nSer fiel por siempre\nCon decisión y no fallar jamás"
-    ],
-    "chorus": "Yo quiero agradecerte,\nAmarte siempre\nCon gran pasión como lo has hecho Tú",
-    "author": "iceb"
-  },
-  {
     "id": 164,
     "title": "Promesas Ricardo quinteros",
     "verses": [
@@ -2422,7 +2098,7 @@
   },
   {
     "id": 165,
-    "title": "QUE SERIA DE MI",
+    "title": "Que seria de mi",
     "verses": [
       "Qué sería de mí\nSi no me hubieras alcanzado,\nDónde estaría hoy\nSi no hubieras perdonado,\nTendría un vacio en mi corazón\nVagaría sin rumbo, sin dirección",
       "//Si no fuera por tu gracia\nY por tu amor//",
@@ -2431,7 +2107,7 @@
   },
   {
     "id": 166,
-    "title": "QUIERO CANTAR UNA LINDA CANCION",
+    "title": "Quiero cantar una linda canción",
     "verses": [
       "Quiero cantar una linda canción de un hombre que me transformó.",
       "Quiero cantar una linda canción de aquel que mi vida cambió.",
@@ -2441,7 +2117,7 @@
   },
   {
     "id": 167,
-    "title": "QUIERO ENTENDER",
+    "title": "Quiero entender",
     "verses": [
       "Quiero entender, que es lo que mueve tu fiel corazón\nY lo que esperas de mi Buen Señor\nPara entregarlo.",
       "Quiero expresar\nEsas palabras que quieres oír\nY la canción que te hará sonreír,\nquiero entonarla.",
@@ -2451,7 +2127,7 @@
   },
   {
     "id": 168,
-    "title": "QUIERO ESCUCHAR TU DULCE VOZ",
+    "title": "Quiero escuchar tu dulce voz",
     "verses": [
       "Quiero escuchar tu dulce voz\nRompiendo el silencio en mi ser",
       "Se que me harías estremecer\nMe harías llorar o reír\nCaería rendido ante Ti",
@@ -2521,9 +2197,9 @@
     "title": "Quiero Continuar",
     "verses": [
       "Quiero continuar cantandote alabanzas\nQuiero proclamar que Tu eres mi esperanza",
-      "Y regocijarme en tu perdon\nFuente de mi paz y de mis bendiciones",
+      "Y regocijarme en tu perdón\nFuente de mi paz y de mis bendiciones",
       "Santo Redentor, suficiente Salvador\n///Quiero continuar cantando de tu amor///",
-      "Santo Redentor, es mi Salvador\nEn la cruz El compró mi perdon"
+      "Santo Redentor, es mi Salvador\nEn la cruz El compró mi perdón"
     ],
     "author": "ICB"
   },
@@ -2544,12 +2220,12 @@
   },
   {
     "id": 174,
-    "title": "RENUEVA-ME",
+    "title": "Renueva-me",
     "verses": [
       "Renuevame, Señor Jesús\nya no quiero ser igual",
-      "Renuevame, Señor Jesús\npon en mi tu corazon",
+      "Renuevame, Señor Jesús\npon en mi tu corazón",
       "Porque todo lo que hay dentro de mi\nNecesita ser cambiado Señor",
-      "Porque todo lo que hay\ndentro de mi corazon\nNecesita mas de Ti"
+      "Porque todo lo que hay\ndentro de mi corazón\nNecesita mas de Ti"
     ]
   },
   {
@@ -2598,7 +2274,7 @@
   },
   {
     "id": 179,
-    "title": "SALVACION",
+    "title": "Salvación",
     "verses": [
       "Fui hecho justo, sin merecerlo\nToda mi culpa ya quitada fue,",
       "Toda mi deuda, quedo saldada,\nEn la persona del Cordero Inmortal",
@@ -2611,22 +2287,8 @@
     "chorus": "Salvación camino angosto\nPlenitud incomparable don de Dios"
   },
   {
-    "id": 180,
-    "title": "SANTO SANTO SANTO",
-    "verses": [
-      "Santo, Santo, Santo! Señor omnipotente,\nSiempre el labio mío loores te dará.",
-      "¡Santo, santo; santo! Te adoro reverente\nDios en tres Personas, bendita Trinidad.",
-      "¡Santo, Santo, Santo! En numeroso coro\nSantos escogidos te adoran sin cesar",
-      "De alegria llenos, y sus coronas de oro,\nRinden ante el trono y el cristalino mar.",
-      "¡Santo, Santo, Santo! Por más que estés velado\nE imposible sea tu gloria contemplar,",
-      "Santo Tú eres sólo y nada hay a tu lado\nEn poder perfecto, pureza y caridad.",
-      "¡Santo, Santo, Santo! La gloria de tu nombre\nVemos en tus obras en cielo, tierra y mar,",
-      "¡Santo, santo, santo! Te adorara todo hombre,\nDios en tres Personas, bendita Trinidad"
-    ]
-  },
-  {
     "id": 181,
-    "title": "SENDAS DIOS HARA",
+    "title": "Sendas Dios hara",
     "verses": [
       "Sendas Dios hará, donde piensas que no hay,",
       "El obra de maneras que\nNo podemos entender",
@@ -2639,7 +2301,7 @@
   },
   {
     "id": 182,
-    "title": "SOLO A TI",
+    "title": "Solo a ti",
     "verses": [
       "No existen mas motivos Señor\nVenimos hoy rendidos a Ti\nLa única razón de nuestra adoración hoy,\nEres Tú\nElevamos olor fragante para Ti,\npara Ti"
     ],
@@ -2647,7 +2309,7 @@
   },
   {
     "id": 183,
-    "title": "SOMOS EL PUEBLO",
+    "title": "Somos el pueblo",
     "verses": [
       "Somos el pueblo de Dios\nSomos un pueblo especial",
       "Llamados para anunciar,\nlas virtudes de Aquel\nque nos llamo a su luz",
@@ -2659,7 +2321,7 @@
   },
   {
     "id": 184,
-    "title": "SU GRACIA ME TRANSFORMO",
+    "title": "Su gracia me transformo",
     "verses": [
       "Su gracia me transformó\nSu gracia me perdonó",
       "Su muerte en la cruz la vida me regaló",
@@ -2669,21 +2331,13 @@
     "chorus": "Es la esperanza\nY es la razón\n\nde mi alabanza\nY adoración que brota del corazón\n\nSu gracia llegó\nSu gracia me transformó"
   },
   {
-    "id": 185,
-    "title": "SUENEN DULCES HIMNOS",
-    "verses": [
-      "Suenen dulce himnos, gratos al Señor,\nY óiganse en concierto universal;\nDesde el alto cielo baja el Salvador\nPara beneficio del mortal."
-    ],
-    "chorus": "¡Gloria, gloria sea a nuestro Dios!\n¡Gloria! sí, cantemos a una voz;\nY el cantar de gloria, que se oyó en Belén,\nSea nuestro cántico también.\n\nSalte de alegría, lleno el corazón,\nLa abatida y pobre humanidad;\nDios se compadece viendo su aflicción,\nY le muestra buena voluntad.\n\nLata en nuestros pechos noble gratitud\nHacia el que nos brinda redención;\nY a Jesús el Cristo, que nos da salud,\nTributemos nuestra adoración."
-  },
-  {
     "id": 186,
     "title": "Saliendo del pretorio",
     "verses": [
       "SALIENDO DEL PRETORIO\nMARCHA UNA PROSECION\nCON RUMBO AL CALVARIO\nSUFRIENDO VA UN VARON\nLA CRUZ SOBRE SU ESPALDA\nLLAGANDOLE ESTA NO PUEDE CAMINAR",
       "NO PUEDE DAR UN PASO\nY CAE POR EL CAMINO\nSE ESCUHA UN LATIGAZO\nSOBRE SU CUERPO HERIDO\nNO PUEDE AVANZAR SE ESCUCHA\nSOLO UN GRITO LEVANTATE MALDITO",
       "NO PUEDE SER MALDITO\nAQUEL QUE EN SU DOLOR\nEXCLAMA CON UN GRITO\nPERDONALOS SEÑOR\nPERDONALES SUS FALTAS\nNO VEAS SU ACTUACION\nDE ELLOS TEN COMPACION",
-      "JESUS TE ESTA BUSCANDO\nEL TE DARA SU AMOR\nBUSCA AL SER HUMANO\nQUE ACEPTE SU PERDON\nQUE ACEPTE ESA SANGRE\nQUE DERRAMANDO ESTA\nPOR TU SALVACION"
+      "JESÚS TE ESTA BUSCANDO\nEL TE DARA SU AMOR\nBUSCA AL SER HUMANO\nQUE ACEPTE SU PERDÓN\nQUE ACEPTE ESA SANGRE\nQUE DERRAMANDO ESTA\nPOR TU SALVACIÓN"
     ],
     "author": "ICB"
   },
@@ -2780,14 +2434,14 @@
     "id": 191,
     "title": "Señor que tu me ayudes",
     "verses": [
-      "Yo quiero obedecerte,\nJesus, mi Salvador",
+      "Yo quiero obedecerte,\nJesús, mi Salvador",
       "Y en agua bautizarme,\nSegun tu ley, Señor",
       "Señor, que tu me ayudes\nTu nombre a ensalzar,",
       "Y en novedad de vida\nContinuamente andar.",
       "Así la fe demuestro\nQue sólo esta en Jesús",
       "que yo con El he muerto\nal mundo por su cruz",
       "Al mundo yo renuncio,\nSus pompas vanas son;",
-      "Ahora al cielo aspiro\nDe todo corazon",
+      "Ahora al cielo aspiro\nDe todo corazón",
       "En novedad de vida\nContigo yo andaré,",
       "Mi Salvador y Guia,\nMi Redentor y Rey",
       "Entonces en Tu reino,\nVencido todo el mal,",
@@ -2824,18 +2478,6 @@
       "O tu gracia y tu bondad, miro alrededor\nTu estás aquí, tu amor me cautivó\nOh gran Dios de amor\nNo entiendo aún",
       "//Nanananananana\nNanananananana//"
     ],
-    "author": "ICB"
-  },
-  {
-    "id": 194,
-    "title": "Siervos de Jesùs",
-    "verses": [
-      "Siervos de Jesús, hombres de verdad,\nGuardas del deber, somos, sí;\nLibres de maldad, ricos en bondad,\nY seremos fieles en la lid",
-      "¡Cuán hermosos son los que sin temor,\nListos al llamar del clarín,\nLuchan sin cesar, sufren sin dudar,\nGuardas del deber siempre hasta el fin!",
-      "Nuestro Capitán es ya vencedor,\nEl nos redimió por su cruz;\nGuardas del deber, él nos da poder\nY nos guiará en su santa luz",
-      "Invencibles son los que con afán\nCada día dan al deber;\nGloria y luz tendrán y recibirán\nGrande galardón del Redentor"
-    ],
-    "chorus": "¡Firmes! ¡Fuertes! Alcen la bandera,\nGrande, noble emblema del deber\n¡Prontos! ¡bravos! Pasen la consigna.\nMarchen todos, vamos a vencer",
     "author": "ICB"
   },
   {
@@ -2966,17 +2608,8 @@
     "author": "ICB"
   },
   {
-    "id": 204,
-    "title": "TAL COMO SOY",
-    "verses": [
-      "Tal como soy Señor \nSin nada que ofrecer mas que mi canción\nNo tengo más que darte pues\nTodo es tuyo Señor",
-      "Tal como soy Señor sin nada que\nEntregar mas que el corazón\nMe rindo todo a Ti\nTómame Señor tal como soy",
-      "//Acéptame como ofrenda de amor\nComo un sacrificio agradable en tu honor\nGrato perfume yo quiero ser Señor//"
-    ]
-  },
-  {
     "id": 205,
-    "title": "TE DARE LO MEJOR",
+    "title": "Te daré lo mejor",
     "verses": [
       "Traemos hoy ante tu altar \nnuestras coronas\nQueremos darte lo mejor\nde nuestras vidas",
       "Te entregare mi amor entero, \nlos sueños que logre alcanzar",
@@ -2987,16 +2620,16 @@
   },
   {
     "id": 206,
-    "title": "TODO LO Q HAGO ES POR TI",
+    "title": "Todo lo q hago es por ti",
     "verses": [
       "Todo lo que hago es por ti\nEs por ti mi cristo\nSiempre que respiro es en ti\nCada nuevo paso es en ti\nTú eres mi amigo\nSiempre que respiro es en ti",
-      "Por tu gracia y tu bondad\nMiro alrededor y allí estas\nTu amor me cautivó\nOh grandioso Dios, que inmenso amor",
+      "Por tu gracia y tu bondad\nMiro alrededor y allí estás\nTu amor me cautivó\nOh grandioso Dios, que inmenso amor",
       "Na na, nana nana na..."
     ]
   },
   {
     "id": 207,
-    "title": "TODOPODEROSO",
+    "title": "Todopoderoso",
     "verses": [
       "La única razón de mi adoración\nEres tú mi Jesús\nEl único motivo para vivir\nEres tú mi Señor",
       "Mi única verdad esta en Ti\nEres mi luz y mi salvación\nMi único amor eres tu Señor\nY por siempre te alabaré"
@@ -3005,7 +2638,7 @@
   },
   {
     "id": 208,
-    "title": "TODOS NECESITAN",
+    "title": "Todos necesitan",
     "verses": [
       "Todos necesitan amor que nunca falla\nTu gracia y compasión",
       "Todos necesitan perdón y esperanza \nY un Dios que salva",
@@ -3017,7 +2650,7 @@
   },
   {
     "id": 209,
-    "title": "TOMADO DE LA MANO",
+    "title": "Tomado de la mano",
     "verses": [
       "///Tomado de la mano con el yo voy///\nPor donde Él va",
       "Si Jesús te dice amigo\nDeja todo y ven conmigo\nYo mis manos pongo en las suyas\nY voy con Él",
@@ -3027,7 +2660,7 @@
   },
   {
     "id": 210,
-    "title": "TU NOMBRE LEVANTARE",
+    "title": "Tu nombre levantare",
     "verses": [
       "Tu nombre levantaré,\nMe deleito en adorarte",
       "Te agradezco que en mi vida estés,\nQue vinieras a salvarme",
@@ -3066,7 +2699,7 @@
   },
   {
     "id": 213,
-    "title": "Toda lengua toda nacion LAPEN",
+    "title": "Toda lengua toda nación LAPEN",
     "verses": [
       "Hasta que Él venga sonará\nLa melodía del clamor de tu iglesia\nJesús, ¡regresa!",
       "Hasta que Él venga subirá\nLa adoración de los que anhelan tu belleza\nJesús, ¡regresa!",
@@ -3193,18 +2826,6 @@
     "author": "iceb"
   },
   {
-    "id": 220,
-    "title": "Un Día- himno 434",
-    "verses": [
-      "Un día que el cielo sus glorias cantaba,\nUn día que el mal imperaba más cruel;\nDescendió Cristo y nació de una virgen,\nY aquí morando mi ejemplo fue él.",
-      "Un día lleváronle al monte Calvario,\nUn día claváronle allí en la cruz;\nPena y dolores sufrió y la muerte,\nPor redimirme, potente Jesús.",
-      "Un día dejáronle solo en el huerto;\nUn día la tumba su cuerpo abrigó.\nAngeles sobre él guardaban vigilia,\nMientras el Dueño del mundo durmió.",
-      "Un día la tumba ocultarle no pudo\nUn día su espíritu al cuerpo volvió;\nY de la muerte ya había triunfado,\nY a la diestra de Dios se sentó."
-    ],
-    "chorus": "Vivo, me amaba; muerto salvóme;\nY en el sepulcro mi mal enterró;\nResucitado es mi eterna justicia;\nUn día él viene, pues lo prometió.",
-    "author": "ICB"
-  },
-  {
     "id": 221,
     "title": "Un viaje largo",
     "verses": [
@@ -3231,7 +2852,7 @@
   },
   {
     "id": 223,
-    "title": "VINE A ADORARTE",
+    "title": "Vine a adorarte",
     "verses": [
       "Tú eres la luz\nQue brilló en las tinieblas",
       "Oh luz del mundo, bajaste a la oscuridad\nMis ojos abriste, pude ver",
@@ -3247,12 +2868,9 @@
     "id": 224,
     "title": "Vasijas Rotas LAPEN",
     "verses": [
-      "Mi alma estaba rota y herida\nPero tu gracia la restauró",
-      "Manos vacías que tú llenaste\nSoy libre en ti, soy libre en ti",
-      "Sublime gracia del Señor\nQue a un pecador salvó",
-      "oh-oh-oh-oh\nFui ciego mas hoy veo yo\nPerdido y Él me halló",
-      "Ahora puedo ver\nOh, puedo ver sus ojos de amor",
-      "Quebrantado fue\nPara darnos su salvación",
+      "Mi alma estaba rota y herida\nPero tu gracia la restauró\nManos vacías que tú llenaste\nSoy libre en ti, soy libre en ti",
+      "Sublime gracia del Señor\nQue a un pecador salvó\noh-oh-oh-oh\nFui ciego mas hoy veo yo\nPerdido y Él me halló",
+      "Ahora puedo ver\nOh, puedo ver sus ojos de amor\nQuebrantado fue\nPara darnos su salvación",
       "Tú no me juzgas por mis fracasos\nTú me aceptas tal como soy",
       "Toma mi vida como vasija\nPara mostrar tu gloria en mí, oh",
       "Sublime gracia del Señor\nQue a un pecador salvó",
@@ -3305,7 +2923,7 @@
   },
   {
     "id": 228,
-    "title": "Vivo estas",
+    "title": "Vivo estás",
     "verses": [
       "Roto estaba mi corazón \nPero tu mano me rescató\nDel polvo yo volví a nacer\nLa salvación en ti encontré",
       "Tu amor no puedo expresar \nTe seguiré por la eternidad\nEn tu gracia caminaré\nEn libertad siempre viviré",
@@ -3319,7 +2937,7 @@
   },
   {
     "id": 229,
-    "title": "Vivo estas + Vida tu me das",
+    "title": "Vivo estás + Vida tu me das",
     "verses": [
       "Roto estaba mi corazón\nPero tu mano me rescató",
       "Del polvo, yo volví a nacer\nLa salvación en Ti encontré",
@@ -3364,17 +2982,6 @@
     "author": "ICB"
   },
   {
-    "id": 232,
-    "title": "Yo quiero trabajar por el Señor",
-    "verses": [
-      "Yo quiero trabajar por el Señor,\nConfiando en su palabra y en su amor,\nQuiero yo cantar y orar,\nY ocupado siempre estar\nEn la viña del Señor.",
-      "Yo quiero cada día trabajar,\nLos esclavos del pecado libertar;\nConducirlos a Jesús\nNuestro Guía, nuestra Luz,\nEn la viña del Señor.",
-      "Yo quiero ser obrero de valor.\nConfiando en el poder del Salvador:\nEl que quiere trabajar,\nHallará también lugar,\nEn la viña del Señor."
-    ],
-    "chorus": "Trabajar y orar\nEn la viña, en la viña del Señor;\nSí, mi anhelo es orar\nY ocupado siempre estar\nEn la viña del Señor.",
-    "author": "ICB"
-  },
-  {
     "id": 233,
     "title": "Yo te amo LAPEN",
     "verses": [
@@ -3406,17 +3013,8 @@
     "author": "ICB"
   },
   {
-    "id": 234,
-    "title": "aaaaaaaaaaaaa",
-    "verses": [
-      "Y ahora, amados hermanos, una cosa más para terminar. Concéntrense en todo lo que es verdadero, todo lo honorable, todo lo justo, todo lo puro, todo lo bello y todo lo admirable.",
-      "Piensen en cosas excelentes y dignas de alabanza"
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 235,
-    "title": "ahora vivo para ti",
+    "title": "Ahora vivo para ti",
     "verses": [
       "Nadie puede igualar lo que hiciste Tú por mí, \nhas cambiado mi dolor por tu amor,\nme has dado libertad, vida eterna y mucho más,\nmás de lo que pueda imaginar",
       "Mi Jesús a dónde iré \nsi no estás nada soy\npues tu amor me conquistó\nsiempre te amaré",
@@ -3429,7 +3027,7 @@
   },
   {
     "id": 236,
-    "title": "al dios que adoramos",
+    "title": "Al Dios que adoramos",
     "verses": [
       "El Dios que hizo los cielos y la tierra\nCon el poder de su palabra\nReina con autoridad",
       "El Dios que aún los vientos le obedecen\nUna palabra es suficiente\nPara los muertos levantar",
@@ -3445,17 +3043,17 @@
   },
   {
     "id": 237,
-    "title": "bendito jesus",
+    "title": "Bendito Jesús",
     "verses": [
       "Por ti es mi clamor y sin ningun temor \nen ti puedo confiar, Bendito Jesús\nHoy puedo escuchar tu voz de sanidad\nRestaurando mi ser, Bendito Jesús",
-      "Mi deseo eres tú, mi momento de amor \nLa alegria de vivir, Bendito Jesús\nEres mi fuente de amor, eres aire y eres sol\nEl latir del corazón, Bendito Jesús\nBendito amor de mi Señor",
+      "Mi deseo eres tú, mi momento de amor \nLa alegría de vivir, Bendito Jesús\nEres mi fuente de amor, eres aire y eres sol\nEl latir del corazón, Bendito Jesús\nBendito amor de mi Señor",
       "Tu gracia y favor conmigo puedo ver \nLlenando hoy me ser, Bendito Jesús\nY hoy mi voluntad se rinde a tu verdad\nTu amor y tu bondad, Bendito Jesús"
     ],
     "author": "ICB"
   },
   {
     "id": 238,
-    "title": "cabeza tronco rodilla pie",
+    "title": "Cabeza tronco rodilla pie",
     "verses": [
       "Cabeza, tronco,\n///rodilla, pie///\nSon para Cristo"
     ],
@@ -3463,7 +3061,7 @@
   },
   {
     "id": 239,
-    "title": "cantaré de tu amor por siempre",
+    "title": "Cantaré de tu amor por siempre",
     "verses": [
       "En las montañas y en el mar\nTu amor en mi fluyendo esta\nTe abro oh Dios mi corazón\nTe pido dame libertad\nEn tu verdad yo soy feliz\nY cada día voy a Ti\nPor siempre canto de este amor que vino a mi si",
       "////Cantaré de tu amor por siempre////"
@@ -3472,7 +3070,7 @@
   },
   {
     "id": 240,
-    "title": "eres mi amigo fiel",
+    "title": "Eres mi amigo fiel",
     "verses": [
       "¿Quien soy yo para que en mí tú pienses\nY que escuches mi clamor?\nY es verdad lo que tú hoy me dices\nQue me amas, me asombras",
       "Eres mi amigo fiel\nEres mi amigo fiel\nEres mi amigo fiel\nTu amigo soy",
@@ -3482,7 +3080,7 @@
   },
   {
     "id": 241,
-    "title": "estoy bien",
+    "title": "Estoy bien",
     "verses": [
       "Si paz cual un río es aquí mi porción,\nSi es como las olas del mar;\nCualquiera mi suerte, es ya mi canción:\n“Está bien, con mi alma está bien”.",
       "Por más que Satán me tentare a mi,\nEn esto consuelo tendré:Que Cristo,\nal ver cuán perdido yo fui,En la cruz por mi alma murió.",
@@ -3495,7 +3093,7 @@
   },
   {
     "id": 242,
-    "title": "hay libertad",
+    "title": "Hay libertad",
     "verses": [
       "Las cadenas de la muerte me quitó",
       "Para mí ya no hay condenación,\nHay libertad, libertad",
@@ -3515,7 +3113,7 @@
   },
   {
     "id": 243,
-    "title": "juancito hoy es domingo",
+    "title": "Juancito hoy es domingo",
     "verses": [
       "MAMÁS:\nJuancito hoy es domingo\nDespierta que es hora ya\nLa escuela dominical\n//pronto va empezar//\nDespierta ya",
       "NIÑOS:\nMamita no me levanto\nTotal si papa no va\nLa escuela es para todos\n//yo no quiero ir//\nSi no va papá",
@@ -3526,9 +3124,9 @@
   },
   {
     "id": 244,
-    "title": "mas grande de lo que imagino",
+    "title": "Más grande de lo que imagino",
     "verses": [
-      "Cada día tu nombre bendeciré\nMoraré en tu gloria y esplendor\nEn tus maravillas, meditaré\nEn tu gran poder proclamaré\nDe tu salvacion diré\ny de tus bondades",
+      "Cada día tu nombre bendeciré\nMoraré en tu gloria y esplendor\nEn tus maravillas, meditaré\nEn tu gran poder proclamaré\nDe tu salvación diré\ny de tus bondades",
       "Porque eres más grande de lo que imagino\nY más hermoso Dios de lo que he pensado\nOh tu eres grande y digno de alabar!",
       "Las generaciones te cantarán\nTu misericordia alabarán\nCantaremos juntos del salvador\nQue vino y del pecado nos libró\nTu llenas nuestras vidas\nPor siempre te alabaremos",
       "Porque eres más grande de lo que imagino\nY mas hermoso Dios de lo que he pensado\n¡Oh tu eres grande y digno de alabar!",
@@ -3539,9 +3137,9 @@
   },
   {
     "id": 245,
-    "title": "mi dios es grande",
+    "title": "Mi Dios es grande",
     "verses": [
-      "Dios de milagros y amor \nSanas y das Salvacion\nIncomparable eres Tu",
+      "Dios de milagros y amor \nSanas y das Salvación\nIncomparable eres Tu",
       "Brillas en la oscuridad \nClamamos por Tu libertad\nIncomparable eres Tu",
       "Mi Dios es grande, mi Dios es fuerte \nNadie es igual, nadie le hace frente",
       "Dios sana y salva\nCon gloria se exalta\nMi Dios, mi Dios",
@@ -3556,7 +3154,7 @@
   },
   {
     "id": 246,
-    "title": "mi esperaza esta en jesus",
+    "title": "Mi esperanza esta en Jesús",
     "verses": [
       "Mi esperanza esta en Jesús\nEn su justicia y en la cruz\nde nadie mas dependeré\nsolo en su nombre confiaré",
       "En Jesús fuerte soy\nSolo El mi roca es\nSobre la tempestad el es Rey",
@@ -3568,29 +3166,29 @@
   },
   {
     "id": 247,
-    "title": "oid bendita historia",
+    "title": "Oid bendita historia",
     "verses": [
-      "Oíd bendita historia\nDe Jesús quien de su gloria\nAl Calvario decidió venir\nPara salvarme a mi",
-      "Su sangre derramada\nSe aplicó felíz a mi alma\nVictoria me concedió\nCuando por mi murió",
-      "Ya tengo la victoria\nPues Cristo me salva\nBuscome y comprome\nCon su divino amor",
-      "Me imparte de su gloria\nSu paz inunda mi alma\nVictoria me concedió\nCuando por mi murió"
+      "Oí bendita historia\nde Jesús quien de su gloria\nAl Calvario decidió venir\nPara salvarme a mi\nSu sangre derramada\nSe aplicó felíz a mi alma\nMe dio victoria sin igual\nCuando me arrepentí.",
+      "Ya tengo la victoria\nPues Cristo me salva\nBuscome y comprome\nCon su divino amor\nMe imparte de su gloria\nSu paz inunda mi alma\nVictoria me concedió\nCuando por mi murió",
+      "Oí que en amor tierno\nÉl sanó a los enfermos\nA los cojos los mandó correr\nAl ciego lo hizo ver.\nEntonces suplicante\nLe pedí al Cristo amante\nLe diera a mi alma sanidad\nY fe para vencer.",
+      "Oí que allá en la gloria\nHay mansiones de victoria\nQue su santa mano preparó\nPara los que Él salvó.\nEspero unir mi canto\nAl del grupo sacrosanto\nQue victorioso rendirá\nTributo al Redentor."
     ],
     "author": "ICB"
   },
   {
     "id": 248,
-    "title": "para morir nacio",
+    "title": "Para morir nació",
     "verses": [
-      "Recuerdas que sano al ciego? Jesus de Nazareth\nRecuerdas que toco a los leprosos y amigos los llamó\nRecuerdas como amaba a los niños de alli\nes dificil comprender que un hombre venga para ese fin",
+      "Recuerdas que sano al ciego? Jesús de Nazareth\nRecuerdas que toco a los leprosos y amigos los llamó\nRecuerdas como amaba a los niños de allí\nes dificil comprender que un hombre venga para ese fin",
       "Para morir naciò, para morir naciò\nel Hijo de Dios, del mundo el Salvador\npara morir naciò\nDesde que Jesùs naciò y en la tierra caminò\nsu fin en la vida fue ir a una cruz\npara morir naciò",
-      "Recuerdas cuando diò a comer a cinco mil\nRecuerdas cuando llamò al muerto Làzaro ¡Sal de alli!\ny cuando en la boda cambiò el agua en buen vino\ntenìa tanto màs que dar pero el tiempo se acababa para Èl",
+      "Recuerdas cuando diò a comer a cinco mil\nRecuerdas cuando llamò al muerto Làzaro ¡Sal de allí!\ny cuando en la boda cambiò el agua en buen vino\ntenìa tanto màs que dar pero el tiempo se acababa para Èl",
       "Para morir naciò, para morir naciò\nel Hijo de Dios, del mundo el Salvador\npara morir naciò\nDesde que Jesùs naciò y en la tierra caminò\nsu fin en la vida fue ir a una cruz\npara morir naciò"
     ],
     "author": "ICB"
   },
   {
     "id": 249,
-    "title": "quiero identificarme con Cristo",
+    "title": "Quiero identificarme con Cristo",
     "verses": [
       "Quiero identificarme con Cristo\nDonde quiera que este,\nque sepa la gente\nQue vivo por Él",
       "Y que el mundo conozca\nque Cristo es real,\ny no solamente palabras\nCon Cristo en este mundo\nme quiero identificar"
@@ -3599,7 +3197,7 @@
   },
   {
     "id": 250,
-    "title": "recibe toda la gloria",
+    "title": "Recibe toda la gloria",
     "verses": [
       "Quiero levantar a ti mis manos\nMaravilloso Jesús\nMilagroso señor",
       "Llena este lugar con tu presencia\nY has descender tu poder a los que estamos aquí",
@@ -3610,51 +3208,40 @@
   },
   {
     "id": 251,
-    "title": "si eres creyente",
+    "title": "Si eres creyente",
     "verses": [
-      "Si eres creyante y tienes certeza\nToda la vida es una belleza\nSi eres cryente y tienes certeza"
+      "Si eres creyente y tienes certeza\nToda la vida es una belleza\nSi eres cryente y tienes certeza"
     ],
     "author": "ICB"
   },
   {
     "id": 252,
-    "title": "somos libres",
+    "title": "Somos libres",
     "verses": [
       "Oh oh oh oh oh",
       "Somos perdonados \ncargamos tu redención\ncon fuego en el corazón\ncon fuego en el corazón",
-      "Nada nos detiene \nvencemos la oscuridad\ncon fuego en el corazon\ncon fuego en el corazón",
+      "Nada nos detiene \nvencemos la oscuridad\ncon fuego en el corazón\ncon fuego en el corazón",
       "Tu eres aquel el que nos movemos\nTuya es la gloria",
       "Hay un fuego que arde en el corazón\nQue Nunca se apagara\nSomos libres Tuya es la gloria",
       "Oh oh oh oh oh",
       "Resucitados \nvivimos para ti\nla pasión no morirá\nla pasión no morirá",
       "Nada nos detiene \nvencemos la oscuridad\nla pasión no morirá\nla pasión no morirá",
-      "hay un fuego que arde en el corazon\nNunca se apagara\nSomos libres Tuya es la gloria",
+      "hay un fuego que arde en el corazón\nNunca se apagara\nSomos libres Tuya es la gloria",
       "Oh oh oh oh oh",
       "Resucitaste con poder \nTe levantaste\ny nos levantamos\nNos levantamos",
       "Hacia el mundo que tu amas \ncaminaremos y nos levantamos\n//Nos levantamos//",
       "Tu eres aquel el que nos movemos\ntuya es la gloria",
       "Tu eres aquel el que nos movemos\ntuya es la gloria",
       "Tu eres aquel el que nos movemos\ntuya es la gloria",
-      "//Hay un fuego que arde en el corazon \nNunca se apagara//\nSomos libres\nTuya es la gloria !!",
+      "//Hay un fuego que arde en el corazón \nNunca se apagara//\nSomos libres\nTuya es la gloria !!",
       "Oh oh oh oh oh"
     ],
     "chorus": "Somos libres \nuna generación\nque canta tu gracia\n\nSomos libres \nsomos una generacion\nque canta tu gracia\nTu eres aquel que nos movemos\ntuya es la gloria\n\nSomos libres \nuna generacion\nque canta tu gracia\n\nSomos libres \nuna generacion\nque canta tu gracia\n\nSomos libres \nuna generacion\nque canta tu gracia",
     "author": "ICB"
   },
   {
-    "id": 253,
-    "title": "sub",
-    "verses": [
-      "Sublime GRacia del Señor\nQue a mí pecador salvó\nFui ciego más hoy miro yo\nPerdido y Él me halló",
-      "Su Gracia me enseño a tener\nmis dudas ahuyentó\nOh cuan precioso fue a mi ser\nCuando Él me transformó",
-      "De mi maldad me libertó\nMi Salvador me rescató\nY como el mar fluye su amor\nSublime Gracia y Amor",
-      "Y cuando en Sión\npor siglos mil\nbrillando este cual sol\nYo cantaré por siempre ahí\nSu amor que me salvó"
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 254,
-    "title": "vine a alabar a Dios",
+    "title": "Vine a alabar a Dios",
     "verses": [
       "//Vine a alabar a Dios//\nVine a adorar su Santo nombre\nVine a alabar a Dios",
       "Él vino a mi vida,\nEn un día muy especial\nCambio mi corazón,\nPor un nuevo corazón,\nY esa es la razón\npor la que digo que",

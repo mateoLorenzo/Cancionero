@@ -46,6 +46,15 @@ export default function RootLayout() {
             headerShadowVisible: false,
           }}
         />
+        <Stack.Screen
+          name="song/[id]"
+          options={{
+            headerShown: true,
+            headerTitle: "",
+            headerBackTitle: "Atrás",
+            headerShadowVisible: false,
+          }}
+        />
       </Stack>
       <StatusBar style="light" />
     </View>

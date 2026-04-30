@@ -1,8 +1,8 @@
 import SearchIcon from "@/assets/svg/search.svg";
-import hymnsData from "@/src/data/hymns.json";
-import { useFavoritesStore } from "@/src/stores/favorites";
+import songsData from "@/src/data/songs.json";
 import { useSettingsStore } from "@/src/stores/settings";
-import { Hymn } from "@/src/types/hymn";
+import { useSongFavoritesStore } from "@/src/stores/song-favorites";
+import { Song } from "@/src/types/song";
 import { Ionicons } from "@expo/vector-icons";
 import { FlashList } from "@shopify/flash-list";
 import { useRouter } from "expo-router";
@@ -17,60 +17,48 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-const hymns = hymnsData as Hymn[];
+const songs = songsData as Song[];
 
 const stripAccents = (str: string) =>
   str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-export default function HomeScreen() {
+export default function SongsScreen() {
   const [search, setSearch] = useState("");
-  const favorites = useFavoritesStore((s) => s.ids);
-  const toggleFavorite = useFavoritesStore((s) => s.toggle);
+  const favorites = useSongFavoritesStore((s) => s.ids);
+  const toggleFavorite = useSongFavoritesStore((s) => s.toggle);
   const fontSize = useSettingsStore((s) => s.fontSize);
   const { push } = useRouter();
   const insets = useSafeAreaInsets();
 
   const results = useMemo(() => {
     const query = search.trim().toLowerCase();
-    if (!query) return hymns.map((h) => ({ hymn: h, snippet: "" }));
-    const queryNum = parseInt(query, 10);
+    if (!query) return songs.map((s) => ({ song: s, snippet: "" }));
     const normQuery = stripAccents(query);
 
-    const titleMatches: { hymn: Hymn; snippet: string }[] = [];
-    const lyricsMatches: { hymn: Hymn; snippet: string }[] = [];
+    const titleMatches: { song: Song; snippet: string }[] = [];
+    const lyricsMatches: { song: Song; snippet: string }[] = [];
 
-    for (const h of hymns) {
-      // Match by number
-      if (!isNaN(queryNum) && String(h.id).includes(query)) {
-        titleMatches.push({ hymn: h, snippet: "" });
-        continue;
-      }
-
+    for (const s of songs) {
       // Match by title
-      if (stripAccents(h.title.toLowerCase()).includes(normQuery)) {
-        titleMatches.push({ hymn: h, snippet: "" });
+      if (stripAccents(s.title.toLowerCase()).includes(normQuery)) {
+        titleMatches.push({ song: s, snippet: "" });
         continue;
       }
 
       // Match by lyrics
-      const allText = [...h.verses, h.chorus ?? ""].join("\n");
+      const allText = [...s.verses, s.chorus ?? ""].join("\n");
       const normText = stripAccents(allText.toLowerCase());
       const idx = normText.indexOf(normQuery);
       if (idx !== -1) {
-        // Extract a snippet around the match
         const start = allText.lastIndexOf("\n", idx) + 1;
         const end = allText.indexOf("\n", idx + normQuery.length);
         const line = allText.slice(start, end === -1 ? undefined : end).trim();
-        lyricsMatches.push({ hymn: h, snippet: line });
+        lyricsMatches.push({ song: s, snippet: line });
       }
     }
 
     return [...titleMatches, ...lyricsMatches];
   }, [search]);
-
-  const handlePress = (id: number) => {
-    push(`/hymn/${id}`);
-  };
 
   const highlightMatch = (text: string, query: string) => {
     const normText = stripAccents(text.toLowerCase());
@@ -89,20 +77,23 @@ export default function HomeScreen() {
     );
   };
 
-  const renderItem = ({ item: { hymn, snippet } }: { item: { hymn: Hymn; snippet: string } }) => (
+  const renderItem = ({
+    item: { song, snippet },
+  }: {
+    item: { song: Song; snippet: string };
+  }) => (
     <Pressable
       style={({ pressed }) => [
         styles.item,
         pressed && styles.itemPressed,
       ]}
-      onPress={() => handlePress(hymn.id)}
+      onPress={() => push(`/song/${song.id}`)}
       accessibilityRole="button"
-      accessibilityLabel={`Himno ${hymn.id}, ${hymn.title}`}
+      accessibilityLabel={`Canción ${song.title}`}
     >
-      <Text style={styles.number}>#{hymn.id}</Text>
       <View style={styles.textContainer}>
         <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
-          {hymn.title}
+          {song.title}
         </Text>
         {snippet !== "" && (
           <Text style={styles.snippet} numberOfLines={1}>
@@ -113,19 +104,19 @@ export default function HomeScreen() {
         )}
       </View>
       <Pressable
-        onPress={() => toggleFavorite(hymn.id)}
+        onPress={() => toggleFavorite(song.id)}
         hitSlop={8}
         accessibilityRole="button"
         accessibilityLabel={
-          favorites.has(hymn.id)
+          favorites.has(song.id)
             ? "Quitar de favoritos"
             : "Agregar a favoritos"
         }
       >
         <Ionicons
-          name={favorites.has(hymn.id) ? "heart" : "heart-outline"}
+          name={favorites.has(song.id) ? "heart" : "heart-outline"}
           size={20}
-          color={favorites.has(hymn.id) ? "#E05555" : "#CCC"}
+          color={favorites.has(song.id) ? "#E05555" : "#CCC"}
         />
       </Pressable>
     </Pressable>
@@ -134,7 +125,7 @@ export default function HomeScreen() {
   const listEmptyComponent = (
     <View style={styles.emptyContainer}>
       <Ionicons name="search-outline" size={40} color="#CCC" />
-      <Text style={styles.emptyText}>No se encontraron himnos</Text>
+      <Text style={styles.emptyText}>No se encontraron canciones</Text>
     </View>
   );
 
@@ -144,7 +135,7 @@ export default function HomeScreen() {
     isSearching ? (
       <FlatList
         data={results}
-        keyExtractor={(item) => item.hymn.id.toString()}
+        keyExtractor={(item) => item.song.id.toString()}
         renderItem={renderItem}
         keyboardDismissMode="on-drag"
         indicatorStyle="black"
@@ -153,7 +144,7 @@ export default function HomeScreen() {
     ) : (
       <FlashList
         data={results}
-        keyExtractor={(item) => item.hymn.id.toString()}
+        keyExtractor={(item) => item.song.id.toString()}
         renderItem={renderItem}
         drawDistance={300}
         keyboardDismissMode="on-drag"
@@ -165,8 +156,8 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
-        <Text style={styles.headerTitle}>Himnos y Canticos</Text>
-        <Text style={styles.headerSubtitle}>del Evangelio</Text>
+        <Text style={styles.headerTitle}>Canciones</Text>
+        <Text style={styles.headerSubtitle}>de Alabanza</Text>
         <View
           style={[
             styles.searchContainer,
@@ -176,14 +167,14 @@ export default function HomeScreen() {
           <SearchIcon width={20} height={20} stroke={isSearching ? "#FFFFFF" : "#999"} />
           <TextInput
             style={styles.searchInput}
-            placeholder="Buscar por nombre, número o letra..."
+            placeholder="Buscar por nombre o letra..."
             placeholderTextColor="#999"
             value={search}
             onChangeText={setSearch}
             autoCorrect={false}
             returnKeyType="search"
             clearButtonMode="always"
-            accessibilityLabel="Buscar himnos"
+            accessibilityLabel="Buscar canciones"
             accessibilityRole="search"
           />
         </View>
@@ -239,7 +230,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "rgba(255,255,255,0.12)",
     borderRadius: 8,
-    // borderRadius: 100,
     paddingHorizontal: 14,
     gap: 10,
     borderWidth: 1.5,
@@ -281,13 +271,6 @@ const styles = StyleSheet.create({
   },
   itemPressed: {
     backgroundColor: "#F5F5F5",
-  },
-  number: {
-    fontSize: 14,
-    color: "#999",
-    width: 46,
-    fontWeight: "400",
-    fontVariant: ["tabular-nums"],
   },
   textContainer: {
     flex: 1,

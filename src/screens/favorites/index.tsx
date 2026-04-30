@@ -1,7 +1,10 @@
 import hymnsData from "@/src/data/hymns.json";
+import songsData from "@/src/data/songs.json";
 import { useFavoritesStore } from "@/src/stores/favorites";
 import { useSettingsStore } from "@/src/stores/settings";
+import { useSongFavoritesStore } from "@/src/stores/song-favorites";
 import { Hymn } from "@/src/types/hymn";
+import { Song } from "@/src/types/song";
 import { Ionicons } from "@expo/vector-icons";
 import { FlashList } from "@shopify/flash-list";
 import { useRouter } from "expo-router";
@@ -14,18 +17,107 @@ const FEEDBACK_URL =
   "https://wa.me/5491140392404?text=Hola,%20tengo%20una%20sugerencia%20para%20la%20app%20Cancionero";
 
 const hymns = hymnsData as Hymn[];
+const songs = songsData as Song[];
+
+type FavItem =
+  | { type: "header"; key: string; label: string }
+  | { type: "hymn"; key: string; hymn: Hymn }
+  | { type: "song"; key: string; song: Song };
 
 export default function FavoritesScreen() {
   const { push } = useRouter();
   const insets = useSafeAreaInsets();
-  const favoriteIds = useFavoritesStore((s) => s.ids);
-  const toggleFavorite = useFavoritesStore((s) => s.toggle);
+  const hymnFavoriteIds = useFavoritesStore((s) => s.ids);
+  const toggleHymnFavorite = useFavoritesStore((s) => s.toggle);
+  const songFavoriteIds = useSongFavoritesStore((s) => s.ids);
+  const toggleSongFavorite = useSongFavoritesStore((s) => s.toggle);
   const fontSize = useSettingsStore((s) => s.fontSize);
 
-  const favorites = useMemo(
-    () => hymns.filter((h) => favoriteIds.has(h.id)),
-    [favoriteIds],
+  const favoriteHymns = useMemo(
+    () => hymns.filter((h) => hymnFavoriteIds.has(h.id)),
+    [hymnFavoriteIds],
   );
+
+  const favoriteSongs = useMemo(
+    () => songs.filter((s) => songFavoriteIds.has(s.id)),
+    [songFavoriteIds],
+  );
+
+  const data = useMemo<FavItem[]>(() => {
+    const items: FavItem[] = [];
+    if (favoriteHymns.length > 0) {
+      items.push({ type: "header", key: "h-header", label: "Himnos" });
+      favoriteHymns.forEach((h) =>
+        items.push({ type: "hymn", key: `h-${h.id}`, hymn: h }),
+      );
+    }
+    if (favoriteSongs.length > 0) {
+      items.push({ type: "header", key: "s-header", label: "Canciones" });
+      favoriteSongs.forEach((s) =>
+        items.push({ type: "song", key: `s-${s.id}`, song: s }),
+      );
+    }
+    return items;
+  }, [favoriteHymns, favoriteSongs]);
+
+  const isEmpty = data.length === 0;
+
+  const renderItem = ({ item }: { item: FavItem }) => {
+    if (item.type === "header") {
+      return (
+        <View style={styles.sectionHeader}>
+          <Text style={styles.sectionHeaderText}>{item.label}</Text>
+        </View>
+      );
+    }
+
+    if (item.type === "hymn") {
+      const h = item.hymn;
+      return (
+        <Pressable
+          style={({ pressed }) => [styles.item, pressed && styles.itemPressed]}
+          onPress={() => push(`/hymn/${h.id}`)}
+          accessibilityRole="button"
+          accessibilityLabel={`Himno ${h.id}, ${h.title}`}
+        >
+          <Text style={styles.number}>#{h.id}</Text>
+          <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
+            {h.title}
+          </Text>
+          <Pressable
+            onPress={() => toggleHymnFavorite(h.id)}
+            hitSlop={8}
+            accessibilityRole="button"
+            accessibilityLabel="Quitar de favoritos"
+          >
+            <Ionicons name="heart" size={20} color="#E05555" />
+          </Pressable>
+        </Pressable>
+      );
+    }
+
+    const s = item.song;
+    return (
+      <Pressable
+        style={({ pressed }) => [styles.item, pressed && styles.itemPressed]}
+        onPress={() => push(`/song/${s.id}`)}
+        accessibilityRole="button"
+        accessibilityLabel={`Canción ${s.title}`}
+      >
+        <Text style={[styles.title, styles.titleNoNumber, { fontSize }]} numberOfLines={1}>
+          {s.title}
+        </Text>
+        <Pressable
+          onPress={() => toggleSongFavorite(s.id)}
+          hitSlop={8}
+          accessibilityRole="button"
+          accessibilityLabel="Quitar de favoritos"
+        >
+          <Ionicons name="heart" size={20} color="#E05555" />
+        </Pressable>
+      </Pressable>
+    );
+  };
 
   return (
     <View style={styles.container}>
@@ -36,44 +128,21 @@ export default function FavoritesScreen() {
       </View>
 
       <View style={styles.listWrapper}>
-        {favorites.length === 0 ? (
+        {isEmpty ? (
           <View style={styles.emptyContainer}>
             <Ionicons name="heart-outline" size={48} color="#CCC" />
-            <Text style={styles.emptyText}>
-              Aún no tenés himnos favoritos
-            </Text>
+            <Text style={styles.emptyText}>Aún no tenés favoritos</Text>
             <Text style={styles.emptySubtext}>
-              Tocá el corazón en un himno para guardarlo acá
+              Tocá el corazón en un himno o canción para guardarlo acá
             </Text>
           </View>
         ) : (
           <FlashList
-            data={favorites}
-            keyExtractor={(item) => item.id.toString()}
-            renderItem={({ item }) => (
-              <Pressable
-                style={({ pressed }) => [
-                  styles.item,
-                  pressed && styles.itemPressed,
-                ]}
-                onPress={() => push(`/hymn/${item.id}`)}
-                accessibilityRole="button"
-                accessibilityLabel={`Himno ${item.id}, ${item.title}`}
-              >
-                <Text style={styles.number}>#{item.id}</Text>
-                <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
-                  {item.title}
-                </Text>
-                <Pressable
-                  onPress={() => toggleFavorite(item.id)}
-                  hitSlop={8}
-                  accessibilityRole="button"
-                  accessibilityLabel="Quitar de favoritos"
-                >
-                  <Ionicons name="heart" size={20} color="#E05555" />
-                </Pressable>
-              </Pressable>
-            )}
+            data={data}
+            keyExtractor={(item) => item.key}
+            getItemType={(item) => item.type}
+            indicatorStyle="black"
+            renderItem={renderItem}
             keyboardDismissMode="on-drag"
           />
         )}
@@ -120,6 +189,18 @@ const styles = StyleSheet.create({
     color: "rgba(255,255,255,0.6)",
     textAlign: "center",
   },
+  sectionHeader: {
+    paddingHorizontal: 20,
+    paddingTop: 20,
+    paddingBottom: 8,
+    backgroundColor: "#FAFAFA",
+  },
+  sectionHeaderText: {
+    fontSize: 12,
+    fontWeight: "600",
+    color: "#515151",
+    textTransform: "uppercase",
+  },
   item: {
     flexDirection: "row",
     alignItems: "center",
@@ -143,6 +224,9 @@ const styles = StyleSheet.create({
     color: "#1A1A1A",
     flex: 1,
     fontWeight: "400",
+  },
+  titleNoNumber: {
+    marginLeft: 0,
   },
   emptyContainer: {
     flex: 1,

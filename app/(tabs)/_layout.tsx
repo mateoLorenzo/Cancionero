@@ -19,6 +19,15 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
+        name="songs"
+        options={{
+          title: "Canciones",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="musical-notes-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="favorites"
         options={{
           title: "Favoritos",

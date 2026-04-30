@@ -1,43 +1,43 @@
 import LyricsView, { LyricsSection } from "@/src/components/LyricsView";
-import hymnsData from "@/src/data/hymns.json";
-import { Hymn } from "@/src/types/hymn";
+import songsData from "@/src/data/songs.json";
+import { Song } from "@/src/types/song";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { useLayoutEffect, useMemo } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const hymns = hymnsData as Hymn[];
+const songs = songsData as Song[];
 
-export default function HymnDetailScreen() {
+export default function SongDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const navigation = useNavigation();
-  const hymn = hymns.find((h) => h.id === Number(id));
+  const song = songs.find((s) => s.id === Number(id));
 
   useLayoutEffect(() => {
-    navigation.setOptions({ headerTitle: `#${id}` });
-  }, [navigation, id]);
+    navigation.setOptions({ headerTitle: "" });
+  }, [navigation]);
 
   const sections = useMemo<LyricsSection[]>(() => {
-    if (!hymn) return [];
+    if (!song) return [];
     const result: LyricsSection[] = [];
-    hymn.verses.forEach((verse, index) => {
+    song.verses.forEach((verse, index) => {
       result.push({ content: verse });
-      if (hymn.chorus && index === 0) {
-        result.push({ label: "Coro:", content: hymn.chorus });
+      if (song.chorus && index === 0) {
+        result.push({ content: song.chorus });
       }
     });
     return result;
-  }, [hymn]);
+  }, [song]);
 
-  if (!hymn) {
+  if (!song) {
     return (
       <View style={styles.container}>
-        <Text style={styles.notFound}>Himno no encontrado</Text>
+        <Text style={styles.notFound}>Canción no encontrada</Text>
       </View>
     );
   }
 
   return (
-    <LyricsView title={hymn.title} sections={sections} labelStyle="inline" />
+    <LyricsView title={song.title} sections={sections} labelStyle="header" />
   );
 }
 

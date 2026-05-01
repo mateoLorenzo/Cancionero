@@ -7,6 +7,9 @@
     "scheme": "cancionero",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.mateolorenzo.cancionero2",

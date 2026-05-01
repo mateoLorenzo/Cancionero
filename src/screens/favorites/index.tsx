@@ -6,10 +6,10 @@ import { useSongFavoritesStore } from "@/src/stores/song-favorites";
 import { Hymn } from "@/src/types/hymn";
 import { Song } from "@/src/types/song";
 import { Ionicons } from "@expo/vector-icons";
-import { FlashList } from "@shopify/flash-list";
-import { useRouter } from "expo-router";
+import { FlashList, FlashListRef } from "@shopify/flash-list";
+import { useNavigation, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -26,12 +26,24 @@ type FavItem =
 
 export default function FavoritesScreen() {
   const { push } = useRouter();
+  const navigation = useNavigation();
   const insets = useSafeAreaInsets();
   const hymnFavoriteIds = useFavoritesStore((s) => s.ids);
   const toggleHymnFavorite = useFavoritesStore((s) => s.toggle);
   const songFavoriteIds = useSongFavoritesStore((s) => s.ids);
   const toggleSongFavorite = useSongFavoritesStore((s) => s.toggle);
   const fontSize = useSettingsStore((s) => s.fontSize);
+  const flashListRef = useRef<FlashListRef<FavItem>>(null);
+
+  useEffect(() => {
+    const unsubscribe = (navigation as { addListener: (e: string, cb: () => void) => () => void })
+      .addListener("tabPress", () => {
+        if (navigation.isFocused()) {
+          flashListRef.current?.scrollToOffset({ offset: 0, animated: true });
+        }
+      });
+    return unsubscribe;
+  }, [navigation]);
 
   const favoriteHymns = useMemo(
     () => hymns.filter((h) => hymnFavoriteIds.has(h.id)),
@@ -138,6 +150,7 @@ export default function FavoritesScreen() {
           </View>
         ) : (
           <FlashList
+            ref={flashListRef}
             data={data}
             keyExtractor={(item) => item.key}
             getItemType={(item) => item.type}

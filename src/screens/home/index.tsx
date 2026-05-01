@@ -4,9 +4,9 @@ import { useFavoritesStore } from "@/src/stores/favorites";
 import { useSettingsStore } from "@/src/stores/settings";
 import { Hymn } from "@/src/types/hymn";
 import { Ionicons } from "@expo/vector-icons";
-import { FlashList } from "@shopify/flash-list";
-import { useRouter } from "expo-router";
-import { useMemo, useState } from "react";
+import { FlashList, FlashListRef } from "@shopify/flash-list";
+import { useNavigation, useRouter } from "expo-router";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   FlatList,
   Pressable,
@@ -28,7 +28,22 @@ export default function HomeScreen() {
   const toggleFavorite = useFavoritesStore((s) => s.toggle);
   const fontSize = useSettingsStore((s) => s.fontSize);
   const { push } = useRouter();
+  const navigation = useNavigation();
   const insets = useSafeAreaInsets();
+  const flashListRef = useRef<FlashListRef<{ hymn: Hymn; snippet: string }>>(null);
+  const flatListRef = useRef<FlatList<{ hymn: Hymn; snippet: string }>>(null);
+
+  useEffect(() => {
+    // tabPress is provided by the parent bottom-tab navigator at runtime
+    const unsubscribe = (navigation as { addListener: (e: string, cb: () => void) => () => void })
+      .addListener("tabPress", () => {
+        if (navigation.isFocused()) {
+          flashListRef.current?.scrollToOffset({ offset: 0, animated: true });
+          flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
+        }
+      });
+    return unsubscribe;
+  }, [navigation]);
 
   const results = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -143,6 +158,7 @@ export default function HomeScreen() {
   const renderList = () =>
     isSearching ? (
       <FlatList
+        ref={flatListRef}
         data={results}
         keyExtractor={(item) => item.hymn.id.toString()}
         renderItem={renderItem}
@@ -152,6 +168,7 @@ export default function HomeScreen() {
       />
     ) : (
       <FlashList
+        ref={flashListRef}
         data={results}
         keyExtractor={(item) => item.hymn.id.toString()}
         renderItem={renderItem}

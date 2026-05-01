@@ -9,7 +9,7 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "release:android": "node ./scripts/bump-android-version-code.js && cd android && ./gradlew bundleRelease"
+    "release:android": "node ./scripts/bump-android-version-code.js && cd android && ./gradlew bundleRelease && echo \"\\n✓ AAB ready at: $(pwd)/app/build/outputs/bundle/release/app-release.aab\""
   },
   "dependencies": {
     "@expo-google-fonts/lato": "^0.4.1",

@@ -18,9 +18,9 @@
     "title": "A quien iré",
     "verses": [
       "¿A quién iré en necesidad?\n¿A quién iré en busca de paz?\n¿Y quién podra mi vida saciar de verdad?",
-      "Quién mas tendra de mi compasión?\nY entenderá mi corazón?\nQuién cambiará mi eternidad?\nSino tu Jesús"
-    ],
-    "chorus": "Cristo, a dónde más podria ir?\nCristo, qué otro lugar puede existir?\nSolo Tú tienes palabras de amor\nCamino al padre y verdad eres Tú\nCristo, a dónde más podria ir?"
+      "¿Quién mas tendra de mi compasión?\n¿Y entenderá mi corazón?\n¿Quién cambiará mi eternidad?\nSino tu Jesús",
+      "Cristo, ¿a dónde más podria ir?\nCristo, ¿qué otro lugar puede existir?\nSolo Tú tienes palabras de amor\nCamino al padre y verdad eres Tú\nCristo, ¿a dónde más podria ir?"
+    ]
   },
   {
     "id": 5,
@@ -148,7 +148,7 @@
     "id": 18,
     "title": "Alelu alelu alelu",
     "verses": [
-      "//Alelu-Alelu-Alelu-Aleluya!\nLoad a Dios//",
+      "//¡Alelu-Alelu-Alelu-Aleluya!\nLoad a Dios//",
       "///Load a Dios\n¡Aleluya!///\nLoad a Dios"
     ],
     "author": "ICB"
@@ -448,7 +448,7 @@
       "¿Andas agobiado por algún pesar?\n¿Duro te parece amarga cruz llevar?\nCuenta las promesas del Señor Jesús,\nY de las tinieblas nacerá la luz.",
       "Cuando de otros veas la prosperidad\nY tus pies claudiquen tras de su maldad,\nCuenta las riquezas que tendrás por fe\nDonde el oro es polvo que hollará tu pie."
     ],
-    "chorus": "Bendiciones, cuántas tienes ya!\nBendiciones, Dios te manda más;\nBendiciones, te sorprenderás,\nCuando veas lo que Dios por ti hará.",
+    "chorus": "Bendiciones, ¡cuántas tienes ya!\nBendiciones, Dios te manda más;\nBendiciones, te sorprenderás,\nCuando veas lo que Dios por ti hará.",
     "author": "ICB"
   },
   {
@@ -493,11 +493,11 @@
     "id": 47,
     "title": "Desde el fondo del mar",
     "verses": [
-      "Desde el fondo del mar \nDel más alto lugar\nDel más hondo abismo\nTe alabaré",
+      "Desde el fondo del mar\nDel más alto lugar\nDel más hondo abismo\nTe alabaré",
       "Desde mi corazón\nFuerte o débil esté\nCada instante de mi vida\nCon gozo yo diré",
+      "Que tu eres la roca eterna   \nSeñor sobre cielo y tierra\nTu eres Dios",
       "Que toda criatura adore\nQue toda nación se postre\nA ti, Señor, Tú eres Dios"
-    ],
-    "chorus": "Que tu eres la roca eterna   \nSeñor sobre cielo y tierra\nTu eres Dios"
+    ]
   },
   {
     "id": 48,
@@ -747,7 +747,7 @@
     "id": 66,
     "title": "Es nuestro Dios",
     "verses": [
-      "Quién aviva el fuego de mil soles con poder\nQue en los cielos arden? Nadie como Él\nNuestro Dios",
+      "¿Quién aviva el fuego de mil soles con poder\nQue en los cielos arden? Nadie como Él\nNuestro Dios",
       "¿Quién gobierna el mundo? ¿Quién levanta y quita al rey\nVence a sus rivales? Nadie como Él\nNuestro Dios, nuestro Dios",
       "¿Quién bajó a salvarnos, detractores de Su Ley?\nEn Su amor nos llama; nadie como Él\nNuestro Dios, nuestro Dios",
       "//Al que en el trono está\nÉl que era y pronto vendrá\nY al Cordero inmolado gloria//"
@@ -1834,10 +1834,10 @@
     "title": "Oh cantaré, gritaré",
     "verses": [
       "La victoria ya llegó\nya no hay muerte Él me rescató\nSalvo soy, Tú eres mi Dios",
-      "Hoy la cruz vacía está\nY la vida eterna tengo ya\nGritalo, Cristo vivo está\nVivo está!!",
+      "Hoy la cruz vacía está\nY la vida eterna tengo ya\nGritalo, Cristo vivo está\n¡Vivo está!!",
       "La perfecta paz llegó\nTodo lo que es terrenal cesó\nLibre soy, Tu eres mi Dios",
-      "Estaré en aquel lugar\nLibre al fin por la eternidad\nCelebrad, Cristo vivo está\nVivo está!!",
-      "Oh.. que glorioso lugar,\nQue glorioso final,\nPues me has salvado!!",
+      "Estaré en aquel lugar\nLibre al fin por la eternidad\nCelebrad, Cristo vivo está\n¡Vivo está!!",
+      "Oh.. que glorioso lugar,\nQue glorioso final,\n¡Pues me has salvado!!",
       "Oh.. que glorioso lugar,\nQue glorioso final..."
     ],
     "chorus": "Oh Cantaré, Gritaré\nMi alma limpia está\nOh Cantaré, Gritaré\nCambió mi eternidad\nJamás seré igual",
@@ -2245,7 +2245,7 @@
     "verses": [
       "Rey de reyes, Te adoramos\nTu grandeza proclamamos\nRey de reyes, Soberano\nTu victoria celebramos",
       "Eres Jesús el que dió vida a nuestro corazón\nEres Jesús digno de recibir toda adoración",
-      "No!, nadie jamás se podrá igualar\nA tu poderío y tu majestad\nEres principio y eres final\nY para siempre tu reinas"
+      "¡No!, nadie jamás se podrá igualar\nA tu poderío y tu majestad\nEres principio y eres final\nY para siempre tu reinas"
     ],
     "chorus": "Rey de reyes te exaltamos\nPoderoso en majestad\nEres el camino y la verdad",
     "author": "ICB"
@@ -3127,7 +3127,7 @@
     "title": "Más grande de lo que imagino",
     "verses": [
       "Cada día tu nombre bendeciré\nMoraré en tu gloria y esplendor\nEn tus maravillas, meditaré\nEn tu gran poder proclamaré\nDe tu salvación diré\ny de tus bondades",
-      "Porque eres más grande de lo que imagino\nY más hermoso Dios de lo que he pensado\nOh tu eres grande y digno de alabar!",
+      "Porque eres más grande de lo que imagino\nY más hermoso Dios de lo que he pensado\n¡Oh tu eres grande y digno de alabar!",
       "Las generaciones te cantarán\nTu misericordia alabarán\nCantaremos juntos del salvador\nQue vino y del pecado nos libró\nTu llenas nuestras vidas\nPor siempre te alabaremos",
       "Porque eres más grande de lo que imagino\nY mas hermoso Dios de lo que he pensado\n¡Oh tu eres grande y digno de alabar!",
       "Porque eres más grande de lo que imagino\nY mas hermoso Dios de lo que he pensado",
@@ -3146,8 +3146,8 @@
       "Brillas en la oscuridad \nClamamos por Tu libertad\nIncomparable eres Tu",
       "Dios sana y salva\nCon gloria se exalta\nMi Dios, mi Dios",
       "Dios sana y salva\nCon gloria se exalta\nMi Dios, mi Dios",
-      "Y si Dios con nosotros, \nquien pues contra nosotros?",
-      "Y si Dios nos levanta,\nquien pues nos detendra?\nQuien pues nos detendra?"
+      "Y si Dios con nosotros, \n¿quien pues contra nosotros?",
+      "Y si Dios nos levanta,\n¿quien pues nos detendra?\n¿Quien pues nos detendra?"
     ],
     "chorus": "Mi Dios es grande, mi Dios es fuerte \nNadie es igual, nadie le hace frente\n\nMi Dios es grande, mi Dios es fuerte \nNadie es igual, nadie le hace frente",
     "author": "ICB"
@@ -3179,7 +3179,7 @@
     "id": 248,
     "title": "Para morir nació",
     "verses": [
-      "Recuerdas que sano al ciego? Jesús de Nazareth\nRecuerdas que toco a los leprosos y amigos los llamó\nRecuerdas como amaba a los niños de allí\nes dificil comprender que un hombre venga para ese fin",
+      "¿Recuerdas que sano al ciego? Jesús de Nazareth\nRecuerdas que toco a los leprosos y amigos los llamó\nRecuerdas como amaba a los niños de allí\nes dificil comprender que un hombre venga para ese fin",
       "Para morir naciò, para morir naciò\nel Hijo de Dios, del mundo el Salvador\npara morir naciò\nDesde que Jesùs naciò y en la tierra caminò\nsu fin en la vida fue ir a una cruz\npara morir naciò",
       "Recuerdas cuando diò a comer a cinco mil\nRecuerdas cuando llamò al muerto Làzaro ¡Sal de allí!\ny cuando en la boda cambiò el agua en buen vino\ntenìa tanto màs que dar pero el tiempo se acababa para Èl",
       "Para morir naciò, para morir naciò\nel Hijo de Dios, del mundo el Salvador\npara morir naciò\nDesde que Jesùs naciò y en la tierra caminò\nsu fin en la vida fue ir a una cruz\npara morir naciò"
@@ -3233,7 +3233,7 @@
       "Tu eres aquel el que nos movemos\ntuya es la gloria",
       "Tu eres aquel el que nos movemos\ntuya es la gloria",
       "Tu eres aquel el que nos movemos\ntuya es la gloria",
-      "//Hay un fuego que arde en el corazón \nNunca se apagara//\nSomos libres\nTuya es la gloria !!",
+      "//Hay un fuego que arde en el corazón \nNunca se apagara//\nSomos libres\n¡Tuya es la gloria !!",
       "Oh oh oh oh oh"
     ],
     "chorus": "Somos libres \nuna generación\nque canta tu gracia\n\nSomos libres \nsomos una generacion\nque canta tu gracia\nTu eres aquel que nos movemos\ntuya es la gloria\n\nSomos libres \nuna generacion\nque canta tu gracia\n\nSomos libres \nuna generacion\nque canta tu gracia\n\nSomos libres \nuna generacion\nque canta tu gracia",

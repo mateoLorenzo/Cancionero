@@ -3,14 +3,21 @@ import { createMMKV } from "react-native-mmkv";
 
 const storage = createMMKV({ id: "favorites" });
 
+// Storage access is wrapped to stay safe during web SSR (no localStorage)
 function loadFavorites(): Set<number> {
-  const raw = storage.getString("ids");
-  if (!raw) return new Set();
-  return new Set(JSON.parse(raw) as number[]);
+  try {
+    const raw = storage.getString("ids");
+    if (!raw) return new Set();
+    return new Set(JSON.parse(raw) as number[]);
+  } catch {
+    return new Set();
+  }
 }
 
 function saveFavorites(ids: Set<number>): void {
-  storage.set("ids", JSON.stringify([...ids]));
+  try {
+    storage.set("ids", JSON.stringify([...ids]));
+  } catch {}
 }
 
 interface FavoritesState {

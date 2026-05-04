@@ -239,11 +239,8 @@
     "title": "Cada día contigo",
     "verses": [
       "// Cada día contigo, es más dulce que ayer //",
-      "Te alabaré cada mañana, y al atardecer también",
-      "Pues cada día aquí contigo es más dulce que ayer",
-      "Que honor es poder yo conocerte y ser amado por tu amor",
-      "Que alegría es cantarte y alabarte con un nuevo corazón",
-      "Desde el amanecer hasta el anochecer…"
+      "Te alabaré cada mañana, y al atardecer también\nPues cada día aquí contigo es más dulce que ayer",
+      "Que honor es poder yo conocerte y ser amado por tu amor\nQue alegría es cantarte y alabarte con un nuevo corazón\nDesde el amanecer hasta el anochecer…"
     ]
   },
   {
@@ -410,10 +407,8 @@
       "Tú eres mío y tuyo soy\nQué gran misterio es nuestro amor\nQuiero por siempre estar\nPerdido en el placer de tú mirar",
       "Dame a Cristo\nSolo a Cristo\nDejo todo por Él\nDejo todo por Él",
       "Más que la plata y oro es\nEl gran tesoro de tu amor\nAhora que he probado tu bondad\nNada más me saciará",
-      "Dame a Cristo\nSolo a Cristo\nDejo todo por Él\nDejo todo por Él",
-      "Mi corazón abierto está\nMi corazón abierto está Dios\nHaz lo que quieras en mí\nHaz tu voluntad en mí Dios",
-      "Todo en mí es movido por tu amor\nCautivado por tu voz\nMi deseo es conocerte más Señor",
-      "A tu pies me rendiré y mis miedos dejaré\nTransformado soy en tu presencia"
+      "// Dame a Cristo\nSolo a Cristo\nDejo todo por Él\nDejo todo por Él //",
+      "/// No quiero a nadie más\nno necesito a nadie más\neres mi todo, eres mi todo ///"
     ],
     "author": "ICB"
   },
@@ -433,40 +428,16 @@
     "author": "ICB"
   },
   {
-    "id": 52,
-    "title": "Digno Santo",
-    "verses": [
-      "Digno y Santo el cordero, \ninmolado en la cruz\nNuevo canto, levantaremos\nAl que en su trono está",
-      "Santo, santo, santo\nDios todo Poderoso\nQuien fue, quien es, y Quien vendrá\nLa creación hoy canta\nY damos gloria a el\nTu eres digno por siempre y siempre",
-      "De un arcoíris, estás vestido\nTu voz resuena, como los truenos\nRecibe Honor y gloria\nPoder y majestad a ti el único rey",
-      "//Santo, santo, santo\nDios todo Poderoso\nQuien fue, quien es, y Quien vendrá\nLa creación hoy canta\nY damos gloria a el\nTu eres digno por siempre y siempre//"
-    ],
-    "author": "iceb"
-  },
-  {
     "id": 53,
     "title": "Digno de alabar",
     "verses": [
-      "Cargaste Tú mi cruz\nMi libertad, con Tu vida compraste",
-      "Y ahora Tuyo soy\nProclamaré Tu bondad para siempre",
-      "Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar",
-      "Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar",
-      "Vergüenza huye hoy\nRendido estoy\nAnte Tu amor innegable",
-      "Tu gracia eterna es\nProclamaré\nTu bondad para siempre",
-      "Digno de alabar, Cristo\nNombre sin igual\nDigno de alaba",
-      "Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar",
-      "Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar",
-      "Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar",
-      "Sé exaltado hoy en los cielos\nVen y llena este lugar",
-      "Eres digno de alabar\nNo hay otro nombre igual",
-      "Sé exaltado hoy en los cielos\nVen y llena este lugar",
-      "Eres digno de alabar\nNo hay otro nombre igual",
-      "Sé exaltado hoy en los cielos\nVen y llena este lugar",
-      "Eres digno de alabar\nNo hay otro nombre igual",
-      "Sé exaltado hoy en los cielos\nVen y llena este lugar",
-      "Eres digno de alabar\nNo hay otro nombre igual",
+      "Cargaste Tú mi cruz\nMi libertad, con Tu vida compraste\nY ahora Tuyo soy\nProclamaré Tu bondad para siempre",
+      "// Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar //",
+      "Vergüenza huye hoy\nRendido estoy ante Tu amor innegable\nTu gracia eterna es\nProclamaré tu bondad para siempre",
+      "//// Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar //// (x4)",
+      "//// Sé exaltado hoy en los cielos\nVen y llena este lugar\nEres digno de alabar\nNo hay otro nombre igual ////// (x5)",
       "Nombre sin igual, Cristo",
-      "Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar"
+      "//// Digno de alabar, Cristo\nNombre sin igual\nDigno de alabar //// (x4)"
     ],
     "author": "ICB"
   },
@@ -474,12 +445,12 @@
     "id": 54,
     "title": "Digno eres señor",
     "verses": [
-      "Gracias por la cruz, Dios\nPor el precio tú pagar",
-      "Mi pecado y dolor, tu amor quitó\nDando gracia eterna",
-      "Gracias por tu amor, Dios\nPor las manos que herí",
-      "Pués tu río me limpió y siento al fin\nTu perdón y salvación",
-      "Digno eres Señor\nEn tu trono estás\nCoronado con poder\nReinas con majestad",
-      "Cristo, Hijo de Dios\nExaltado Rey\nMoriste en la cruz en mi lugar\n/ Digno eres Señor /\nQuien quiera hoy ser perdonado,\nRestaurado y de Cristo ser llenado,\nDebe verlo, y solo por la cruz."
+      "Gracias por la cruz, oh Dios\nEl precio que pagaste por mí\nLlevando mi pecado allí\nSublime amor\nTu gracia me salvó",
+      "Gracias por tu amor, oh Dios\nTus manos clavadas por mí\nMe has lavado oh Señor\nConozco hoy\nTu abrazo y tu perdón",
+      "Digno es el Señor\nEn su trono está\nHoy te coronamos Rey\nY reinas con poder\nAltísimo Señor\nJesús, Hijo de Dios\nEl amado del cielo\nEn la cruz murió\n// Digno es el Señor //",
+      "Gracias por la cruz, oh Dios\nEl precio que pagaste por mí\nLlevando mi pecado allí\nSublime amor\nTu gracia me salvó",
+      "Gracias por tu amor, oh Dios\nTus manos clavadas por mí\nMe has lavado oh Señor\nConozco hoy\nTu abrazo y tu perdón",
+      "// Digno es el Señor\nEn su trono está\nHoy te coronamos Rey\nY reinas con poder\nAltísimo Señor\nJesús, Hijo de Dios\nEl amado del cielo\nEn la cruz murió\nDigno es el Señor //"
     ],
     "author": "ICB"
   },
@@ -487,18 +458,8 @@
     "id": 55,
     "title": "Digno y Santo",
     "verses": [
-      "Digno es el Cordero Santo\nSanto Santo es El",
-      "Levantamos nuestra alabanza\nAl que en su trono está",
-      "Quien fue, Quien es\nY quien vendrá",
-      "La creación hoy canta\nY damos gloria a El",
-      "Tu eres Digno por siempre\nY siempre",
-      "Quien fue, Quien es\nY quien vendrá",
-      "La creación hoy canta\nY damos gloria a El",
-      "Tu eres Digno por siempre\nY siempre",
-      "Quien fue, Quien es\nY quien vendrá",
-      "La creación hoy canta\nY damos gloria a El",
-      "Tu eres Digno por siempre\nY siempre",
-      "Camioneta patente ad562wg con balizas prendidas"
+      "Digno es el Cordero Santo\nSanto Santo es Él\nLevantamos nuestra alabanza\nAl que en su trono está",
+      "Santo, santo, santo\nDios Todopoderoso\nQuién fue, Quién es y Quién vendrá\nLa creación hoy canta\nY damos gloria a Él\nTu eres Digno por siempre\nY siempre"
     ],
     "author": "ICB"
   },
@@ -506,20 +467,13 @@
     "id": 56,
     "title": "Dios es Poderoso",
     "verses": [
-      "Poderoso\nNunca fallará\nOmnipotente Dios",
-      "Más de lo que busqué\nMás de lo que pedí\nGrande es nuestro Dios",
-      "Él triunfó\nA la muerte venció\nVivo está, es poderoso",
-      "En Jesús\nSoy vencedor\nNuestro Dios es poderoso",
-      "Dios me guía\nÉl conmigo está\nUn camino hará",
-      "Más de lo que soñé\nMás de lo que esperé\nGrande es nuestro Dios",
-      "Él triunfó\nA la muerte venció\nVivo está, es poderoso",
-      "En Jesús\nSoy vencedor\nNuestro Dios es poderoso",
-      "Dios me cuida\nÉl conmigo está\n/Él nunca me deja/",
-      "Dios me ama\nCon eterno amor\n/Él nunca me falla/",
-      "Él triunfó\nA la muerte venció\nVivo está, es poderoso",
-      "En Jesús\nSoy vencedor\nNuestro Dios es poderoso",
-      "El triunfó\nA la muerte venció\nVivo está, es poderoso",
-      "En Jesús\nSoy vencedor\n//Nuestro Dios es poderoso//"
+      "Poderoso, nunca fallará\nOmnipotente Dios\nMás de lo que busqué, más de lo que pedí\nGrande es nuestro Dios",
+      "Él triunfó, a la muerte venció\nVivo está, es Poderoso\nEn Jesús, soy vencedor\nNuestro Dios es Poderoso",
+      "Dios me guía, Él conmigo está\nUn camino hará\nMás de lo que soñé, más de lo que esperé\nGrande es nuestro Dios",
+      "Él triunfó, a la muerte venció\nVivo está, es Poderoso\nEn Jesús, soy vencedor\nNuestro Dios es Poderoso",
+      "Dios me cuida, Él conmigo está\n// Él nunca me deja //\nDios me ama, con eterno amor\n// Él nunca me falla //",
+      "Él triunfó, a la muerte venció\nVivo está, es Poderoso\nEn Jesús, soy vencedor\nNuestro Dios es Poderoso",
+      "Él triunfó, a la muerte venció\nVivo está, es Poderoso\nEn Jesús, soy vencedor\n// Nuestro Dios es Poderoso //"
     ],
     "author": "ICB"
   },
@@ -527,10 +481,12 @@
     "id": 57,
     "title": "Dios me sostendrá",
     "verses": [
-      "Dios entiende tus tristezas, Él ve tu llorar\nÉl te consuela y dice contigo voy a estar\nComo buen pastor nos guía, nos dá su protección\nPaz perfecta da a tu alma, amate Salvador",
-      "Él me sostendrá, Dios me guiará\nTomará mis manos, me dice aquí estoy\nQue por mí murió, que me guarde fiel\nDios me guiará hasta la eternidad",
+      "Dios entiende tus tristezas, Él ve tu llorar\nÉl te consuela y dice contigo voy a estar\nComo buen pastor nos guía, nos dá su protección\nPaz perfecta da a tu alma, Amante Salvador",
+      "Él me sostendrá, Dios me guiará\nTomará mi mano, me dice aquí estoy\nQue por mí murió, que me guarde fiel\nDios me guiará hasta la eternidad",
       "Cuando en la lucha falte toda nuestra fe\nSi es fuerte el enemigo defensa yo tendré\nComo buen pastor nos guía, es Justo, Santo y Fiel\nHoy concedeme tu gracia Amante Salvador",
-      "En horas de angustia\nConmigo Dios está\nNo tengo dudas ni temores,\nRefugio en aflicción"
+      "Él me sostendrá, Dios me guiará\nTomará mi mano, me dice aquí estoy\nQue por mí murió, que me guarde fiel\nDios me guiará hasta la eternidad",
+      "En horas de angustia\nConmigo Dios está\nNo tengo dudas ni temores,\nRefugio en aflicción",
+      "Él me sostendrá, Dios me guiará\nTomará mi mano, me dice aquí estoy\nQue por mí murió, que me guarde fiel\nDios me guiará hasta la eternidad"
     ],
     "author": "ICB"
   },
@@ -538,103 +494,75 @@
     "id": 59,
     "title": "El es el rey exaltado",
     "verses": [
-      "Él es el Rey exaltado en su majestad le alabo.",
-      "Él es por siempre exaltado y su nombre santo he de adorar.",
-      "Él es Señor, por siempre ha de reinar.\nLa humanidad un día le adorará.\nÉl es el Rey exaltado en su majestad",
-      "Él es Señor, por siempre ha de reinar.\nLa humanidad un día le adorará.",
-      "//Él es el Rey exaltado en su majestad//"
+      "Él es el Rey exaltado en su majestad, le alabo\nÉl es por siempre exaltado\ny su nombre santo he de adorar",
+      "Él es Señor, por siempre ha de reinar\nLa humanidad un día le adorará\nÉl es el Rey exaltado en su majestad",
+      "Él es el Rey exaltado en su majestad, le alabo\nÉl es por siempre exaltado\ny su nombre santo he de adorar",
+      "Él es Señor, por siempre ha de reinar.\nLa humanidad un día le adorará\n// Él es el Rey exaltado en su majestad //"
     ]
   },
   {
     "id": 60,
     "title": "El es la voz",
     "verses": [
-      "El es la voz que mis oídos abrió\nLa libertad que mis cadenas rompió",
-      "El es la luz que mi alma oscura iluminó\nEl es Jesús, toda mi vida transformó",
-      "Puede transformar al más pecador,\nDarle una nueva vida y su perdón,",
-      "El hizo que vuelva a latir mi corazón",
-      "El es la voz que mis oídos abrió\nLa libertad que mis cadenas rompió",
-      "El es la luz que mi alma oscura iluminó\nEl es Jesús, toda mi vida transformó",
-      "El hizo cambiar, mi odio en amor,\nConvierte en alegría, mi dolor,",
-      "Puede transformar al más pecador,\nDarle una nueva vida y su perdón,",
-      "El hizo que vuelva a latir mi corazón",
-      "El hizo cambiar, mi odio en amor,\nConvierte en alegría, mi dolor,",
-      "Puede transformar al más pecador,\nDarle una nueva vida y su perdón,",
-      "El hizo que vuelva a latir mi corazón"
-    ]
-  },
-  {
-    "id": 61,
-    "title": "En el monte Calvario",
-    "verses": [
-      "En el monte Calvario estaba una cruz,\nEmblema de afrenta y dolor.",
-      "Mas yo amo a Jesús, que murio en la cruz\nPor salvar al más vil pecador.",
-      "Gloriareme solo en la cruz.\nEn sus triunfos mi gloria será.",
-      "Y en el día de eterna salud,\nMi corona Jesús me dará.",
-      "Aunque el mundo desprecie la cruz de Jesús,\nPara mi tiene suma atracción.",
-      "Porque en ella llevo el Cordero de Dios\nde mi alma la condenación.",
-      "Gloriareme solo en la cruz.\nEn sus triunfos mi gloria será.",
-      "Y en el día de eterna salud,\nMi corona Jesús me dará.",
-      "En la cruz de Jesús do su sangre vertio,\nHermosura contemplo sin par.",
-      "Pues en ella triunfante a la muerte vencio\ny mi ser puede santificar",
-      "Gloriareme solo en la cruz.\nEn sus triunfos mi gloria será.",
-      "Y en el día de eterna salud,\nMi corona Jesús me dará.",
-      "Yo quisiera seguir en pos de Jesús,\nY su menosprecio llevar.",
-      "Y algún día feliz con los santos en luz,\nEn la gloria con Él he de estar.",
-      "Gloriareme solo en la cruz.\nEn sus triunfos mi gloria será.",
-      "Y en el día de eterna salud,\nMi corona Jesús me dará."
+      "Él es la voz que mis oídos abrió\nLa libertad que mis cadenas rompió\nEl es la luz que mi alma oscura iluminó\nEl es Jesús, toda mi vida transformó",
+      "Él hizo cambiar, mi odio en amor,\nConvierte en alegría, mi dolor,\nPuede transformar al más pecador,\nDarle una nueva vida y su perdón\nÉl hizo que vuelva a latir mi corazón",
+      "Él es la voz que mis oídos abrió\nLa libertad que mis cadenas rompió\nEl es la luz que mi alma oscura iluminó\nEl es Jesús, toda mi vida transformó",
+      "// Él hizo cambiar, mi odio en amor,\nConvierte en alegría, mi dolor,\nPuede transformar al más pecador,\nDarle una nueva vida y su perdón\nÉl hizo que vuelva a latir mi corazón //"
     ]
   },
   {
     "id": 62,
     "title": "En ti confia mi corazón",
     "verses": [
-      "//En Ti confía mi corazón,\nEn Ti reposa mi alma,\nMi ser descansa en ti,\nPuedo ser feliz//",
+      "// En Ti confía mi corazón,\nEn Ti reposa mi alma,\nMi ser descansa en ti,\nPuedo ser feliz //",
       "Porque se que estás obrando,\nTu perfecta voluntad,\nEn mi vida estás obrando,\nTu perfecta voluntad.",
-      "En Ti confía mi corazón,\nEn Ti reposa mi alma,\nMi ser descansa en ti,\n//Puedo ser feliz//"
+      "En Ti confía mi corazón,\nEn Ti reposa mi alma,\nMi ser descansa en ti,\nPuedo ser feliz",
+      "Porque se que estás obrando,\nTu perfecta voluntad,\nEn mi vida estás obrando,\nTu perfecta voluntad."
     ]
   },
   {
     "id": 63,
     "title": "Enviame a mi",
     "verses": [
-      "La mies es mucha hay gran necesidad\nPocos obreros al campo van",
-      "Hoy muchos se pierden\nViven sin dirección",
-      "Van como ovejas sin pastor",
-      "//Heme aquí envíame a mi/\nYo iré por aquellos que vagan sin ti/",
+      "La mies es mucha hay gran necesidad\nY pocos obreros al campo van\nHoy muchos se pierden, viven sin dirección\nVagan como ovejas sin pastor",
+      "// Heme aquí envíame a mi\nHeme aquí envíame a mi\nYo iré por aquellos que vagan sin ti //",
       "Envíame a mi yo iré."
     ]
   },
   {
     "id": 64,
-    "title": "Eres tu",
+    "title": "Eres Tú",
     "verses": [
-      "Eres Tu la única razón de mi adoración oh Jesús\nEres Tu la esperanza que anhelé tener oh Jesús",
+      "Eres Tú la única razón de mi adoración,\nOh Jesús\nEres Tú la esperanza que anhelé tener,\nOh Jesús",
       "Confié en Ti me has ayudado\nTu salvación me has regalado\nHoy hay gozo en mi corazón\nCon mi canto te alabaré",
       "//Te alabaré, te glorificaré\nTe alabaré mi buen Jesús//",
-      "//En todo tiempo te alabaré\nEn todo tiempo te adoraré//"
+      "Eres Tú la única razón de mi adoración,\nOh Jesús\nEres Tú la esperanza que anhelé tener,\nOh Jesús",
+      "Confié en Ti me has ayudado\nTu salvación me has regalado\nHoy hay gozo en mi corazón\nCon mi canto te alabaré",
+      "//Te alabaré, te glorificaré\nTe alabaré mi buen Jesús//",
+      "//En todo tiempo te alabaré\nEn todo tiempo te adoraré//",
+      "//Te alabaré, te glorificaré\nTe alabaré mi buen Jesús//"
     ]
   },
   {
     "id": 65,
-    "title": "Es mas q una canción",
+    "title": "Es más que una canción",
     "verses": [
-      "Es más que una canción,\nEs más que palabras\nEs mi corazón rendido a Ti,",
-      "Es lo mejor de mí,\nLo que vengo a darte,\nYa no es suficiente una canción\nLo que tu me pidas yo te quiero dar",
-      "No vengo a pedir, no vengo a buscar,\nSólo vengo a darte mi ofrenda de amor,",
-      "Hoy quiero tocar tu fiel corazón,\nY darte las gracias mi amado Señor,\nSacrificio vivo a Ti, a Ti, a Ti"
+      "Es más que una canción, es más que palabras\nEs mi corazón rendido a Ti\nEs lo mejor de mí, lo que vengo a darte,\nYa no es suficiente una canción.\nLo que tu me pidas yo te quiero dar",
+      "No vengo a pedir, no vengo a buscar,\nSólo vengo a darte mi ofrenda de amor\nHoy quiero tocar tu fiel corazón,\nY darte las gracias mi amado Señor.",
+      "Hoy te vengo a bendecir...\n// a Ti //"
     ]
   },
   {
     "id": 66,
     "title": "Es nuestro Dios",
     "verses": [
-      "Quién aviva el fuego de mil soles con poder\nQue en los cielos arden? Nadie como Él\nNuestro Dios",
-      "¿Quién gobierna el mundo? ¿Quién levanta y quita al rey\nVence a sus rivales? Nadie como Él\nNuestro Dios, nuestro Dios",
-      "Santo, solo Tú eres santo\nSin igual en gloria, Santo Dios",
-      "¿Quién bajó a salvarnos, detractores de Su Ley?\nEn Su amor nos llama; nadie como Él\nNuestro Dios, nuestro Dios",
-      "Santo, solo Tú eres santo\nSin igual en gloria, incomparable\nDigno, solo Tú eres digno\nSolo a Ti adoramos, santo Dios",
-      "//Al que en el trono está\nÉl que era y pronto vendrá\nY al Cordero inmolado gloria//"
+      "¿Quién aviva el fuego de mil soles con poder, que en los cielos arden?\nNadie como Él; Nuestro Dios",
+      "¿Quién gobierna el mundo? ¿Quién levanta y quita al rey?\nVence a sus rivales, nadie como Él\nNuestro Dios, nuestro Dios",
+      "Santo, solo Tú eres Santo\nSin igual en gloria, Santo Dios",
+      "¿Quién bajó a salvarnos, detractores de Su Ley?\nEn Su amor nos llama; nadie como Él,\nNuestro Dios, nuestro Dios.",
+      "Santo, solo Tú eres Santo\nSin igual en gloria, incomparable\nDigno, solo Tú eres digno\nSolo a Ti adoramos, Santo Dios",
+      "// Al que en el trono está\nÉl que era y pronto vendrá\nY al Cordero inmolado gloria //",
+      "Santo, solo Tú eres Santo\nSin igual en gloria, incomparable\nDigno, solo Tú eres digno\nSolo a Ti adoramos, Santo Dios"
     ],
     "author": "ICB"
   },
@@ -642,52 +570,27 @@
     "id": 67,
     "title": "Este es mi deseo",
     "verses": [
-      "Este es mi deseo\nHonrarte a Ti",
-      "Con todo mi ser\nTe adoro a Ti",
-      "Con todas mis fuerzas\nTe alabare\nMi adoración eres Tú",
-      "Hoy te rindo mi ser\nTe doy mi corazón\nYo vivo para Ti",
-      "Y en cada palpitar\nMientras haya aliento en mí\nDios haz tu obra en mí",
-      "//Hoy te rindo mi ser\nTe doy mi corazón",
-      "Yo vivo para Ti\nY en cada palpitar",
-      "Mientras haya aliento en mí\nDios haz tu obra en mí//"
+      "Este es mi deseo, honrarte a Ti\nCon todo mi ser, Te adoro a Ti\nCon todas mis fuerzas, Te alabare\nMi adoración eres Tú.",
+      "// Hoy te rindo mi ser, te doy mi corazón\nYo vivo para Ti, y en cada palpitar\nMientras haya aliento en mí\nDios haz tu obra en mí //"
     ]
-  },
-  {
-    "id": 68,
-    "title": "El Es",
-    "verses": [
-      "Dame de beber que tengo sed\nNo quiero mas buscar\nEn otras fuentes",
-      "No necesitaré allí volver\nPara mi sed saciar\nUna vez que te oído hablar",
-      "Eres\nAquel que mi vida esperó\nLa fuente de vida que me encontró\nRegalo de Dios el Mesías\nY mi Salvador"
-    ],
-    "author": "ICB"
   },
   {
     "id": 69,
     "title": "El Mismo Poder",
     "verses": [
-      "Su nombre mueve las montañas\nAbre caminos en el mar",
-      "Vi su poder en la batalla\nConquistándola",
-      "Hay una fe desafiante\nQue a Goliat hizo caer",
-      "La adoración, toda cadena\nPuede romper",
-      "En su nombre hay poder\nNada se opone a Él\nCaen gigantes y murallas al nombrarlo",
-      "A la tumba, Él venció\nEl mismo poder nos dio\nComo el nombre de Jesús, no hay ningún otro",
-      "Una esperanza que es valiente\nQue hasta el fuego enfrentará",
-      "Desafiante expectativa\nQue cada oración\nÉl la responderá",
-      "En su nombre hay poder\nNada se opone a Él\nCaen gigantes y murallas al nombrarlo",
-      "A la tumba, Él venció\nEl mismo poder nos dio\n/ Como el nombre de Jesús, no hay ningún otro /",
-      "No hay otro nombre",
-      "Te veo conquistar\nTe veo avanzar",
-      "Tu voz al enemigo\nHace temblar",
-      "Milagros tú harás\nPromesas cumplirás",
-      "Tú eres el mismo Dios\nY siempre lo serás",
-      "Tu espíritu está aquí\nTu reino cerca está",
-      "Lo que el enemigo robó\nTú lo devolverás",
-      "Milagros tú harás\nPromesas cumplirás",
-      "Tú eres el mismo Dios\nY siempre lo serás",
-      "En su nombre hay poder\nNada se opone a Él\nCaen gigantes y murallas al nombrarlo",
-      "A la tumba, Él venció\nEl mismo poder nos dio\n/ Como el nombre de Jesús, no hay ningún otro /",
-      "Como el nombre de Jesús, no hay ningún otro"
+      "Su nombre mueve las montañas\nAbre caminos en el mar\nVi su poder en la batalla\nConquistándola",
+      "Hay una fe desafiante\nQue a Goliat hizo caer\nLa adoración, toda cadena\nPuede romper",
+      "En su nombre hay poder\nNada se opone a Él\nCaen gigantes y murallas\nAl nombrarlo",
+      "A la tumba Él venció\nEl mismo poder nos dio\nComo el nombre de Jesús\nNo hay ningún otro",
+      "Una esperanza que es valiente\nQue hasta el fuego enfrentará\nDesafiante expectativa\nQue cada oración\nÉl la responderá",
+      "En su nombre hay poder\nNada se opone a Él\nCaen gigantes y murallas\nAl nombrarlo",
+      "A la tumba Él venció\nEl mismo poder nos dio\n// Como el nombre de Jesús\nNo hay ningún otro //",
+      "Te veo conquistar\nTe veo avanzar\nTu voz al enemigo\nHace temblar",
+      "Milagros tú harás\nPromesas cumplirás\nTú eres el mismo Dios\nY siempre lo serás",
+      "Tu espíritu está aquí\nTu reino cerca está\nLo que el enemigo robó\nTú lo devolverás",
+      "Milagros tú harás\nPromesas cumplirás\nTú eres el mismo Dios\nY siempre lo serás",
+      "En su nombre hay poder\nNada se opone a Él\nCaen gigantes y murallas\nAl nombrarlo",
+      "A la tumba Él venció\nEl mismo poder nos dio\n/// Como el nombre de Jesús\nNo hay ningún otro ///"
     ],
     "author": "ICB"
   },
@@ -695,10 +598,8 @@
     "id": 70,
     "title": "El amor de Dios es maravilloso",
     "verses": [
-      "//El amor de Dios es maravilloso//",
-      "Cuan grande es el amor de Dios",
-      "Tan alto que no puedo ir arriba de Él\nTan bajo que no puedo ir debajo de Él",
-      "Tan ancho que no puedo ir afuera de Él\nCuan grande es el amor de Dios"
+      "// El amor de Dios es maravilloso //\nCuan grande es el amor de Dios",
+      "Tan alto que no puedo ir arriba de Él\nTan bajo que no puedo ir debajo de Él\nTan ancho que no puedo ir afuera de Él\nCuan grande es el amor de Dios"
     ],
     "author": "ICB"
   },
@@ -724,47 +625,14 @@
     "author": "ICB"
   },
   {
-    "id": 72,
-    "title": "En la casa",
-    "verses": [
-      "En la casa del alfarero\nHay consuelo, hay sanidad\nDonde todos me dejaron\nTú viniste a restaurar",
-      "Tú no rechazas lo roto\nTú me abrazas con valor",
-      "En la casa del alfarero\nAhí late fuerte mi corazón",
-      "Cada grieta en mi interior\nEs parte de tu labor",
-      "Lo que duele no es final\nEs el arte celestial",
-      "Tú me tomas con ternura\nY me enseñas a esperar",
-      "Aun quebrado tú me usas\nTu propósito es real",
-      "En la casa del alfarero\nHay propósito y verdad",
-      "Donde el mundo vio cenizas\nTú me hiciste levantar",
-      "Tú no rechazas lo roto\nTú lo llenas de tu unción",
-      "En la casa del alfarero\nAhí canta libre mi corazón",
-      "No soy lo que fui\nSoy lo que formas tú",
-      "Aunque me rompí\nTú me diste luz",
-      "Obra en proceso\nVas a terminar",
-      "Lo que comenzaste\nNo lo dejará",
-      "En la casa del alfarero\nMi alma encontró paz",
-      "Tú limpias mis temores\nMe haces descansar",
-      "Tú no rechazas lo roto\nTú lo haces brillar",
-      "En la casa del alfarero\nYo vivo para adorar"
-    ],
-    "author": "ICB"
-  },
-  {
     "id": 73,
-    "title": "En la casa de dios",
+    "title": "En la casa de Dios",
     "verses": [
-      "Mejor es un día en la casa de Dios\nQue mil años lejos de él",
-      "Prefiero un rincón en la casa de Dios\n/Que todo el palacio de un rey/",
-      "Ven conmigo a la casa de Dios\nCelebraremos juntos su amor",
-      "Haremos fiesta en honor de aquel que nos amó",
-      "Estando aquí en la casa de Dios\nAlegraremos su corazón",
-      "Le brindaremos ofrendas de obediencia y amor\nEn la casa de Dios",
-      "Arde mi alma, arde de amor\nPor aquel que me dio la vida",
-      "Por eso le anhela mi corazón\n/Anhela de su compañía/",
-      "Ven conmigo a la casa de Dios\nCelebraremos juntos su amor",
-      "Haremos fiesta en honor de aquel que nos amó",
-      "Estando aquí en la casa de Dios\nAlegraremos su corazón\nLe brindaremos ofrendas de obediencia y amor",
-      "///En la casa de Dios///"
+      "Mejor es un día en la casa de Dios\nQue mil años lejos de él\nPrefiero un rincón en la casa de Dios\n// Que todo el palacio de un rey //",
+      "Ven conmigo a la casa de Dios\nCelebraremos juntos su amor\nHaremos fiesta en honor de aquel que nos amó\nEstando aquí en la casa de Dios\nAlegraremos su corazón\nLe brindaremos ofrendas de obediencia y amor\nEn la casa de Dios",
+      "Arde mi alma, arde de amor\nPor aquel que me dio la vida\nPor eso le anhela mi corazón\n// Anhela de su compañía //",
+      "// Ven conmigo a la casa de Dios\nCelebraremos juntos su amor\nHaremos fiesta en honor de aquel que nos amó\nEstando aquí en la casa de Dios\nAlegraremos su corazón\nLe brindaremos ofrendas de obediencia y amor //",
+      "/// En la casa de Dios ///"
     ],
     "author": "ICB"
   },
@@ -772,30 +640,23 @@
     "id": 75,
     "title": "En tu presencia",
     "verses": [
-      "Quieto en tu presencia\nAnte ti, me presento",
-      "Quiero oír tu voz\nTe escucho, Señor",
+      "Quieto en tu presencia\nAnte ti, me presento\nQuiero oír tu voz\nTe escucho, Señor",
       "Mi atención te entrego\nA tus pies, yo espero\nAquí quiero estar",
       "Mi corazón anhela más de ti\nHaz algo nuevo en mí\nA ti me entrego Dios",
-      "Todo en mí, es movido por tu amor\nCautivado por tu voz\nMi deseo es conocerte más Señor",
-      "A tu pies, me rendiré\nY mis miedos dejaré\nTransformado soy, en tu presencia",
+      "Todo en mí, es movido por tu amor\nCautivado por tu voz\nMi deseo es conocerte más Señor\nA tus pies, me rendiré\nY mis miedos dejaré\nTransformado soy, en tu presencia",
       "Ohh-oh\nOhh-oh\nOhh-oh\nOhh-oh",
-      "Tú eres fuego en el día\nTú eres brisa en la noche",
-      "Aliento en mi ser\nTú sacias mi sed",
+      "Tú eres fuego en el día\nTú eres brisa en la noche\nAliento en mi ser\nTú sacias mi sed",
       "No hay duda alguna\nDe tu amor y tu afecto\nNo hay nada igual",
       "Mi corazón anhela más de tí\nHaz algo nuevo en mí\nA ti me entrego Dios",
-      "Todo en mí, es movido por tu amor\nCautivado por tu voz\nMi deseo es conocerte más, Señor",
-      "A tu pies me rendiré\nY mis miedos dejaré\nTransformado soy en tu presencia",
+      "Todo en mí, es movido por tu amor\nCautivado por tu voz\nMi deseo es conocerte más, Señor\nA tus pies me rendiré\nY mis miedos dejaré\nTransformado soy en tu presencia",
       "Ohh-oh\nOhh-oh\nOhh-oh\nOhh-oh",
-      "Mi corazón abierto está\nMi corazón abierto está, Dios",
-      "Haz lo que quieras en mí\nHaz tu voluntad en mí, Dios",
-      "Mi corazón abierto está\nMi corazón abierto está, Dios",
-      "Haz lo que quieras en mí\nHaz tu voluntad en mí, Dios",
-      "Mi corazón abierto está\nMi corazón abierto está, Dios",
-      "Haz lo que quiera en mí\nHaz tu voluntad en mí, Dios",
+      "Mi corazón abierto está\nMi corazón abierto está, Dios\nHaz lo que quieras en mí\nHaz tu voluntad en mí, Dios",
+      "Mi corazón abierto está\nMi corazón abierto está, Dios\nHaz lo que quieras en mí\nHaz tu voluntad en mí, Dios",
+      "Mi corazón abierto está\nMi corazón abierto está, Dios\nHaz lo que quieras en mí\nHaz tu voluntad en mí, Dios",
       "Na-na-na-na-na-na-na\nNa-na-na-na-na-na-na\nNa-na-na-na-na-na-na-na-na",
       "Todo en mí, es movido por tu amor\nCautivado por tu voz\nMi deseo es conocerte más Señor",
       "A tus pies me rendiré\nY mis miedos dejaré\nTransformado soy en tu presencia",
-      "Ohh-oh\nOhh-oh\nOhh-oh\nOhh-oh"
+      "Na-na-na-na-na-na-na\nNa-na-na-na-na-na-na\nNa-na-na-na-na-na-na-na-na"
     ],
     "author": "ICB"
   },
@@ -803,12 +664,13 @@
     "id": 76,
     "title": "Entre las llamas",
     "verses": [
-      "Hubo uno más entre las llamas\nQue estuvo junto a mí",
-      "Hubo uno más sobre las aguas\nQue pudo el mar abrir\nQue en mi interior no queden dudas\nDe cómo libre fui",
-      "Hay una cruz que muestra el precio\nQue Jesús pagó por mí",
-      "Tu luz vencerá las tinieblas\nA tus pies se rendirán",
-      "Rugirá tu voz desde el cielo\nY los muros caerán",
-      "Traes libertad las cadenas\nAnte ti se romperán\n/ Nada nos separa /"
+      "Gracia hay cuando paso por el fuego\nAbres camino donde no lo hay\nAl recordar lo que has hecho en mí\nLo que un día fui, lo que recorrí\nSé que a mi lado siempre estás",
+      "Hubo uno más entre las llamas\nQue estuvo junto a mí\nHubo uno más sobre las aguas\nQue pudo el mar abrir\nQue en mi interior no queden dudas\nDe cómo libre fui\nHay una cruz que muestra el precio\nQue Jesús pagó por mí",
+      "En las aguas hundiste mi pasado\nAhora sé que un esclavo al pecado no soy\nAl tropezar en mi caminar\nMe levantaré, yo persistiré\nMiro al frente\nY no volveré nunca atrás\nYo sé que a mi lado siempre estás",
+      "Hay uno más entre las llamas\nQue está hoy junto a mi\nHay uno más sobre las aguas\nQue puede el mar abrir\nEn mi interior no quedan dudas\nDe cómo libre fui\nEl mismo que venció la tumba\nAhora vive en mí",
+      "Tu luz vencerá las tinieblas\nA tus pies se rendirán\nRugirá tu voz desde el cielo\nY los muros caerán\nTraes libertad, las cadenas\nAnte ti se romperán\nNada nos separa\nNada nos separa",
+      "No hay nombre igual\nAl nombre de Cristo\nEl que fue, el que es\nY por siempre será\nAunque no sepa lo que vendrá\nSé que tu verdad, nunca fallará\n// Yo sé que a mi lado siempre estás //",
+      "Habrá uno más entre las llamas\nQue va a estar junto a mí\nHabrá uno más sobre las aguas\nQue puede el mar abrir\nQue en mi interior no queden dudas\nDe tu fidelidad\n// Me alegraré en las batallas\nPorque conmigo ahí estarás //"
     ],
     "author": "ICB"
   },
@@ -820,6 +682,7 @@
       "Tú eres Señor\nMi esperanza\nComo ninguna\nVives en mí",
       "Gracia que me levantó\nNombre que me restauró\nHas sido fiel\nTu has sido fiel",
       "Perfecto amor\nInagotable\nIncomparable\nVives en mí",
+      "// Gracia que me levantó\nNombre que me restauró\nHas sido fiel\nTu has sido fiel //",
       "//Tu amor Señor\nLlega hasta los cielos\nTu fidelidad\nNunca fallará//",
       "Tú eres Señor\nMi fortaleza\nComo ninguna\nVives en mí",
       "Tú eres Señor\nMi esperanza\nComo ninguna\nVives en mí"

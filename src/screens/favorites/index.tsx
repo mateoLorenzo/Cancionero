@@ -119,7 +119,10 @@ export default function FavoritesScreen() {
         accessibilityRole="button"
         accessibilityLabel={`Canción ${s.title}`}
       >
-        <Text style={[styles.title, styles.titleNoNumber, { fontSize }]} numberOfLines={1}>
+        <Text
+          style={[styles.title, styles.titleNoNumber, { fontSize }]}
+          numberOfLines={1}
+        >
           {s.title}
         </Text>
         <Pressable
@@ -158,12 +161,12 @@ export default function FavoritesScreen() {
             contentInsetAdjustmentBehavior="never"
             automaticallyAdjustsScrollIndicatorInsets={false}
             style={{ marginTop: headerHeight }}
-            contentContainerStyle={{ paddingBottom: insets.bottom + 50 }}
+            contentContainerStyle={{ paddingBottom: 16 }}
           />
         )}
       </View>
 
-      <View style={styles.footer}>
+      <View style={[styles.footer, { paddingBottom: insets.bottom + 62 }]}>
         <Pressable
           style={({ pressed }) => [
             styles.feedbackButton,
@@ -191,14 +194,9 @@ export default function FavoritesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // White (not #FAFAFA) so the empty area below the last row blends with
-    // the white list rows instead of showing a gray band above the tab bar.
     backgroundColor: "#FFFFFF",
   },
   headerOverlay: {
-    // No zIndex: as the last sibling it already paints on top, and zIndex
-    // would force React Native to reorder native subviews, which can move
-    // the list out of the subviews[0] slot the native scroll-to-top needs.
     position: "absolute",
     top: 0,
     left: 0,
@@ -284,7 +282,6 @@ const styles = StyleSheet.create({
   },
   footer: {
     paddingTop: 12,
-    paddingBottom: 12,
     paddingHorizontal: 20,
     backgroundColor: "#FAFAFA",
   },
@@ -293,8 +290,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#179130",
-    borderRadius: 12,
-    paddingVertical: 12,
+    borderRadius: 100,
+    paddingVertical: 16,
     paddingHorizontal: 20,
     gap: 8,
   },

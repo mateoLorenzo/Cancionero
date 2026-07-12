@@ -7,7 +7,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const MIN_FONT = 14;
-const MAX_FONT = 28;
+const MAX_FONT = 34;
 
 export interface LyricsSection {
   label?: string;

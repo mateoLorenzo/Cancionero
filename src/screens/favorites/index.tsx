@@ -283,7 +283,7 @@ const styles = StyleSheet.create({
   footer: {
     paddingTop: 12,
     paddingHorizontal: 20,
-    backgroundColor: "#FAFAFA",
+    backgroundColor: "#FFFFFF",
   },
   feedbackButton: {
     flexDirection: "row",

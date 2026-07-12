@@ -155,6 +155,7 @@ export default function HomeScreen() {
       renderItem={renderItem}
       drawDistance={300}
       keyboardDismissMode="on-drag"
+      keyboardShouldPersistTaps="handled"
       indicatorStyle="black"
       contentInsetAdjustmentBehavior="never"
       automaticallyAdjustsScrollIndicatorInsets={false}

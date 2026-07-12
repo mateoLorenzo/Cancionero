@@ -4,11 +4,11 @@ import { useFavoritesStore } from "@/src/stores/favorites";
 import { useSettingsStore } from "@/src/stores/settings";
 import { Hymn } from "@/src/types/hymn";
 import { Ionicons } from "@expo/vector-icons";
-import { FlashList, FlashListRef } from "@shopify/flash-list";
-import { useNavigation, useRouter } from "expo-router";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { FlashList } from "@shopify/flash-list";
+import { useRouter } from "expo-router";
+import { useMemo, useState } from "react";
 import {
-  FlatList,
+  LayoutChangeEvent,
   Pressable,
   StyleSheet,
   Text,
@@ -28,22 +28,12 @@ export default function HomeScreen() {
   const toggleFavorite = useFavoritesStore((s) => s.toggle);
   const fontSize = useSettingsStore((s) => s.fontSize);
   const { push } = useRouter();
-  const navigation = useNavigation();
   const insets = useSafeAreaInsets();
-  const flashListRef = useRef<FlashListRef<{ hymn: Hymn; snippet: string }>>(null);
-  const flatListRef = useRef<FlatList<{ hymn: Hymn; snippet: string }>>(null);
+  const [headerHeight, setHeaderHeight] = useState(insets.top + 150);
 
-  useEffect(() => {
-    // tabPress is provided by the parent bottom-tab navigator at runtime
-    const unsubscribe = (navigation as { addListener: (e: string, cb: () => void) => () => void })
-      .addListener("tabPress", () => {
-        if (navigation.isFocused()) {
-          flashListRef.current?.scrollToOffset({ offset: 0, animated: true });
-          flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
-        }
-      });
-    return unsubscribe;
-  }, [navigation]);
+  const handleHeaderLayout = (e: LayoutChangeEvent) => {
+    setHeaderHeight(e.nativeEvent.layout.height);
+  };
 
   const results = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -155,74 +145,71 @@ export default function HomeScreen() {
 
   const isSearching = search.trim().length > 0;
 
-  const renderList = () =>
-    isSearching ? (
-      <FlatList
-        ref={flatListRef}
-        data={results}
-        keyExtractor={(item) => item.hymn.id.toString()}
-        renderItem={renderItem}
-        keyboardDismissMode="on-drag"
-        indicatorStyle="black"
-        ListEmptyComponent={listEmptyComponent}
-      />
-    ) : (
-      <FlashList
-        ref={flashListRef}
-        data={results}
-        keyExtractor={(item) => item.hymn.id.toString()}
-        renderItem={renderItem}
-        drawDistance={300}
-        keyboardDismissMode="on-drag"
-        indicatorStyle="black"
-        ListEmptyComponent={listEmptyComponent}
-      />
-    );
+  const listFrameStyle = { marginTop: headerHeight };
+  const listContentStyle = { paddingBottom: insets.bottom + 50};
+
+  const renderList = () => (
+    <FlashList
+      data={results}
+      keyExtractor={(item) => item.hymn.id.toString()}
+      renderItem={renderItem}
+      drawDistance={300}
+      keyboardDismissMode="on-drag"
+      indicatorStyle="black"
+      contentInsetAdjustmentBehavior="never"
+      automaticallyAdjustsScrollIndicatorInsets={false}
+      ListEmptyComponent={listEmptyComponent}
+      style={listFrameStyle}
+      contentContainerStyle={listContentStyle}
+    />
+  );
 
   return (
-    <View style={styles.container}>
-      <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
-        <Text style={styles.headerTitle}>Himnos y Canticos</Text>
-        <Text style={styles.headerSubtitle}>del Evangelio</Text>
-        <View
-          style={[
-            styles.searchContainer,
-            isSearching && styles.searchContainerActive,
-          ]}
-        >
-          <SearchIcon width={20} height={20} stroke={isSearching ? "#FFFFFF" : "#999"} />
-          <TextInput
-            style={styles.searchInput}
-            placeholder="Buscar por nombre, número o letra..."
-            placeholderTextColor="#999"
-            value={search}
-            onChangeText={setSearch}
-            autoCorrect={false}
-            returnKeyType="search"
-            clearButtonMode="always"
-            accessibilityLabel="Buscar himnos"
-            accessibilityRole="search"
-          />
-        </View>
-      </View>
-
-      {isSearching && (
-        <View style={styles.filterBanner}>
-          <Text style={styles.filterText}>
-            {results.length} resultado{results.length !== 1 ? "s" : ""} para &ldquo;{search.trim()}&rdquo;
-          </Text>
-          <Pressable
-            onPress={() => setSearch("")}
-            hitSlop={8}
-            accessibilityLabel="Limpiar búsqueda"
-            accessibilityRole="button"
-          >
-            <Ionicons name="close-circle" size={18} color="#888" />
-          </Pressable>
-        </View>
-      )}
-
+    <View style={styles.container} collapsable={false}>
       {renderList()}
+
+      <View style={styles.headerOverlay} onLayout={handleHeaderLayout}>
+        <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
+          <Text style={styles.headerTitle}>Himnos y Canticos</Text>
+          <Text style={styles.headerSubtitle}>del Evangelio</Text>
+          <View
+            style={[
+              styles.searchContainer,
+              isSearching && styles.searchContainerActive,
+            ]}
+          >
+            <SearchIcon width={20} height={20} stroke={isSearching ? "#FFFFFF" : "#999"} />
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Buscar por nombre, número o letra..."
+              placeholderTextColor="#999"
+              value={search}
+              onChangeText={setSearch}
+              autoCorrect={false}
+              returnKeyType="search"
+              clearButtonMode="always"
+              accessibilityLabel="Buscar himnos"
+              accessibilityRole="search"
+            />
+          </View>
+        </View>
+
+        {isSearching && (
+          <View style={styles.filterBanner}>
+            <Text style={styles.filterText}>
+              {results.length} resultado{results.length !== 1 ? "s" : ""} para &ldquo;{search.trim()}&rdquo;
+            </Text>
+            <Pressable
+              onPress={() => setSearch("")}
+              hitSlop={8}
+              accessibilityLabel="Limpiar búsqueda"
+              accessibilityRole="button"
+            >
+              <Ionicons name="close-circle" size={18} color="#888" />
+            </Pressable>
+          </View>
+        )}
+      </View>
     </View>
   );
 }
@@ -230,7 +217,13 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FAFAFA",
+    backgroundColor: "#FFFFFF",
+  },
+  headerOverlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
   },
   headerSection: {
     backgroundColor: "#0c0c0c",
@@ -256,7 +249,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "rgba(255,255,255,0.12)",
     borderRadius: 8,
-    // borderRadius: 100,
     paddingHorizontal: 14,
     gap: 10,
     borderWidth: 1.5,

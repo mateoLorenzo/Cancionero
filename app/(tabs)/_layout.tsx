@@ -1,41 +1,21 @@
-import { Ionicons } from "@expo/vector-icons";
-import { Tabs } from "expo-router";
+// import { Tabs } from "expo-router";
+import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
 
 export default function TabsLayout() {
   return (
-    <Tabs
-      screenOptions={{
-        headerShown: false,
-        tabBarActiveTintColor: "#000000",
-      }}
-    >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: "Himnos",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="book-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="songs"
-        options={{
-          title: "Canciones",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="musical-notes-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="favorites"
-        options={{
-          title: "Favoritos",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="heart-outline" size={size} color={color} />
-          ),
-        }}
-      />
-    </Tabs>
+    <NativeTabs>
+      <NativeTabs.Trigger name="index">
+        <Label>Himnos</Label>
+        <Icon sf={"book"} drawable="custom_home_drawable" />
+      </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="songs">
+        <Label>Canciones</Label>
+        <Icon sf={"music.pages"} drawable="custom_home_drawable" />
+      </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="favorites">
+        <Label>Favoritos</Label>
+        <Icon sf={"heart"} drawable="custom_home_drawable" />
+      </NativeTabs.Trigger>
+    </NativeTabs>
   );
 }

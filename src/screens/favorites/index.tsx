@@ -6,11 +6,18 @@ import { useSongFavoritesStore } from "@/src/stores/song-favorites";
 import { Hymn } from "@/src/types/hymn";
 import { Song } from "@/src/types/song";
 import { Ionicons } from "@expo/vector-icons";
-import { FlashList, FlashListRef } from "@shopify/flash-list";
-import { useNavigation, useRouter } from "expo-router";
+import { FlashList } from "@shopify/flash-list";
+import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useEffect, useMemo, useRef } from "react";
-import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
+import { useMemo, useState } from "react";
+import {
+  LayoutChangeEvent,
+  Linking,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const FEEDBACK_URL =
@@ -26,24 +33,20 @@ type FavItem =
 
 export default function FavoritesScreen() {
   const { push } = useRouter();
-  const navigation = useNavigation();
   const insets = useSafeAreaInsets();
   const hymnFavoriteIds = useFavoritesStore((s) => s.ids);
   const toggleHymnFavorite = useFavoritesStore((s) => s.toggle);
   const songFavoriteIds = useSongFavoritesStore((s) => s.ids);
   const toggleSongFavorite = useSongFavoritesStore((s) => s.toggle);
   const fontSize = useSettingsStore((s) => s.fontSize);
-  const flashListRef = useRef<FlashListRef<FavItem>>(null);
+  // The list must be the first descendant for the native tab bar's
+  // scroll-to-top (repeated tab selection) to work, so the header is
+  // overlaid on top and the list is padded down by its measured height.
+  const [headerHeight, setHeaderHeight] = useState(insets.top + 90);
 
-  useEffect(() => {
-    const unsubscribe = (navigation as { addListener: (e: string, cb: () => void) => () => void })
-      .addListener("tabPress", () => {
-        if (navigation.isFocused()) {
-          flashListRef.current?.scrollToOffset({ offset: 0, animated: true });
-        }
-      });
-    return unsubscribe;
-  }, [navigation]);
+  const handleHeaderLayout = (e: LayoutChangeEvent) => {
+    setHeaderHeight(e.nativeEvent.layout.height);
+  };
 
   const favoriteHymns = useMemo(
     () => hymns.filter((h) => hymnFavoriteIds.has(h.id)),
@@ -132,16 +135,12 @@ export default function FavoritesScreen() {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} collapsable={false}>
       <StatusBar style="light" />
-      <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
-        <Text style={styles.headerTitle}>Mis Favoritos</Text>
-        <Text style={styles.headerSubtitle}>Guarda tantos como quieras</Text>
-      </View>
 
-      <View style={styles.listWrapper}>
+      <View style={styles.listWrapper} collapsable={false}>
         {isEmpty ? (
-          <View style={styles.emptyContainer}>
+          <View style={[styles.emptyContainer, { paddingTop: headerHeight }]}>
             <Ionicons name="heart-outline" size={48} color="#CCC" />
             <Text style={styles.emptyText}>Aún no tenés favoritos</Text>
             <Text style={styles.emptySubtext}>
@@ -150,13 +149,16 @@ export default function FavoritesScreen() {
           </View>
         ) : (
           <FlashList
-            ref={flashListRef}
             data={data}
             keyExtractor={(item) => item.key}
             getItemType={(item) => item.type}
             indicatorStyle="black"
             renderItem={renderItem}
             keyboardDismissMode="on-drag"
+            contentInsetAdjustmentBehavior="never"
+            automaticallyAdjustsScrollIndicatorInsets={false}
+            style={{ marginTop: headerHeight }}
+            contentContainerStyle={{ paddingBottom: insets.bottom + 50 }}
           />
         )}
       </View>
@@ -175,6 +177,13 @@ export default function FavoritesScreen() {
           <Text style={styles.feedbackButtonText}>Enviar sugerencias</Text>
         </Pressable>
       </View>
+
+      <View style={styles.headerOverlay} onLayout={handleHeaderLayout}>
+        <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
+          <Text style={styles.headerTitle}>Mis Favoritos</Text>
+          <Text style={styles.headerSubtitle}>Guarda tantos como quieras</Text>
+        </View>
+      </View>
     </View>
   );
 }
@@ -182,7 +191,18 @@ export default function FavoritesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FAFAFA",
+    // White (not #FAFAFA) so the empty area below the last row blends with
+    // the white list rows instead of showing a gray band above the tab bar.
+    backgroundColor: "#FFFFFF",
+  },
+  headerOverlay: {
+    // No zIndex: as the last sibling it already paints on top, and zIndex
+    // would force React Native to reorder native subviews, which can move
+    // the list out of the subviews[0] slot the native scroll-to-top needs.
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
   },
   headerSection: {
     backgroundColor: "#0c0c0c",

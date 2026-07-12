@@ -101,7 +101,12 @@ export default function SongsScreen() {
   const renderItem = ({ item }: { item: ListItem }) => {
     if (item.type === "crossHeader") {
       return (
-        <View style={styles.crossHeader}>
+        <View
+          style={[
+            styles.crossHeader,
+            results.length > 0 && styles.crossHeaderSpaced,
+          ]}
+        >
           <Text style={styles.crossHeaderTitle}>
             Tal vez querías decir&hellip;
           </Text>
@@ -370,7 +375,6 @@ const styles = StyleSheet.create({
   // The cross-section zone uses a grouped gray treatment (banner header plus
   // tinted rows) so the boundary with the main results reads at a glance
   crossHeader: {
-    marginTop: 24,
     paddingHorizontal: 20,
     paddingVertical: 10,
     backgroundColor: "#F0F0F0",
@@ -388,6 +392,11 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#999",
     marginTop: 1,
+  },
+  // Breathing room after the last own-section row; skipped when there are
+  // no own results so the banner sits flush under the results counter
+  crossHeaderSpaced: {
+    marginTop: 24,
   },
   crossItem: {
     backgroundColor: "#FAFAFA",

@@ -118,7 +118,11 @@ export default function HomeScreen() {
     if (item.type === "song") {
       return (
         <Pressable
-          style={({ pressed }) => [styles.item, pressed && styles.itemPressed]}
+          style={({ pressed }) => [
+            styles.item,
+            styles.crossItem,
+            pressed && styles.crossItemPressed,
+          ]}
           onPress={() => push(`/song/${item.song.id}`)}
           accessibilityRole="button"
           accessibilityLabel={`Canción ${item.song.title}`}
@@ -248,7 +252,7 @@ export default function HomeScreen() {
               &ldquo;{search.trim()}&rdquo;
             </Text>
             <Pressable
-              onPress={() => setSearch("")}
+              onPress={() => handleSearchChange("")}
               hitSlop={8}
               accessibilityLabel="Limpiar búsqueda"
               accessibilityRole="button"
@@ -363,21 +367,34 @@ const styles = StyleSheet.create({
   snippetBold: {
     fontWeight: "700",
   },
+  // The cross-section zone uses a grouped gray treatment (banner header plus
+  // tinted rows) so the boundary with the main results reads at a glance
   crossHeader: {
+    marginTop: 24,
     paddingHorizontal: 20,
-    paddingTop: 28,
-    paddingBottom: 8,
-    backgroundColor: "#FFFFFF",
+    paddingVertical: 10,
+    backgroundColor: "#F0F0F0",
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: "#CCC",
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: "#CCC",
   },
   crossHeaderTitle: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: "600",
-    color: "#1A1A1A",
+    color: "#555",
   },
   crossHeaderSubtitle: {
-    fontSize: 13,
-    color: "#888",
-    marginTop: 2,
+    fontSize: 12,
+    color: "#999",
+    marginTop: 1,
+  },
+  crossItem: {
+    backgroundColor: "#FAFAFA",
+    borderBottomColor: "#E5E5E5",
+  },
+  crossItemPressed: {
+    backgroundColor: "#EFEFEF",
   },
   emptyContainer: {
     alignItems: "center",

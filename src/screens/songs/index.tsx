@@ -1,8 +1,11 @@
 import SearchIcon from "@/assets/svg/search.svg";
+import hymnsData from "@/src/data/hymns.json";
 import songsData from "@/src/data/songs.json";
 import { useSettingsStore } from "@/src/stores/settings";
 import { useSongFavoritesStore } from "@/src/stores/song-favorites";
+import { Hymn } from "@/src/types/hymn";
 import { Song } from "@/src/types/song";
+import { searchCollection, stripAccents } from "@/src/utils/search";
 import { Ionicons } from "@expo/vector-icons";
 import { FlashList, FlashListRef } from "@shopify/flash-list";
 import { useRouter } from "expo-router";
@@ -18,9 +21,12 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const songs = songsData as Song[];
+const hymns = hymnsData as Hymn[];
 
-const stripAccents = (str: string) =>
-  str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+type ListItem =
+  | { type: "song"; song: Song; snippet: string }
+  | { type: "crossHeader" }
+  | { type: "hymn"; hymn: Hymn; snippet: string };
 
 export default function SongsScreen() {
   const [search, setSearch] = useState("");
@@ -30,48 +36,41 @@ export default function SongsScreen() {
   const { push } = useRouter();
   const insets = useSafeAreaInsets();
   const [headerHeight, setHeaderHeight] = useState(insets.top + 150);
-  const listRef = useRef<FlashListRef<{ song: Song; snippet: string }>>(null);
+  const listRef = useRef<FlashListRef<ListItem>>(null);
 
   const handleHeaderLayout = (e: LayoutChangeEvent) => {
     setHeaderHeight(e.nativeEvent.layout.height);
   };
 
-  // Changing the query replaces the whole dataset, so any preserved scroll
-  // offset would land in a random spot (seen as a blank gap above results).
   const handleSearchChange = (text: string) => {
     setSearch(text);
     listRef.current?.scrollToOffset({ offset: 0, animated: false });
   };
 
-  const results = useMemo(() => {
-    const query = search.trim().toLowerCase();
-    if (!query) return songs.map((s) => ({ song: s, snippet: "" }));
-    const normQuery = stripAccents(query);
+  const results = useMemo(() => searchCollection(songs, search), [search]);
 
-    const titleMatches: { song: Song; snippet: string }[] = [];
-    const lyricsMatches: { song: Song; snippet: string }[] = [];
+  const crossResults = useMemo(
+    () =>
+      search.trim()
+        ? searchCollection(hymns, search, { matchNumber: true })
+        : [],
+    [search],
+  );
 
-    for (const s of songs) {
-      // Match by title
-      if (stripAccents(s.title.toLowerCase()).includes(normQuery)) {
-        titleMatches.push({ song: s, snippet: "" });
-        continue;
-      }
-
-      // Match by lyrics
-      const allText = [...s.verses, s.chorus ?? ""].join("\n");
-      const normText = stripAccents(allText.toLowerCase());
-      const idx = normText.indexOf(normQuery);
-      if (idx !== -1) {
-        const start = allText.lastIndexOf("\n", idx) + 1;
-        const end = allText.indexOf("\n", idx + normQuery.length);
-        const line = allText.slice(start, end === -1 ? undefined : end).trim();
-        lyricsMatches.push({ song: s, snippet: line });
-      }
+  const data = useMemo<ListItem[]>(() => {
+    const items: ListItem[] = results.map(({ item, snippet }) => ({
+      type: "song",
+      song: item,
+      snippet,
+    }));
+    if (crossResults.length > 0) {
+      items.push({ type: "crossHeader" });
+      crossResults.forEach(({ item, snippet }) =>
+        items.push({ type: "hymn", hymn: item, snippet }),
+      );
     }
-
-    return [...titleMatches, ...lyricsMatches];
-  }, [search]);
+    return items;
+  }, [results, crossResults]);
 
   const highlightMatch = (text: string, query: string) => {
     const normText = stripAccents(text.toLowerCase());
@@ -90,45 +89,84 @@ export default function SongsScreen() {
     );
   };
 
-  const renderItem = ({
-    item: { song, snippet },
-  }: {
-    item: { song: Song; snippet: string };
-  }) => (
-    <Pressable
-      style={({ pressed }) => [styles.item, pressed && styles.itemPressed]}
-      onPress={() => push(`/song/${song.id}`)}
-      accessibilityRole="button"
-      accessibilityLabel={`Canción ${song.title}`}
-    >
-      <View style={styles.textContainer}>
-        <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
-          {song.title}
-        </Text>
-        {snippet !== "" && (
-          <Text style={styles.snippet} numberOfLines={1}>
-            &ldquo;...
-            {highlightMatch(snippet, search.trim())}
-            ...&rdquo;
+  const renderSnippet = (snippet: string) =>
+    snippet !== "" && (
+      <Text style={styles.snippet} numberOfLines={1}>
+        &ldquo;...
+        {highlightMatch(snippet, search.trim())}
+        ...&rdquo;
+      </Text>
+    );
+
+  const renderItem = ({ item }: { item: ListItem }) => {
+    if (item.type === "crossHeader") {
+      return (
+        <View style={styles.crossHeader}>
+          <Text style={styles.crossHeaderTitle}>
+            Tal vez querías decir&hellip;
           </Text>
-        )}
-      </View>
+          <Text style={styles.crossHeaderSubtitle}>Resultados en Himnos</Text>
+        </View>
+      );
+    }
+
+    if (item.type === "hymn") {
+      return (
+        <Pressable
+          style={({ pressed }) => [
+            styles.item,
+            styles.crossItem,
+            pressed && styles.crossItemPressed,
+          ]}
+          onPress={() => push(`/hymn/${item.hymn.id}`)}
+          accessibilityRole="button"
+          accessibilityLabel={`Himno ${item.hymn.id}, ${item.hymn.title}`}
+        >
+          <Text style={styles.number}>#{item.hymn.id}</Text>
+          <View style={styles.textContainer}>
+            <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
+              {item.hymn.title}
+            </Text>
+            {renderSnippet(item.snippet)}
+          </View>
+          <Ionicons name="chevron-forward" size={16} color="#CCC" />
+        </Pressable>
+      );
+    }
+
+    const { song, snippet } = item;
+    return (
       <Pressable
-        onPress={() => toggleFavorite(song.id)}
-        hitSlop={8}
+        style={({ pressed }) => [styles.item, pressed && styles.itemPressed]}
+        onPress={() => push(`/song/${song.id}`)}
         accessibilityRole="button"
-        accessibilityLabel={
-          favorites.has(song.id) ? "Quitar de favoritos" : "Agregar a favoritos"
-        }
+        accessibilityLabel={`Canción ${song.title}`}
       >
-        <Ionicons
-          name={favorites.has(song.id) ? "heart" : "heart-outline"}
-          size={20}
-          color={favorites.has(song.id) ? "#E05555" : "#CCC"}
-        />
+        <View style={styles.textContainer}>
+          <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
+            {song.title}
+          </Text>
+          {renderSnippet(snippet)}
+        </View>
+        <Pressable
+          onPress={() => toggleFavorite(song.id)}
+          hitSlop={8}
+          accessibilityRole="button"
+          accessibilityLabel={
+            favorites.has(song.id)
+              ? "Quitar de favoritos"
+              : "Agregar a favoritos"
+          }
+        >
+          <Ionicons
+            name={favorites.has(song.id) ? "heart" : "heart-outline"}
+            size={20}
+            color={favorites.has(song.id) ? "#E05555" : "#CCC"}
+          />
+        </Pressable>
       </Pressable>
-    </Pressable>
-  );
+    );
+  };
 
   const listEmptyComponent = (
     <View style={styles.emptyContainer}>
@@ -145,8 +183,15 @@ export default function SongsScreen() {
   const renderList = () => (
     <FlashList
       ref={listRef}
-      data={results}
-      keyExtractor={(item) => item.song.id.toString()}
+      data={data}
+      keyExtractor={(item) =>
+        item.type === "crossHeader"
+          ? "cross-header"
+          : item.type === "hymn"
+            ? `hymn-${item.hymn.id}`
+            : `song-${item.song.id}`
+      }
+      getItemType={(item) => item.type}
       renderItem={renderItem}
       drawDistance={300}
       maintainVisibleContentPosition={{ disabled: true }}
@@ -298,6 +343,13 @@ const styles = StyleSheet.create({
   itemPressed: {
     backgroundColor: "#F5F5F5",
   },
+  number: {
+    fontSize: 14,
+    color: "#999",
+    width: 46,
+    fontWeight: "400",
+    fontVariant: ["tabular-nums"],
+  },
   textContainer: {
     flex: 1,
   },
@@ -314,6 +366,35 @@ const styles = StyleSheet.create({
   },
   snippetBold: {
     fontWeight: "700",
+  },
+  // The cross-section zone uses a grouped gray treatment (banner header plus
+  // tinted rows) so the boundary with the main results reads at a glance
+  crossHeader: {
+    marginTop: 24,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: "#F0F0F0",
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: "#CCC",
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: "#CCC",
+  },
+  crossHeaderTitle: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#555",
+  },
+  crossHeaderSubtitle: {
+    fontSize: 12,
+    color: "#999",
+    marginTop: 1,
+  },
+  crossItem: {
+    backgroundColor: "#FAFAFA",
+    borderBottomColor: "#E5E5E5",
+  },
+  crossItemPressed: {
+    backgroundColor: "#EFEFEF",
   },
   emptyContainer: {
     alignItems: "center",

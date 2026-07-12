@@ -75,11 +75,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#999",
   },
-  // Fixed square so the icon glyph centers inside the native header circle
   favoriteButton: {
     width: 34,
     height: 34,
     alignItems: "center",
     justifyContent: "center",
+    paddingLeft: 2,
   },
 });

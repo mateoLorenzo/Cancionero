@@ -1,12 +1,15 @@
 import SearchIcon from "@/assets/svg/search.svg";
 import hymnsData from "@/src/data/hymns.json";
+import songsData from "@/src/data/songs.json";
 import { useFavoritesStore } from "@/src/stores/favorites";
 import { useSettingsStore } from "@/src/stores/settings";
 import { Hymn } from "@/src/types/hymn";
+import { Song } from "@/src/types/song";
+import { searchCollection, stripAccents } from "@/src/utils/search";
 import { Ionicons } from "@expo/vector-icons";
-import { FlashList } from "@shopify/flash-list";
+import { FlashList, FlashListRef } from "@shopify/flash-list";
 import { useRouter } from "expo-router";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   LayoutChangeEvent,
   Pressable,
@@ -18,9 +21,12 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const hymns = hymnsData as Hymn[];
+const songs = songsData as Song[];
 
-const stripAccents = (str: string) =>
-  str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+type ListItem =
+  | { type: "hymn"; hymn: Hymn; snippet: string }
+  | { type: "crossHeader" }
+  | { type: "song"; song: Song; snippet: string };
 
 export default function HomeScreen() {
   const [search, setSearch] = useState("");
@@ -30,52 +36,44 @@ export default function HomeScreen() {
   const { push } = useRouter();
   const insets = useSafeAreaInsets();
   const [headerHeight, setHeaderHeight] = useState(insets.top + 150);
+  const listRef = useRef<FlashListRef<ListItem>>(null);
 
   const handleHeaderLayout = (e: LayoutChangeEvent) => {
     setHeaderHeight(e.nativeEvent.layout.height);
   };
 
-  const results = useMemo(() => {
-    const query = search.trim().toLowerCase();
-    if (!query) return hymns.map((h) => ({ hymn: h, snippet: "" }));
-    const queryNum = parseInt(query, 10);
-    const normQuery = stripAccents(query);
-
-    const titleMatches: { hymn: Hymn; snippet: string }[] = [];
-    const lyricsMatches: { hymn: Hymn; snippet: string }[] = [];
-
-    for (const h of hymns) {
-      // Match by number
-      if (!isNaN(queryNum) && String(h.id).includes(query)) {
-        titleMatches.push({ hymn: h, snippet: "" });
-        continue;
-      }
-
-      // Match by title
-      if (stripAccents(h.title.toLowerCase()).includes(normQuery)) {
-        titleMatches.push({ hymn: h, snippet: "" });
-        continue;
-      }
-
-      // Match by lyrics
-      const allText = [...h.verses, h.chorus ?? ""].join("\n");
-      const normText = stripAccents(allText.toLowerCase());
-      const idx = normText.indexOf(normQuery);
-      if (idx !== -1) {
-        // Extract a snippet around the match
-        const start = allText.lastIndexOf("\n", idx) + 1;
-        const end = allText.indexOf("\n", idx + normQuery.length);
-        const line = allText.slice(start, end === -1 ? undefined : end).trim();
-        lyricsMatches.push({ hymn: h, snippet: line });
-      }
-    }
-
-    return [...titleMatches, ...lyricsMatches];
-  }, [search]);
-
-  const handlePress = (id: number) => {
-    push(`/hymn/${id}`);
+  // Changing the query replaces the whole dataset, so any preserved scroll
+  // offset would land in a random spot (seen as a blank gap above results).
+  const handleSearchChange = (text: string) => {
+    setSearch(text);
+    listRef.current?.scrollToOffset({ offset: 0, animated: false });
   };
+
+  const results = useMemo(
+    () => searchCollection(hymns, search, { matchNumber: true }),
+    [search],
+  );
+
+  // Matches from the other collection, shown as a "did you mean" section
+  const crossResults = useMemo(
+    () => (search.trim() ? searchCollection(songs, search) : []),
+    [search],
+  );
+
+  const data = useMemo<ListItem[]>(() => {
+    const items: ListItem[] = results.map(({ item, snippet }) => ({
+      type: "hymn",
+      hymn: item,
+      snippet,
+    }));
+    if (crossResults.length > 0) {
+      items.push({ type: "crossHeader" });
+      crossResults.forEach(({ item, snippet }) =>
+        items.push({ type: "song", song: item, snippet }),
+      );
+    }
+    return items;
+  }, [results, crossResults]);
 
   const highlightMatch = (text: string, query: string) => {
     const normText = stripAccents(text.toLowerCase());
@@ -94,47 +92,82 @@ export default function HomeScreen() {
     );
   };
 
-  const renderItem = ({ item: { hymn, snippet } }: { item: { hymn: Hymn; snippet: string } }) => (
-    <Pressable
-      style={({ pressed }) => [
-        styles.item,
-        pressed && styles.itemPressed,
-      ]}
-      onPress={() => handlePress(hymn.id)}
-      accessibilityRole="button"
-      accessibilityLabel={`Himno ${hymn.id}, ${hymn.title}`}
-    >
-      <Text style={styles.number}>#{hymn.id}</Text>
-      <View style={styles.textContainer}>
-        <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
-          {hymn.title}
-        </Text>
-        {snippet !== "" && (
-          <Text style={styles.snippet} numberOfLines={1}>
-            &ldquo;...
-            {highlightMatch(snippet, search.trim())}
-            ...&rdquo;
+  const renderSnippet = (snippet: string) =>
+    snippet !== "" && (
+      <Text style={styles.snippet} numberOfLines={1}>
+        &ldquo;...
+        {highlightMatch(snippet, search.trim())}
+        ...&rdquo;
+      </Text>
+    );
+
+  const renderItem = ({ item }: { item: ListItem }) => {
+    if (item.type === "crossHeader") {
+      return (
+        <View style={styles.crossHeader}>
+          <Text style={styles.crossHeaderTitle}>
+            Tal vez querías decir&hellip;
           </Text>
-        )}
-      </View>
+          <Text style={styles.crossHeaderSubtitle}>
+            Resultados en Canciones
+          </Text>
+        </View>
+      );
+    }
+
+    if (item.type === "song") {
+      return (
+        <Pressable
+          style={({ pressed }) => [styles.item, pressed && styles.itemPressed]}
+          onPress={() => push(`/song/${item.song.id}`)}
+          accessibilityRole="button"
+          accessibilityLabel={`Canción ${item.song.title}`}
+        >
+          <View style={styles.textContainer}>
+            <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
+              {item.song.title}
+            </Text>
+            {renderSnippet(item.snippet)}
+          </View>
+          <Ionicons name="chevron-forward" size={16} color="#CCC" />
+        </Pressable>
+      );
+    }
+
+    const { hymn, snippet } = item;
+    return (
       <Pressable
-        onPress={() => toggleFavorite(hymn.id)}
-        hitSlop={8}
+        style={({ pressed }) => [styles.item, pressed && styles.itemPressed]}
+        onPress={() => push(`/hymn/${hymn.id}`)}
         accessibilityRole="button"
-        accessibilityLabel={
-          favorites.has(hymn.id)
-            ? "Quitar de favoritos"
-            : "Agregar a favoritos"
-        }
+        accessibilityLabel={`Himno ${hymn.id}, ${hymn.title}`}
       >
-        <Ionicons
-          name={favorites.has(hymn.id) ? "heart" : "heart-outline"}
-          size={20}
-          color={favorites.has(hymn.id) ? "#E05555" : "#CCC"}
-        />
+        <Text style={styles.number}>#{hymn.id}</Text>
+        <View style={styles.textContainer}>
+          <Text style={[styles.title, { fontSize }]} numberOfLines={1}>
+            {hymn.title}
+          </Text>
+          {renderSnippet(snippet)}
+        </View>
+        <Pressable
+          onPress={() => toggleFavorite(hymn.id)}
+          hitSlop={8}
+          accessibilityRole="button"
+          accessibilityLabel={
+            favorites.has(hymn.id)
+              ? "Quitar de favoritos"
+              : "Agregar a favoritos"
+          }
+        >
+          <Ionicons
+            name={favorites.has(hymn.id) ? "heart" : "heart-outline"}
+            size={20}
+            color={favorites.has(hymn.id) ? "#E05555" : "#CCC"}
+          />
+        </Pressable>
       </Pressable>
-    </Pressable>
-  );
+    );
+  };
 
   const listEmptyComponent = (
     <View style={styles.emptyContainer}>
@@ -146,14 +179,23 @@ export default function HomeScreen() {
   const isSearching = search.trim().length > 0;
 
   const listFrameStyle = { marginTop: headerHeight };
-  const listContentStyle = { paddingBottom: insets.bottom + 50};
+  const listContentStyle = { paddingBottom: insets.bottom + 50 };
 
   const renderList = () => (
     <FlashList
-      data={results}
-      keyExtractor={(item) => item.hymn.id.toString()}
+      ref={listRef}
+      data={data}
+      keyExtractor={(item) =>
+        item.type === "crossHeader"
+          ? "cross-header"
+          : item.type === "song"
+            ? `song-${item.song.id}`
+            : `hymn-${item.hymn.id}`
+      }
+      getItemType={(item) => item.type}
       renderItem={renderItem}
       drawDistance={300}
+      maintainVisibleContentPosition={{ disabled: true }}
       keyboardDismissMode="on-drag"
       keyboardShouldPersistTaps="handled"
       indicatorStyle="black"
@@ -179,13 +221,17 @@ export default function HomeScreen() {
               isSearching && styles.searchContainerActive,
             ]}
           >
-            <SearchIcon width={20} height={20} stroke={isSearching ? "#FFFFFF" : "#999"} />
+            <SearchIcon
+              width={20}
+              height={20}
+              stroke={isSearching ? "#FFFFFF" : "#999"}
+            />
             <TextInput
               style={styles.searchInput}
               placeholder="Buscar por nombre, número o letra..."
               placeholderTextColor="#999"
               value={search}
-              onChangeText={setSearch}
+              onChangeText={handleSearchChange}
               autoCorrect={false}
               returnKeyType="search"
               clearButtonMode="always"
@@ -198,7 +244,8 @@ export default function HomeScreen() {
         {isSearching && (
           <View style={styles.filterBanner}>
             <Text style={styles.filterText}>
-              {results.length} resultado{results.length !== 1 ? "s" : ""} para &ldquo;{search.trim()}&rdquo;
+              {results.length} resultado{results.length !== 1 ? "s" : ""} para
+              &ldquo;{search.trim()}&rdquo;
             </Text>
             <Pressable
               onPress={() => setSearch("")}
@@ -315,6 +362,22 @@ const styles = StyleSheet.create({
   },
   snippetBold: {
     fontWeight: "700",
+  },
+  crossHeader: {
+    paddingHorizontal: 20,
+    paddingTop: 28,
+    paddingBottom: 8,
+    backgroundColor: "#FFFFFF",
+  },
+  crossHeaderTitle: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#1A1A1A",
+  },
+  crossHeaderSubtitle: {
+    fontSize: 13,
+    color: "#888",
+    marginTop: 2,
   },
   emptyContainer: {
     alignItems: "center",

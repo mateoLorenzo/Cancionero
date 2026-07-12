@@ -4,9 +4,9 @@ import { useSettingsStore } from "@/src/stores/settings";
 import { useSongFavoritesStore } from "@/src/stores/song-favorites";
 import { Song } from "@/src/types/song";
 import { Ionicons } from "@expo/vector-icons";
-import { FlashList } from "@shopify/flash-list";
+import { FlashList, FlashListRef } from "@shopify/flash-list";
 import { useRouter } from "expo-router";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   LayoutChangeEvent,
   Pressable,
@@ -30,9 +30,17 @@ export default function SongsScreen() {
   const { push } = useRouter();
   const insets = useSafeAreaInsets();
   const [headerHeight, setHeaderHeight] = useState(insets.top + 150);
+  const listRef = useRef<FlashListRef<{ song: Song; snippet: string }>>(null);
 
   const handleHeaderLayout = (e: LayoutChangeEvent) => {
     setHeaderHeight(e.nativeEvent.layout.height);
+  };
+
+  // Changing the query replaces the whole dataset, so any preserved scroll
+  // offset would land in a random spot (seen as a blank gap above results).
+  const handleSearchChange = (text: string) => {
+    setSearch(text);
+    listRef.current?.scrollToOffset({ offset: 0, animated: false });
   };
 
   const results = useMemo(() => {
@@ -136,10 +144,12 @@ export default function SongsScreen() {
 
   const renderList = () => (
     <FlashList
+      ref={listRef}
       data={results}
       keyExtractor={(item) => item.song.id.toString()}
       renderItem={renderItem}
       drawDistance={300}
+      maintainVisibleContentPosition={{ disabled: true }}
       keyboardDismissMode="on-drag"
       keyboardShouldPersistTaps="handled"
       indicatorStyle="black"
@@ -175,7 +185,7 @@ export default function SongsScreen() {
               placeholder="Buscar por nombre o letra..."
               placeholderTextColor="#999"
               value={search}
-              onChangeText={setSearch}
+              onChangeText={handleSearchChange}
               autoCorrect={false}
               returnKeyType="search"
               clearButtonMode="always"
@@ -192,7 +202,7 @@ export default function SongsScreen() {
               &ldquo;{search.trim()}&rdquo;
             </Text>
             <Pressable
-              onPress={() => setSearch("")}
+              onPress={() => handleSearchChange("")}
               hitSlop={8}
               accessibilityLabel="Limpiar búsqueda"
               accessibilityRole="button"

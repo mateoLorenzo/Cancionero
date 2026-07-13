@@ -11,11 +11,13 @@ import { FlashList, FlashListRef } from "@shopify/flash-list";
 import { useRouter } from "expo-router";
 import { useMemo, useRef, useState } from "react";
 import {
+  Keyboard,
   LayoutChangeEvent,
   Pressable,
   StyleSheet,
   Text,
   TextInput,
+  TouchableWithoutFeedback,
   View,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -220,53 +222,56 @@ export default function HomeScreen() {
     <View style={styles.container} collapsable={false}>
       {renderList()}
 
-      <View style={styles.headerOverlay} onLayout={handleHeaderLayout}>
-        <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
-          <Text style={styles.headerTitle}>Himnos y Canticos</Text>
-          <Text style={styles.headerSubtitle}>del Evangelio</Text>
-          <View
-            style={[
-              styles.searchContainer,
-              isSearching && styles.searchContainerActive,
-            ]}
-          >
-            <SearchIcon
-              width={20}
-              height={20}
-              stroke={isSearching ? "#FFFFFF" : "#999"}
-            />
-            <TextInput
-              style={styles.searchInput}
-              placeholder="Buscar por nombre, número o letra..."
-              placeholderTextColor="#999"
-              value={search}
-              onChangeText={handleSearchChange}
-              autoCorrect={false}
-              returnKeyType="search"
-              clearButtonMode="always"
-              accessibilityLabel="Buscar himnos"
-              accessibilityRole="search"
-            />
-          </View>
-        </View>
-
-        {isSearching && (
-          <View style={styles.filterBanner}>
-            <Text style={styles.filterText}>
-              {results.length} resultado{results.length !== 1 ? "s" : ""} para
-              &ldquo;{search.trim()}&rdquo;
-            </Text>
-            <Pressable
-              onPress={() => handleSearchChange("")}
-              hitSlop={8}
-              accessibilityLabel="Limpiar búsqueda"
-              accessibilityRole="button"
+      {/* Tapping the header (outside the input) closes the keyboard */}
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View style={styles.headerOverlay} onLayout={handleHeaderLayout}>
+          <View style={[styles.headerSection, { paddingTop: insets.top + 12 }]}>
+            <Text style={styles.headerTitle}>Himnos y Canticos</Text>
+            <Text style={styles.headerSubtitle}>del Evangelio</Text>
+            <View
+              style={[
+                styles.searchContainer,
+                isSearching && styles.searchContainerActive,
+              ]}
             >
-              <Ionicons name="close-circle" size={18} color="#888" />
-            </Pressable>
+              <SearchIcon
+                width={20}
+                height={20}
+                stroke={isSearching ? "#FFFFFF" : "#999"}
+              />
+              <TextInput
+                style={styles.searchInput}
+                placeholder="Buscar por nombre, número o letra..."
+                placeholderTextColor="#999"
+                value={search}
+                onChangeText={handleSearchChange}
+                autoCorrect={false}
+                returnKeyType="search"
+                clearButtonMode="always"
+                accessibilityLabel="Buscar himnos"
+                accessibilityRole="search"
+              />
+            </View>
           </View>
-        )}
-      </View>
+
+          {isSearching && (
+            <View style={styles.filterBanner}>
+              <Text style={styles.filterText}>
+                {results.length} resultado{results.length !== 1 ? "s" : ""} para
+                &ldquo;{search.trim()}&rdquo;
+              </Text>
+              <Pressable
+                onPress={() => handleSearchChange("")}
+                hitSlop={8}
+                accessibilityLabel="Limpiar búsqueda"
+                accessibilityRole="button"
+              >
+                <Ionicons name="close-circle" size={18} color="#888" />
+              </Pressable>
+            </View>
+          )}
+        </View>
+      </TouchableWithoutFeedback>
     </View>
   );
 }

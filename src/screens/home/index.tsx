@@ -106,12 +106,7 @@ export default function HomeScreen() {
   const renderItem = ({ item }: { item: ListItem }) => {
     if (item.type === "crossHeader") {
       return (
-        <View
-          style={[
-            styles.crossHeader,
-            results.length > 0 && styles.crossHeaderSpaced,
-          ]}
-        >
+        <View style={styles.crossHeader}>
           <Text style={styles.crossHeaderTitle}>
             Tal vez querías decir&hellip;
           </Text>
@@ -397,11 +392,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#999",
     marginTop: 1,
-  },
-  // Breathing room after the last own-section row; skipped when there are
-  // no own results so the banner sits flush under the results counter
-  crossHeaderSpaced: {
-    marginTop: 24,
   },
   crossItem: {
     backgroundColor: "#FAFAFA",

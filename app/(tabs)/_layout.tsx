@@ -3,7 +3,6 @@ import { Tabs } from "expo-router";
 import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
 import { StyleSheet } from "react-native";
 
-// TODO: Add svg icons for book, music notes and heart (replace Ionicons placeholders)
 export default function TabsLayout() {
   if (process.env.EXPO_OS === "ios") {
     return (

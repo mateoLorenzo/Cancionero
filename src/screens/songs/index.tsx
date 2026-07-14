@@ -180,7 +180,9 @@ export default function SongsScreen() {
   const isSearching = search.trim().length > 0;
 
   const listFrameStyle = { marginTop: headerHeight };
-  const listContentStyle = { paddingBottom: insets.bottom + 50 };
+  const listContentStyle = {
+    paddingBottom: process.env.EXPO_OS === "ios" ? insets.bottom + 50 : 24,
+  };
 
   const renderList = () => (
     <FlashList

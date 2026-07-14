@@ -166,7 +166,15 @@ export default function FavoritesScreen() {
         )}
       </View>
 
-      <View style={[styles.footer, { paddingBottom: insets.bottom + 62 }]}>
+      <View
+        style={[
+          styles.footer,
+          {
+            paddingBottom:
+              process.env.EXPO_OS === "ios" ? insets.bottom + 62 : 24,
+          },
+        ]}
+      >
         <Pressable
           style={({ pressed }) => [
             styles.feedbackButton,
